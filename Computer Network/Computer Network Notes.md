@@ -87,7 +87,6 @@ A Wide Area Network is a network that extends over a large geographical area suc
 
 ### 6. Network Topologies
 Topology defines the structure of the network of how all the components are interconnected to each other. There are two types of topology: physical and logical topology.
-
 #### Types of Network Topology
 1. *Bus Topology*
 2. *Ring Topology*
@@ -113,4 +112,42 @@ In a mesh topology, every node is connected to every other node, either directly
 ##### Hybrid Topology
 A hybrid topology is a combination of two or more different types of topologies, chosen based on specific network needs.
 ![[Pasted image 20241105004058.png]]
+
+### 7. Transmission Modes
+The way in which data is transmitted from one device to another device is known as transmission mode. The transmission mode is also known as the communication mode. Each communication channel has a direction associated with it, and transmission media provide the direction. Therefore, the transmission mode is also known as a directional mode.
+The transmission mode is defined in the physical layer.
+#### Types of Transmission Modes
+1. *Simplex Mode*
+2. *Half-Duplex Mode*
+3. *Full-Duplex Mode*
+##### Diagram: 
+![[Pasted image 20241105005715.png]]
+
+##### Simplex Mode:
+In simplex mode, data flows in only one direction, from sender to receiver, without the ability to send data back.It's communication is unidirectional.
+###### Diagram:
+![[Pasted image 20241105010255.png]]
+
+##### Half-Duplex Mode:
+In half-duplex mode, data flows in both directions between sender and receiver, but not simultaneously. Only one side can send data at a time.
+###### Diagram
+![[Pasted image 20241105010624.png]]
+
+##### Full-Duplex Mode:
+In full-duplex mode, data flows simultaneously in both directions between the sender and receiver. The communication is bi-directional, i.e., the data flow in both the directions. Full-duplex mode has two simplex channels. One channel has traffic moving in one direction, and another channel has traffic flowing in the opposite direction.
+###### Diagram
+![[Pasted image 20241105010800.png]]
+
+| **Parameters**                 | **Simplex**                                                                  | **Half Duplex**                                                                   | **Full Duplex**                                                                     |
+| ------------------------------ | ---------------------------------------------------------------------------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **Direction of Communication** | Uni-directional communication.                                               | Two-way communication, but one direction at a time.                               | Two-way communication simultaneously.                                               |
+| **Sender and Receiver**        | Sender can send data, but cannot receive data.                               | Sender can send and receive data, but one direction at a time.                    | Sender can send and receive data simultaneously.                                    |
+| **Channel Usage**              | Uses one channel for data transmission.                                      | Uses one channel for data transmission.                                           | Uses two channels for data transmission.                                            |
+| **Performance**                | Provides less performance than half-duplex and full-duplex modes.            | Provides less performance than full-duplex mode.                                  | Provides better performance than simplex and half-duplex modes.                     |
+| **Bandwidth Utilization**      | Utilizes maximum of a single bandwidth.                                      | Utilizes less bandwidth than simplex and full-duplex during transmission.         | Doubles the utilization of transmission bandwidth.                                  |
+| **Suitable For**               | Suitable when full bandwidth is needed for delivering data in one direction. | Suitable when data needs to be sent in both directions, but not at the same time. | Suitable when data needs to be sent and received simultaneously in both directions. |
+| **Examples**                   | Keyboard, monitor.                                                           | Walkie-talkies.                                                                   | Telephone.                                                                          |
+
+
+
 
