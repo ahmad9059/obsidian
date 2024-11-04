@@ -3,7 +3,7 @@ A **computer network** is a system that connects multiple computers and devices 
 ### 1. Major Components of a Computer Network are:
 
 - **NIC(Network Interface Card) :**  network interface card is a piece of hardware that allows computers to communicate with other devices on a network. It can also be called an Ethernet card, LAN card, or network adaptor.
-- ![[Pasted image 20241104155435.png]]
+- ![[client-server-model.png]]
 
 - **Hub**: A hub is a basic networking device that connects multiple computers within a network. When one computer sends data, the hub receives it and broadcasts it to all other connected devices, regardless of the intended receiver. Hubs operate at the physical layer (Layer 1) of the OSI model and are sometimes referred to as "repeaters" because they amplify the signal to ensure it reaches all connected devices.
 - ![[Pasted image 20241104155523.png]]
