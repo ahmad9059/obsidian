@@ -85,10 +85,32 @@ A Wide Area Network is a network that extends over a large geographical area suc
 | **Design & Maintenance** | Simple to design and maintain, with limited setup required.   | Easier design and maintenance; requires limited resources.    | More complex to design and maintain than LAN.                | Complex to design and maintain; often requires specialized skills and resources. |
 | **Fault Tolerance**     | Generally high fault tolerance due to limited devices.         | Higher fault tolerance; issues are easier to isolate and resolve. | Lower fault tolerance than LAN, depending on infrastructure. | Lower fault tolerance, as failures can affect extensive regions. |
 
+### 6. Network Topologies
+Topology defines the structure of the network of how all the components are interconnected to each other. There are two types of topology: physical and logical topology.
 
-
-
-
-
-
+#### Types of Network Topology
+1. *Bus Topology*
+2. *Ring Topology*
+3. *Star Topology*
+4. *Tree Topology*
+5. *Mesh Topology*
+6. *Hybrid Topology*
+##### Bus Topology:
+In a bus topology, all nodes are connected to a single communication line, often a coaxial or twisted-pair cable, that runs through the network. Each device on the network taps into this central bus.
+![[Pasted image 20241105003958.png]]
+##### Ring Topology
+In a ring topology, each node is connected to exactly two other nodes, forming a circular path for signals to travel.
+![[Pasted image 20241105004006.png]]
+##### Star Topology
+In a star topology, all nodes are connected to a central hub or switch. The hub acts as a repeater, managing data transmission between devices.
+![[Pasted image 20241105004024.png]]
+##### Tree Topology
+Tree topology combines characteristics of both star and bus topologies. It has a hierarchical structure with root nodes that branch out to form a tree-like structure.
+![[Pasted image 20241105004041.png]]
+##### Mesh Topology
+In a mesh topology, every node is connected to every other node, either directly or through intermediary nodes, creating multiple paths for data.
+![[Pasted image 20241105004051.png]]
+##### Hybrid Topology
+A hybrid topology is a combination of two or more different types of topologies, chosen based on specific network needs.
+![[Pasted image 20241105004058.png]]
 
