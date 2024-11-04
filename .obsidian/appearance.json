@@ -1,1 +1,8 @@
-{}
+{
+  "cssTheme": "Tokyo Night",
+  "accentColor": "#0091ff",
+  "baseFontSize": 19,
+  "enabledCssSnippets": [
+    "style"
+  ]
+}
