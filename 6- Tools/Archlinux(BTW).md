@@ -1,0 +1,1 @@
+Arch is one of Linux flavour that follow the minimalist approach.  

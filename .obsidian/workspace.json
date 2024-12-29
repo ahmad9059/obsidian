@@ -13,15 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6- Tools/Archlinux(BTW).md",
+                "file": "4- University Stuff/Software Engineering Notes/Finals- Software Engineering Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Archlinux(BTW)"
+              "title": "Finals- Software Engineering Notes"
+            }
+          },
+          {
+            "id": "a70707847af5e849",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-12-30 01.00.55.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2024-12-30 01.00.55.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -159,33 +172,37 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "command-palette:Open command palette": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "31734cf910632a3d",
+  "active": "a70707847af5e849",
   "lastOpenFiles": [
-    "6- Tools/Tmux.md",
+    "4- University Stuff/Software Engineering Notes/Finals- Software Engineering Notes.md",
+    "Excalidraw/Drawing 2024-12-30 01.00.55.excalidraw.md",
+    "Excalidraw",
+    "3- Rough Notes/Linkedin Post/DSA Complete Linkedin Post.md",
+    "3- Rough Notes/Useful Links.md",
     "6- Tools/Archlinux(BTW).md",
+    "6- Tools/Hyprland.md",
     "6- Tools/Neovim-Vim.md",
     "6- Tools/Obsidian.md",
-    "3- Rough Notes/Linkedin Post/DSA Complete Linkedin Post.md",
-    "6- Tools",
-    "4- University Stuff/Software Engineering Notes/Finals- Software Engineering Notes.md",
+    "6- Tools/Tmux.md",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233508.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233449.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233438.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233428.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233417.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233402.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233350.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233334.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233315.png",
     "5- Daily Tasks/2024-12-26.md",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227124945.png",
+    "6- Tools",
     "5- Daily Tasks/Roadmap.canvas",
     "5- Daily Tasks",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241226223448.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241226223145.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241226223052.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241226223034.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241226221159.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241226221125.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241226221114.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241226220648.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241226220624.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241226220529.png",
     "4- University Stuff/Software Engineering Notes/assets",
-    "3- Rough Notes/Useful Links.md",
     "4- University Stuff/Software Engineering Notes",
     "4- University Stuff",
     "3- Rough Notes/Linkedin Post",
@@ -205,10 +222,8 @@
     "linear algebra.md",
     "2024-12-25.md",
     "1- blog/posts/16bit-assembly-language/assembly-code.md",
-    "Templetes",
     "blog/posts/computer-networks-notes/computer.md",
     "blog/posts/markdown-cheat-sheet/index.md",
-    "blog/posts/software-engineering/software-engineering-notes.md",
-    "blog/posts/_index.md"
+    "blog/posts/software-engineering/software-engineering-notes.md"
   ]
 }
