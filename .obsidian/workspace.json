@@ -13,28 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4- University Stuff/Software Engineering Notes/Finals- Software Engineering Notes.md",
+                "file": "4- University Stuff/Finals Exams -Preperatoin.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Finals- Software Engineering Notes"
-            }
-          },
-          {
-            "id": "a70707847af5e849",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2024-12-30 01.00.55.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2024-12-30 01.00.55.excalidraw"
+              "title": "Finals Exams -Preperatoin"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -176,29 +163,30 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a70707847af5e849",
+  "active": "31734cf910632a3d",
   "lastOpenFiles": [
+    "3- Rough Notes/Useful Links.md",
+    "4- University Stuff/Finals Exams -Preperatoin.md",
+    "6- Tools/Obsidian.md",
     "4- University Stuff/Software Engineering Notes/Finals- Software Engineering Notes.md",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143922.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143900.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143828.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143759.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143459.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143411.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143343.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143312.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143237.png",
+    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143235.png",
     "Excalidraw/Drawing 2024-12-30 01.00.55.excalidraw.md",
     "Excalidraw",
     "3- Rough Notes/Linkedin Post/DSA Complete Linkedin Post.md",
-    "3- Rough Notes/Useful Links.md",
     "6- Tools/Archlinux(BTW).md",
     "6- Tools/Hyprland.md",
     "6- Tools/Neovim-Vim.md",
-    "6- Tools/Obsidian.md",
     "6- Tools/Tmux.md",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233508.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233449.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233438.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233428.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233417.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233402.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233350.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233334.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227233315.png",
     "5- Daily Tasks/2024-12-26.md",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241227124945.png",
     "6- Tools",
     "5- Daily Tasks/Roadmap.canvas",
     "5- Daily Tasks",
@@ -223,7 +211,6 @@
     "2024-12-25.md",
     "1- blog/posts/16bit-assembly-language/assembly-code.md",
     "blog/posts/computer-networks-notes/computer.md",
-    "blog/posts/markdown-cheat-sheet/index.md",
-    "blog/posts/software-engineering/software-engineering-notes.md"
+    "blog/posts/markdown-cheat-sheet/index.md"
   ]
 }
