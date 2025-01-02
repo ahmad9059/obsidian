@@ -5,7 +5,7 @@
 - [ ] Linear Algebra
 - [ ] QR- II
 - [x] Software Engineering
-- [ ] Assembly Language
+- [x] Assembly Language
 - [ ] Computer Networking
 - [x] DSA
 ## 1. Linear Algebra
@@ -15,14 +15,18 @@
 3. [ ] Vectors
 4. [ ] Eigenvalue and Eigenvector
 5. [ ] Cayley-Hamilton Theorem
+6. [ ] inner product topic vector (dot product)
+7. [ ] Orthogonality and Linear Combination
+8. [ ] Inversion + Cramer's Rule
 ## 2. QR - II
 
 1. [ ] Permutation
 2. [ ] Combination
 3. [ ] Probability
-4. [ ] Mean, Median, Mode
-5. [ ] Progression : APs, GPs, HPs
-6. [ ] Means : AMs, GMs, HMs
+4. [ ] Grouped and ungrouped
+5. [ ] Mean, Median, Mode
+6. [ ] Progression : APs, GPs, HPs
+7. [ ] Means : AMs, GMs, HMs
 
 ## 3. Software Engineering
 
@@ -35,11 +39,11 @@
 
 1. [x] Out-of-Bounds Memory References and Buffer Overflows in Assembly Language
 2. [x] GDB: A Powerful Tool for Debugging Assembly Language
-3. [ ] Machine-Level Representation of Floating-Point Numbers
-4. [ ] Pipelining in Y86: A Step-by-Step Guide
+3. [x] Machine-Level Representation of Floating-Point Numbers
+4. [x] Pipelining in Y86: A Step-by-Step Guide
 5. [x] Understanding Pointers in Computer Organization and Assembly Language
-6. [ ] x86-64: Extending IA-32 to 64 Bits
-7. [ ] x86-64: A Modern Processor Architecture
+6. [x] x86-64: Extending IA-32 to 64 Bits
+7. [x] x86-64: A Modern Processor Architecture
 
 ## 5. Computer Networking
 
