@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9c8bb7b4db255f2d",
+        "id": "9970c17d88289c0a",
         "type": "tabs",
         "children": [
           {
-            "id": "e435dc81c44c6375",
+            "id": "4b60a0740a5abd6d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4- University Stuff/Finals Exams -Preperatoin.md",
+                "file": "3- Rough Notes/Useful Links.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Finals Exams -Preperatoin"
+              "title": "Useful Links"
             }
           }
         ]
@@ -93,17 +93,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/software-engineering/software-engineering-notes.md",
+                "file": "7. Full-Stack Development/The Ultimate Roadmap to Becoming a Full-Stack Web Developer in 2025.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for software-engineering-notes"
+              "title": "Backlinks for The Ultimate Roadmap to Becoming a Full-Stack Web Developer in 2025"
             }
           },
           {
@@ -163,15 +163,29 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e435dc81c44c6375",
+  "active": "4b60a0740a5abd6d",
   "lastOpenFiles": [
-    "3- Rough Notes/Topics to Discuss.md",
+    "3- Rough Notes/Random.md",
     "3- Rough Notes/Useful Links.md",
+    "4- University Stuff/Finals Exams -Preperatoin.md",
+    "Excalidraw/Drawing 2025-01-06 15.13.25.excalidraw.md",
+    "4- University Stuff/Computer Network/OSI Model.md",
+    "7. Full-Stack Development/The Ultimate Roadmap to Becoming a Full-Stack Web Developer in 2025.md",
+    "Templetes/frontmatter.md",
+    "7. Full-Stack Development/Complete Web Development + DSA + Aptitude Reasoning.md",
+    "1- blog/posts/computer-networks-notes/Computer Network Basics.md",
+    "2- My Thoughts/For Her.md",
+    "2- My Thoughts/About Life and Love.md",
+    "2- My Thoughts/assets/Pasted image 20250104002442.png",
+    "2- My Thoughts/assets/Pasted image 20250104002413.png",
+    "2- My Thoughts/assets",
+    "2- My Thoughts/Nothing to Something.md",
+    "4- University Stuff/Computer Network",
+    "7. Full-Stack Development/Job Ready AI Powered Cohort Complete Web Developme 16f8ee4802b780b8b116ef7eb32a4d42.md",
+    "3- Rough Notes/Topics to Discuss.md",
     "4- University Stuff/Assembly Language/7. Pipelining in Y86 A Step-by-Step Guide.md",
     "4- University Stuff/Assembly Language/6. x86-64 A Modern Processor Architecture.md",
     "4- University Stuff/Assembly Language/5. x86-64 Extending IA-32 to 64 Bits.md",
-    "4- University Stuff/Finals Exams -Preperatoin.md",
-    "7. Full-Stack Development/Roadmap.md",
     "7. Full-Stack Development/HTML.md",
     "Untitled.md",
     "7. Full-Stack Development",
@@ -180,13 +194,9 @@
     "4- University Stuff/Assembly Language/2. GDB A Powerful Tool for Debugging Assembly Language.md",
     "4- University Stuff/Assembly Language/1. Understanding Pointers in Computer Organization and Assembly Language.md",
     "Templetes/thought-template.md",
-    "Templetes/frontmatter.md",
     "Templetes/default-template.md",
     "Templetes/date-template.md",
-    "Excalidraw/Drawing 2024-12-31 13.50.55.excalidraw.md",
-    "4- University Stuff/Software Engineering Notes/Finals- Software Engineering Notes.md",
     "4- University Stuff/Assembly Language",
-    "6- Tools/Obsidian.md",
     "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143922.png",
     "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143900.png",
     "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143828.png",
@@ -195,22 +205,12 @@
     "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143411.png",
     "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143343.png",
     "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143312.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143237.png",
-    "4- University Stuff/Software Engineering Notes/assets/Pasted image 20241230143235.png",
-    "Excalidraw/Drawing 2024-12-30 01.00.55.excalidraw.md",
     "Excalidraw",
-    "3- Rough Notes/Linkedin Post/DSA Complete Linkedin Post.md",
-    "6- Tools/Archlinux(BTW).md",
-    "6- Tools/Hyprland.md",
-    "6- Tools/Neovim-Vim.md",
-    "6- Tools/Tmux.md",
     "6- Tools",
     "5- Daily Tasks/Roadmap.canvas",
     "5- Daily Tasks",
     "4- University Stuff/Software Engineering Notes/assets",
     "4- University Stuff/Software Engineering Notes",
-    "4- University Stuff",
-    "3- Rough Notes/Linkedin Post",
-    "3- Rough Notes"
+    "4- University Stuff"
   ]
 }

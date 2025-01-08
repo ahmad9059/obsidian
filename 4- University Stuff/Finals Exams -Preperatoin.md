@@ -3,15 +3,15 @@
 
 ## 📝 Subjects
 - [ ] Linear Algebra
-- [ ] QR- II
+- [x] QR- II
 - [x] Software Engineering
 - [x] Assembly Language
 - [ ] Computer Networking
 - [x] DSA
 ## 1. Linear Algebra
 
-1. [ ] Gaussian Elimination
-2. [ ] Gaussian Jordan  Elimination
+1. [x] Gaussian Elimination
+2. [x] Gaussian Jordan  Elimination
 3. [ ] Vectors
 4. [ ] Eigenvalue and Eigenvector
 5. [ ] Cayley-Hamilton Theorem
@@ -20,10 +20,10 @@
 8. [ ] Inversion + Cramer's Rule
 ## 2. QR - II
 
-1. [ ] Permutation
-2. [ ] Combination
-3. [ ] Probability
-4. [ ] Grouped and ungrouped
+1. [x] Permutation
+2. [x] Combination
+3. [x] Probability
+4. [x] Grouped and ungrouped
 5. [ ] Mean, Median, Mode
 6. [ ] Progression : APs, GPs, HPs
 7. [ ] Means : AMs, GMs, HMs
@@ -47,10 +47,10 @@
 
 ## 5. Computer Networking
 
-1. [ ] OSI Model
-2. [ ] Protocols
-3. [ ] Security
-4. [ ] IP Header
+1. [x] OSI Model
+2. [x] Protocols(DNS, FTP, Telnet and SMTP)
+3. [x] Security
+4. [x] IP Header
 5. [ ] Subnetting
 
 ## 6. DSA

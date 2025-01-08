@@ -20,3 +20,14 @@ Carding Course : https://mega.nz/folder/2rBhSCKS#ZQw8Qi7AKOEN54xQHGqghA
 Linux Networking - Basics and Beyond : https://mega.nz/folder/D6xjhJTQ#JKhwyqPkZOFtWqT0yWF_yA
 
 https://mrcet.com/pdf/Lab%20Manuals/CSE/(R18A0584)%20Data%20Structures%20Lab%20Manual.pdf
+
+Supertaskers: https://link.springer.com/article/10.3758/PBR.17.4.479
+
+Confidence on Command: https://mega.nz/folder/5sJglZCT#zUFiUJAndo8C_NRy0fH3sw
+
+Alpha Batch 5.0 (Apna College): https://mega.nz/folder/XZxDHYhY#Bk_4KKRClM8uJ_Mi9o8IvA
+
+How to Speak So That People Want to Listen : https://mega.nz/folder/5FRHmRgR#9elhLBvEQSubiyccOnVHrA
+
+
+
