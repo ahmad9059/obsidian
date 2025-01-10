@@ -4,29 +4,28 @@
 ## 📝 Subjects
 - [ ] Linear Algebra
 - [x] QR- II
-- [x] Software Engineering
+- [ ] Software Engineering
 - [x] Assembly Language
-- [ ] Computer Networking
-- [x] DSA
+- [x] Computer Networking
+- [ ] DSA
 ## 1. Linear Algebra
 
 1. [x] Gaussian Elimination
 2. [x] Gaussian Jordan  Elimination
-3. [ ] Vectors
-4. [ ] Eigenvalue and Eigenvector
-5. [ ] Cayley-Hamilton Theorem
-6. [ ] inner product topic vector (dot product)
-7. [ ] Orthogonality and Linear Combination
-8. [ ] Inversion + Cramer's Rule
+4. [x] Eigenvalue and Eigenvector
+5. [x] Cayley-Hamilton Theorem
+6. [x] inner product topic vector (dot product)
+7. [x] Orthogonality and Linear Combination
+8. [x] Inversion + Cramer's Rule
 ## 2. QR - II
 
 1. [x] Permutation
 2. [x] Combination
 3. [x] Probability
 4. [x] Grouped and ungrouped
-5. [ ] Mean, Median, Mode
-6. [ ] Progression : APs, GPs, HPs
-7. [ ] Means : AMs, GMs, HMs
+5. [x] Mean, Median, Mode
+6. [x] Progression : APs, GPs, HPs
+7. [x] Means : AMs, GMs, HMs
 
 ## 3. Software Engineering
 
@@ -51,7 +50,7 @@
 2. [x] Protocols(DNS, FTP, Telnet and SMTP)
 3. [x] Security
 4. [x] IP Header
-5. [ ] Subnetting
+5. [x] Subnetting
 
 ## 6. DSA
 
