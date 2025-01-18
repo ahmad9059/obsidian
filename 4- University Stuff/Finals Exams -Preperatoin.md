@@ -2,7 +2,7 @@
 ---
 
 ## 📝 Subjects
-- [ ] Linear Algebra
+- [x] Linear Algebra
 - [x] QR- II
 - [ ] Software Engineering
 - [x] Assembly Language
@@ -29,10 +29,13 @@
 
 ## 3. Software Engineering
 
-1. [x] Activity Diagrams
-2. [x] Swimlane Diagrams
-3. [x] Sequence Diagrams
-4. [x] Data Flow Diagrams
+1. [x] SE Models
+2. [x] Functional and Non-Functional Requirements
+3. [ ] Use Case Diagram
+4. [x] Activity Diagrams
+5. [x] Swimlane Diagrams
+6. [ ] Sequence Diagrams
+7. [ ] Data Flow Diagrams
 
 ## 4. Assembly Language
 
@@ -54,9 +57,9 @@
 
 ## 6. DSA
 
-1. [x] Stack
-2. [x] Queue
-3. [x] Graph
-4. [x] Tree : Binary Tree, Binary Search Tree
-5. [x] Searching : Linear and Binary Search
-6. [x] Sorting : Selection, Insertion, Bubble, Merge, Quick Sort
+1. [ ] Stack
+2. [ ] Queue
+3. [ ] Graph
+4. [ ] Tree : Binary Tree, Binary Search Tree
+5. [ ] Searching : Linear and Binary Search
+6. [ ] Sorting : Selection, Insertion, Bubble, Merge, Quick Sort

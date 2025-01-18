@@ -1,0 +1,40 @@
+{
+	"nodes":[
+		{"id":"c1fae42f2f488b50","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Data Analysis:</b>\nManagers leverage AI to enhance data connections across portfolios.<p>","x":-1680,"y":-1040,"width":250,"height":140},
+		{"id":"3a90a303f30c488f","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Product Development:</b>\nAI aids in creating new investment products for clients.<p>","x":-1680,"y":-840,"width":250,"height":140},
+		{"id":"d52a0fdf1168f13e","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Client Engagement:</b>\nInformation reporting is faster and analytics improved for investors.<p>","x":-1680,"y":-640,"width":250,"height":140},
+		{"id":"ae5d91f57c0e3f01","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Implementation Hurdles:</b>\nManagers face challenges in integrating AI seamlessly into processes.<p>","x":-1680,"y":-420,"width":250,"height":120},
+		{"id":"24f51b25cab3c0bb","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Risk Management:</b>\nAI usage must not compromise investment performance standards.<p>","x":-1680,"y":-240,"width":280,"height":120},
+		{"id":"e5244c88c7d208a4","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Future Implications:</b>\nThe long-term effects of AI in finance need thorough research.<p>","x":-1680,"y":-40,"width":250,"height":120},
+		{"id":"aea2c60455b90b36","type":"text","text":"<p style=\"font-size: 13px\">\n<b>AI Integration:</b>\nAI is changing how managers handle data and reporting.<p>","x":-1160,"y":-820,"width":280,"height":100},
+		{"id":"7a2ea6e5f981e1e4","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Challenges and Considerations:</b>\nNavigating the balance between AI capabilities and portfolio risks.<p>","x":-1160,"y":-220,"width":320,"height":100},
+		{"id":"e54ce98718ca10d8","type":"text","text":"# How AI is Transforming Asset Management\n\n## Key Insights\n\n### Adoption of AI in Finance\n- 90% of managers are using or planning to use AI in their investment processes.\n- Indicates a significant trend of integrating technology into the financial sector.\n\n### AI Integration\n- The impact varies based on how managers incorporate AI.\n- Key applications include:\n  - **Sourcing and Screening**: Identifying investment opportunities based on specific criteria.\n  - **Data Analysis**: Enhancing analysis and connecting data across portfolios.\n  - **Innovation**: Creating new products and solutions for clients.\n\n### Client Engagement\n- AI supports investment decision-making and reporting.\n- Delivers faster data to limited partners (LPs).\n- Improves analytics and updates provided to investors.\n\n### Early Performance Indicators\n- Substantial integration of AI is underway.\n- Measurable benefits are less defined at this stage.\n- Focus remains on:\n  - Enhancing portfolio value.\n  - Addressing challenges amidst declining distributions.\n\n## Visualization\n\nA mind map can visually organize these insights, presenting the hierarchical and interconnected relationships effectively.\n\n## Further Exploration Options\n\n1. Add more details on AI tools used in asset management.\n2. Highlight key challenges in AI integration within the financial sector.\n3. Expand on future prospects of AI in finance, focusing on emerging trends and opportunities.\n","x":-2800,"y":-970,"width":780,"height":990},
+		{"id":"34b48489e55321cb","type":"text","text":"<p style=\"font-size: 19px\">\n<b>AI in Finance:</b>\nExploring the integration of AI in wealth and asset management.<p>","x":-480,"y":-590,"width":440,"height":160,"color":"#00b3ff"},
+		{"id":"993726c686660203","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Importance of AI:</b>\nAI improves efficiency and decision-making in investment processes.<p>","x":960,"y":-1050,"width":250,"height":120},
+		{"id":"f5512e56de3e42f2","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Tools Used:</b>\nAI tools assist in screening and sourcing new investment opportunities.<p>","x":960,"y":-850,"width":250,"height":120},
+		{"id":"e2b3672748060c2e","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Future Prospects:</b>\nThe trend is growing with more managers planning to adopt AI.<p>","x":960,"y":-650,"width":250,"height":120},
+		{"id":"61a9a190113bab89","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Value Addition:</b>\nAI is utilized to streamline processes and cut operational costs.<p>","x":960,"y":-430,"width":260,"height":120},
+		{"id":"278107a20165c5e5","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Focus Areas:</b>\nManagers seek to enhance portfolio value amidst declining distributions.<p>","x":960,"y":-210,"width":260,"height":90},
+		{"id":"adf9c96333653f3e","type":"text","text":"<p style=\"font-size: 13px\">\n<b>ROI Measurement:</b>\nClear metrics showing AI's impact on performance remain undefined..<p>","x":960,"y":-10,"width":260,"height":120},
+		{"id":"82c405903b2ce323","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Adoption of AI:</b>\n90% of managers are incorporating AI into investment practices.<p>","x":360,"y":-830,"width":280,"height":100},
+		{"id":"12309c8da26fa088","type":"text","text":"<p style=\"font-size: 13px\">\n<b>Early Returns:</b>\nPerformance benefits of AI integration are still being measured.<p>","x":360,"y":-210,"width":280,"height":100}
+	],
+	"edges":[
+		{"id":"2af2f00e5755ac32","fromNode":"d52a0fdf1168f13e","fromSide":"right","toNode":"aea2c60455b90b36","toSide":"left"},
+		{"id":"5883b0e48e0e389c","fromNode":"3a90a303f30c488f","fromSide":"right","toNode":"aea2c60455b90b36","toSide":"left"},
+		{"id":"3a9de97b36ef5ecf","fromNode":"c1fae42f2f488b50","fromSide":"right","toNode":"aea2c60455b90b36","toSide":"left"},
+		{"id":"aae82d07d4f8b125","fromNode":"ae5d91f57c0e3f01","fromSide":"right","toNode":"7a2ea6e5f981e1e4","toSide":"left"},
+		{"id":"914de704511c087c","fromNode":"24f51b25cab3c0bb","fromSide":"right","toNode":"7a2ea6e5f981e1e4","toSide":"left"},
+		{"id":"91cbfae000d0e71c","fromNode":"e5244c88c7d208a4","fromSide":"right","toNode":"7a2ea6e5f981e1e4","toSide":"left"},
+		{"id":"7f639e94f934be6f","fromNode":"aea2c60455b90b36","fromSide":"right","toNode":"34b48489e55321cb","toSide":"left"},
+		{"id":"18bb56e8337adb20","fromNode":"7a2ea6e5f981e1e4","fromSide":"right","toNode":"34b48489e55321cb","toSide":"left"},
+		{"id":"d5e36724e085373c","fromNode":"34b48489e55321cb","fromSide":"right","toNode":"82c405903b2ce323","toSide":"left"},
+		{"id":"1145dd83f4b7c912","fromNode":"34b48489e55321cb","fromSide":"right","toNode":"12309c8da26fa088","toSide":"left"},
+		{"id":"a2a1dce0f9561271","fromNode":"82c405903b2ce323","fromSide":"right","toNode":"993726c686660203","toSide":"left"},
+		{"id":"88991f48af0d7c27","fromNode":"82c405903b2ce323","fromSide":"right","toNode":"f5512e56de3e42f2","toSide":"left"},
+		{"id":"fd5b3fd52e66efa1","fromNode":"82c405903b2ce323","fromSide":"right","toNode":"e2b3672748060c2e","toSide":"left"},
+		{"id":"e52b57f0f01abe0d","fromNode":"12309c8da26fa088","fromSide":"right","toNode":"61a9a190113bab89","toSide":"left"},
+		{"id":"bceccd80696a51be","fromNode":"12309c8da26fa088","fromSide":"right","toNode":"278107a20165c5e5","toSide":"left"},
+		{"id":"89dc7e126181267b","fromNode":"12309c8da26fa088","fromSide":"right","toNode":"adf9c96333653f3e","toSide":"left"}
+	]
+}
