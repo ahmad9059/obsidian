@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2.1- Notes/Fundamentals of AI/Introduction to Machine Learning.md",
+                "file": "3- Rough Notes/Useful Links.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Introduction to Machine Learning"
+              "title": "Useful Links"
             }
           }
         ]
@@ -154,20 +154,23 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "777b3a2c4b15b293",
   "lastOpenFiles": [
-    "2.1- Notes/Fundamentals of AI/assets/cybersecurity.canvas",
+    "3- Rough Notes/Accounts.md",
+    "3- Rough Notes/Random.md",
+    "3- Rough Notes/Useful Links.md",
     "2.1- Notes/Fundamentals of AI/Introduction to Machine Learning.md",
-    "2.1- Notes/Fundamentals of AI/assets/finance.canvas",
     "2.1- Notes/Fundamentals of AI/assets/healthcare.canvas",
+    "2.1- Notes/Fundamentals of AI/assets/cybersecurity.canvas",
+    "2.1- Notes/Fundamentals of AI/assets/finance.canvas",
     "2.1- Notes/Fundamentals of AI/assets/AI in Healthcare.md",
     "2.1- Notes/Fundamentals of AI/assets/AI.webp",
     "7. Full-Stack Development/Rough.md",
@@ -184,13 +187,10 @@
     "7. Full-Stack Development/Untitled.canvas",
     "7. Full-Stack Development/HTML.md",
     "2.1- Notes/Fundamentals of AI/assets",
-    "3- Rough Notes/Random.md",
     "3- Rough Notes/ahmad.md",
-    "3- Rough Notes/Accounts.md",
     "3- Rough Notes/Topics to Discuss.md",
     "2.1- Notes/Fundamentals of AI",
     "2.1- Notes",
-    "3- Rough Notes/Useful Links.md",
     "1- blog/Random.md",
     "1- blog/posts/ArchLinux Installation Guide Using My Dotfiles. A Step-by-Step Guide.md",
     "4- University Stuff/Software Engineering Notes/Finals- Software Engineering Notes.md",
