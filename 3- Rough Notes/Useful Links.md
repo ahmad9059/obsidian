@@ -32,3 +32,6 @@ How to Speak So That People Want to Listen : https://mega.nz/folder/5FRHmRgR#9el
 
 
 itsahmad-me-indexing@itsahmad-me-indexing.iam.gserviceaccount.com
+
+
+http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html
