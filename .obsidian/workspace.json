@@ -11,12 +11,14 @@
             "id": "718ff021f8c6d31f",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "7. Full-Stack Development/CSS/assets/margin-padding.jpg"
+                "file": "7. Full-Stack Development/CSS/CSS.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "margin-padding"
+              "icon": "lucide-file",
+              "title": "CSS"
             }
           }
         ]
@@ -162,12 +164,13 @@
   },
   "active": "718ff021f8c6d31f",
   "lastOpenFiles": [
+    "git.sh",
+    "7. Full-Stack Development/CSS/assets/margin-padding.jpg",
     "7. Full-Stack Development/CSS/assets/Pasted image 20250121121047.png",
     "7. Full-Stack Development/CSS/assets/Pasted image 20250124214905.png",
     "7. Full-Stack Development/CSS/assets/Pasted image 20250124214815.png",
     "7. Full-Stack Development/CSS/CSS.md",
     "7. Full-Stack Development/CSS/assets/Pasted image 20250124214844.png",
-    "7. Full-Stack Development/CSS/assets/margin-padding.jpg",
     "7. Full-Stack Development/CSS/assets/Pasted image 20250120235623.png",
     "3- Rough Notes/Linkedin Post/DSA Complete Linkedin Post.md",
     "2.1- Notes/DBMS/Complete DBMS.md",

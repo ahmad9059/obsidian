@@ -310,4 +310,4 @@ There are tons of screens and devices with different heights and widths, so it i
 @media only screen and (min-width: 1200px) {...}
 ```
 
-
+### Properties
