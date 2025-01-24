@@ -1,6 +1,6 @@
 CSS (Cascadia Styling Sheet) is the style sheet language that's use to specify how a document written in HTML or XML should be presented and styled.
 
-### CSS Boilerplate
+## CSS Boilerplate
 
 ```css
 *{
@@ -34,6 +34,8 @@ Add the line after tittle tag in your html file
 4. **vw :** It is relative to the width of the `viewpoint(screen)`. `1vm or 1/100 of the width of the width of viewpoint`
 5. **em :** Relative to the font-size of the element `2em means 2 times the size of the current font`
 6. **rem :** Relative to font-size of the root element like `html tag`.
+7. **vmin :** Relative to 1% of viewport's* smaller dimension
+8. **vmax :** Relative to 1% of viewport's* larger dimension
 
 *Tip:* There are mainly two type of fonts sans-serif and serif. The difference is the presence of decorative strokes, or serifs at the beginning and end of letters.
 
@@ -63,8 +65,12 @@ Add the line after tittle tag in your html file
 15. `text-align:` specifies the horizontal alignment of text like *left*, *right*, *justify*, *center*.
 16. `padding:` A shorthand property for all the padding properties. instead we can also use, `padding-top`, `padding-left`, `padding-bottm`, `padding-right`.
 17. `margin:` sets all the margin properties in one declaration. we can also like padding uses these `margin-top`,`margin-left`,`margin-bottom`,`margin-right`.
+18. `rotate:` property allows you to rotate elements.
+19. `gap:` The `gap` property defines the size of the gap between the rows and between the columns in flexbox.
+20. `overflow:` The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area. like `visible`, `hidden`,`scroll`,`auto`.
+21. `overflow-x and overflow-y:` `overflow-x` specifies what to do with the left/right edges of the content.`overflow-y` specifies what to do with the top/bottom edges of the content.
 
-#### Margin VS Padding:
+## Margin VS Padding:
 ---
 - **padding:** padding is the space inside an element, between its content and its border.
 - **margin:** margin is the space outside an element, between the element's border and other elements.
@@ -73,7 +79,7 @@ Add the line after tittle tag in your html file
 18. `border:` A shorthand property for `border-width`, `border-style`, `border-color` *ex:* `border: 3px solid gray`
 19. `border-radius:` A shorthand property for the for border `*_radius` properties. We can also add radius on only one corner. like using these properties `border-bottom-left-radius`, `border-bottom-right-radius`,`border-top-left-radius`,`border-top-right-radius` 
 
-#### Block VS Inline VS Inline-Block:
+## Block VS Inline VS Inline-Block:
 ---
 **Block Element:-** Start on a new line (occupy full width) and take-up 100% of the width by default. You can set *height*, *width*, *margin*,*padding*. **ex:** `<div>`, `<p>`, `<h1>`.
 
@@ -83,7 +89,7 @@ Add the line after tittle tag in your html file
 
 20. `display:` specifies how a certain HTML should be displayed. *attributes:* `block`,`inline`,`inline-block`
 
-#### Position Absolute VS Position Relative:
+## Position Absolute VS Position Relative:
 ---
 **Position Absolute:-**
 - An element with `position: absolute` is removed from the normal document flow.
@@ -95,13 +101,13 @@ Add the line after tittle tag in your html file
 - It is positioned relative to its **original position**, using `top`, `right`, `bottom`, and `left` values.
 - Space for the element is still reserved in the layout, so it affects other elements.
 21. `position:` specifies the type of positioning method used for an element `absolute`,`relative`,`fixed`.
-#### Background Properties:
+## Background Properties:
 ---
 23. `background:` A shorthand property for all the background properties. It set by `img()`,`color`, `linear-gradiant(to bottom right, red,yellow)` etc.
 24. `background-size:` Specifies the size of the background images like `cover`,`contain` etc.
 25. `background-repeat:` Sets if/how a background image will be repeated. like `no-repeat`, `round` etc.
 26. `background-position:` specifies the position of a background image like `center`,`right`, `left`,`top`,`bottom`.
-#### Flexbox:
+## Flexbox:
 ---
 Flexbox is a CSS layout model designed to help arrange elements in a responsive flexible way. It simplifies alignment, distribution, and spacing of items within a container-even when their size is unknown or dynamic. The Flexbox model is one-dimensional, meaning it handles either row or a column layout, Unlike CSS Grid which is two-dimensional(rows and columns).
 ![](Pasted%20image%2020250121121047.png)
@@ -116,8 +122,10 @@ Flexbox is a CSS layout model designed to help arrange elements in a responsive 
 28. `flex-direction:` Specifies the direction of the main axis like `row`, `column`,`row-reverse`,`column-reverse`.
 29. `justify-content:` Aligns items along the main axis like `start`,`center`,`space-between`,`space-evenlly`.
 30. `align-items:` Aligns items along the cross-axis `stretch`,`center`, `flex-start`,`flex-end`.
+31. `flex-wrap:` The `flex-wrap` property specifies whether the flexible items should wrap or not. like `nowrap`,`wrap`,`wrap-reverse`.
+32. `flex-shrink:` The `flex-shrink` property specifies how the item will shrink relative to the rest of the flexible items inside the same container. value like 0 or 1.
 
-#### Pseudo-Class and Pseudo-Elements:-
+## Pseudo-Class and Pseudo-Elements:-
 ---
 Pseudo-elements and pseudo-classes are both powerful CSS features used to style elements based on specific states or to target parts of elements that aren't directly available in the DOM, although they serve similar purposes, modifying or styling elements based on conditions, they function differently.
 ##### Pseudo-Classes:
@@ -134,4 +142,172 @@ They targets an element in a specific state, and we use `:` for pseudo-classes.
 ##### Pseudo-Elements:
 Targets part of an element or inserts content before/after it. we use `::` for elements.
 *Syntax:* `selector::pesudo-element`
+
+**Common Examples:**
+- `::before` insert content before an element.
+- `::after` inserts content after an element.
+- `::first-letter` styles the first-letter.
+- `::first-line` styles the first line.
+- `::selection` styles the selected text.
+
+| Pseudo Classes                                      | Pseudo-Elements                                                             |
+| --------------------------------------------------- | --------------------------------------------------------------------------- |
+| Interact with element states (e.g., :hover, :focus) | Target parts of an element or add content (e.g., ::before, ::first-letter). |
+
+## Color Science and their Units
+--- 
+##### 1. Color Name:
+CSS provides a set of predefined names that are recognized by all browsers *ex:* `red`,`green`,`blue`,`black` (total around 140 standard names)
+**Example:** `background-color: red;`
+
+##### 2. Hexadecimal Notation(#RRGGBB):
+A more precise way to specify color in CSS is using hexadecimal(hx) notation.
+Hex values are written in the form #<span style="color:red">RR</span><span style="color:green">GG</span><span style="color:blue">BB</span>, where:
+- #<span style="color:red">RR</span> : represent the red component.
+- #<span style="color:green">GG</span> : represent the green component.
+- #<span style="color:blue">BB</span> : represent the blue component.
+The values range is `00-FF`, 00 means no color and FF means full intensity.
+**Example:** `background-color: #11111b;`
+
+##### 3. RGB Functional Notation:
+The rgb notation uses the same concept as hex but, specifies values in the decimal range from `0-255`. The format is `rgb(red,green,blue)`, where each color component is an integer between 0(no color) and 255(full intensity).
+**Example:** `background-color: rgb(255,0.0);`
+
+##### 4. RGBA Functional Notation:
+`rgba()` extends the `rgb()` notation by adding an *alpha* channel for transparency. The format is `rgba(red,green,blue,alpha)`, where alpha value is a decimal between 0(completely transparent) and 1(completely opoque).
+**Example:** `background-color: rgba(255,0,0,0.5)`.
+
+#### Grid in CSS
+---
+CSS Grid Layout is a powerful two-dimensional layout system designed to handle both rows and columns. It provides a way to create web layouts without relying on floats or positioning.
+
+##### Core Concepts of CSS Grid;
+
+1. **Grid Container**: The parent element where `display: grid;` is applied.
+2. **Grid Items**: The direct child elements of a grid container.
+3. **Grid Lines**: Horizontal and vertical lines that divide the gird into cells.
+
+##### Defining a Grid:
+- **Columns and Rows:** Use `grid-template-columns` and `grid-template-rows` to define the grid.
+1. `grid-template-columns:` Specifies the size of the columns, and how many columns in a grid layout
+2. `grid-template-rows:` Specifies the size of the rows in a grid layout. 
+- **Gap between Grid items:** Use `gap`,`row-gap`,`column-gap` to create spacing.
+##### Alignment and Justification:
+
+1. `align-items:` Aligns items vertically inside the container.
+2. `justify-items:` Aligns items horizontally inside the container.
+3. `align-content:` Vertically aligns the whole grid inside the container (when total grid size is smaller than container).
+4. `jusitfy-content:` Horizontally aligns the whole grid inside the container (when total grid size is smaller than container).
+*other useful:*
+5. `justify-self:` Aligns the content for a specific grid item along the row axis
+6. `align-self:` Aligns the content for a specific grid item along the column axis
+7. `grid-row-start:` Specifies where to start the grid item
+8. `grid-row-end:` Specifies where to end the grid item
+9. `grid-column-start:` Specifies where to start the grid item
+10. `grid-column-end:` Specifies where to end the grid item
+11. `grid-row:` A shorthand property for the _grid-row-start_ and the _grid-row-end_ properties.*ex:* `grid-row: 1 / 3;`
+12. `grid-column:` A shorthand property for the _grid-column-start_ and the _grid-column-end_ properties.*ex:* `grid-column: 1 / 4;`
+#### CSS Grid vs Flexbox
+
+| **CSS Grid**                 | **Flexbox**                            |
+| ---------------------------- | -------------------------------------- |
+| Two-dimensional layout       | One-dimensional layout                 |
+| Suitable for complex layouts | Ideal for simpler layouts (row/column) |
+| Explicit rows and columns    | No rows/columns concept                |
+
+## Responsive Web Design
+---
+### 1.Understanding Units
+The first thing in responsiveness is to understand the Absolute(like px) and Relative(em,vh) Units and given are units in css.
+
+#### Absolute Units
+
+These units are fixed and not affected by the size of other elements or the viewport.
+
+- **px (pixels):** A single pixel on the screen.
+- **cm (centimeters):** A physical centimeter.
+- **mm (millimeters):** A physical millimeter.
+- **in (inches):** A physical inch (1 inch = 2.54 cm).
+#### Relative Units
+
+These units are based on the size of other elements, the viewport, or the font size.
+
+##### Relative to the Font Size
+
+- **em:** Relative to the font size of the parent element.
+- **rem (root em):** Relative to the font size of the root element (`<html>`).
+- **ex:** Relative to the height of the lowercase letter "x" in the current font.
+- **ch:** Relative to the width of the character "0" (zero) in the current font.
+
+##### Relative to the Viewport
+
+- **vw (viewport width):** 1% of the viewport’s width.
+- **vh (viewport height):** 1% of the viewport’s height.
+- **vmin:** 1% of the smaller dimension (width or height) of the viewport.
+- **vmax:** 1% of the larger dimension (width or height) of the viewport.
+
+##### Relative to the Element’s Size
+
+- **% (percentage):** Relative to the size of the parent element.
+
+### 3. Flexbox
+Flexbox is a powerful tool for creating responsive layouts that adapt to different screen sizes and devices. Below are key takeaways for using Flexbox in responsive design:
+##### General Concepts
+
+1. **Flex Direction:**
+- Use `flex-direction: row;` for horizontal layouts.
+- Switch to `flex-direction: column;` for vertical layouts on smaller screens using media queries.
+2. **Flex Wrap:**
+- Use `flex-wrap: wrap;` to allow flex items to wrap onto new lines if necessary.
+3. **Flex Property:**
+- Use the `flex` property with percentages (e.g., `flex: 50%;`) to adjust the width of items based on the screen size.
+
+### 3. CSS Media Queries
+Media query is a CSS technique introduced in CSS3. It uses the `@media`rule to include a block of CSS properties only if a certain condition is true.
+#### Example
+If the browser window is 600px or smaller, the background color will be lightblue:
+
+```css
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+```
+
+#### Add a Breakpoint:
+Earlier in this tutorial we made a web page with rows and columns, and it was responsive, but it did not look good on a small screen.
+
+Media queries can help with that. We can add a breakpoint where certain parts of the design will behave differently on each side of the breakpoint.
+
+![](Pasted%20image%2020250124214905.png)
+
+#### Always Design for Mobile First
+
+Mobile First means designing for mobile before designing for desktop or any other device (This will make the page display faster on smaller devices).
+
+This means that we must make some changes in our CSS.
+
+Instead of changing styles when the width gets _smaller_ than 768px, we should change the design when the width gets _larger_ than 768px. This will make our design Mobile First:
+
+#### Typical Device Breakpoints
+
+There are tons of screens and devices with different heights and widths, so it is hard to create an exact breakpoint for each device. To keep things simple you could target five groups:
+
+```css
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+```
+
 

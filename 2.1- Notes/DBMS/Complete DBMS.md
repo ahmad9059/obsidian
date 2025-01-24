@@ -55,4 +55,26 @@ a. **File-Processing Systems** has major disadvantages.
 b. Above 7 points are also the Advantages of DBMS (answer to "why to use DBMS")
 
 
+## 9. View of Data(Three Schema)
+1. The major purpose of DBMS is to provide users with an abstract view of the data. That is, the system hides certain details of how the data is stored and maintained.
+2. To simplify user interaction with system, abstraction is applied through several levels of abstraction.
+3. The main objective of three level architecture is to enable multiple users to access the same data with a personalized view while storing the underlying data only once.
+### Physical Level/Internal Level
+1. The lowest level of abstraction describes how the data are stored.
+2. Low-Level data structures used.
+3. It has *Physical Schema* which describes physical storage structure of DB.
+4. Talks about: Storage allocation (N-array tree etc), Data compression & encryption etc.
+5. **Goal:** We must define algorithms that allow efficient access of data.
+### Logical Level / Conceptual Level
+1. The *conceptual schema* describes the design of a database at the conceptual level, describes *what* data are stored in DB, and what *relationships* exist among those data.
+2. User at logical level does not need to be aware about physical-level structures.
+3. **DBA:** who must decide what information to keep in the DB use the logical level of abstraction.
+
+### View Level / External Level
+1. Highest level of abstraction aims to simplify user's interaction with the system by providing different view to different end-user.
+2. Each view schema describes the database part that a particular user group is interested and hides the remaining database from that user group.
+3. At the external level, a database contain several schemas that sometimes called subschema. The subschema is used to describe the different view of the database.
+4. At views also provide a *security* mechanism to prevent users from accessing certain parts of DB.
+5
+		![](dbms-three-schema-architecture%201.jpg)
 
