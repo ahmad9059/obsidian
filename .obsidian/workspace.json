@@ -11,14 +11,12 @@
             "id": "718ff021f8c6d31f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "7. Full-Stack Development/CSS/CSS.md",
-                "mode": "source",
-                "source": false
+                "file": "7. Full-Stack Development/CSS/assets/margin-padding.jpg"
               },
-              "icon": "lucide-file",
-              "title": "CSS"
+              "icon": "lucide-image",
+              "title": "margin-padding"
             }
           }
         ]
@@ -164,24 +162,23 @@
   },
   "active": "718ff021f8c6d31f",
   "lastOpenFiles": [
+    "7. Full-Stack Development/CSS/assets/Pasted image 20250121121047.png",
     "7. Full-Stack Development/CSS/assets/Pasted image 20250124214905.png",
-    "7. Full-Stack Development/CSS/assets/Pasted image 20250124214844.png",
     "7. Full-Stack Development/CSS/assets/Pasted image 20250124214815.png",
-    "3- Rough Notes/Linkedin Post/DSA Complete Linkedin Post.md",
     "7. Full-Stack Development/CSS/CSS.md",
+    "7. Full-Stack Development/CSS/assets/Pasted image 20250124214844.png",
+    "7. Full-Stack Development/CSS/assets/margin-padding.jpg",
+    "7. Full-Stack Development/CSS/assets/Pasted image 20250120235623.png",
+    "3- Rough Notes/Linkedin Post/DSA Complete Linkedin Post.md",
     "2.1- Notes/DBMS/Complete DBMS.md",
     "Untitled.md",
     "2.1- Notes/DBMS/assets/dbms-three-schema-architecture 1.jpg",
     "2.1- Notes/DBMS/assets/dbms-three-schema-architecture.jpg",
     "2.1- Notes/DBMS/assets/dbms-three-schema-architecture (1).jpg",
     "2.1- Notes/DBMS/assets/Pasted image 20250118210016.png",
-    "2.1- Notes/DBMS/assets/Pasted image 20250122233602.png",
-    "2.1- Notes/DBMS/assets/Pasted_image_20250118210016-removebg-preview.png",
-    "2.1- Notes/DBMS/assets/dbms-three-schema-architecture-removebg-preview.png",
     "3- Rough Notes/Useful Links.md",
     "3- Rough Notes/Topics to Discuss.md",
     "3- Rough Notes/Random.md",
-    "7. Full-Stack Development/CSS/assets/Pasted image 20250121121047.png",
     "7. Full-Stack Development/CSS/assets",
     "2025-01-20.md",
     "7. Full-Stack Development/CSS",
