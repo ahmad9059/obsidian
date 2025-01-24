@@ -5,7 +5,7 @@ echo "Starting Git operations..."
 
 # Stage all changes
 echo "Running: git add ."
-git add .
+git add . > /dev/null 2>&1
 if [ $? -eq 0 ]; then
     echo "All changes staged successfully."
 else
@@ -15,7 +15,7 @@ fi
 
 # Commit the changes with a message
 echo "Running: git commit -m 'notes added'"
-git commit -m "notes added"
+git commit -m "notes added" > /dev/null 2>&1
 if [ $? -eq 0 ]; then
     echo "Changes committed successfully."
 else
@@ -25,7 +25,7 @@ fi
 
 # Push the changes to the repository
 echo "Running: git push"
-git push
+git push > /dev/null 2>&1
 if [ $? -eq 0 ]; then
     echo "Changes pushed successfully."
 else
