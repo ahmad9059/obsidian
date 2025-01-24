@@ -120,5 +120,19 @@ b. Above 7 points are also the Advantages of DBMS (answer to "why to use DBMS")
 1. Apps(written in host languages, C/C++,Java) interacts with DB.
 2. E.g., Banking system's module generating payrolls access DB by executing DML statements from the host language.
 3. API provided to send DML/DDL statements to DB and retrieve the results.
-	1. Open Database Connectivity(ODBC), Microsoft "C".
-	2. Java Database Connectivity (JDBC), Java.
+	1. Open Database Connectivity(*ODBC*), Microsoft "C".
+	2. Java Database Connectivity (*JDBC*), Java.
+## Database Administrator(DBA)
+---
+1. A person who has *central control* of both the data and the programs that access those data.
+2. **Functions** of DBA:
+	1. Schema Definition
+	2. Storage Structure and access methods.
+	3. Schema and physical organization modifications
+	4. Authorization control.
+	5. Routine maintenance
+		1. Periodic backups
+		2. Security patches
+		3. Any upgrades.
+## DBMS Application Architectures
+---
