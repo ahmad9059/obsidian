@@ -309,3 +309,84 @@ There are tons of screens and devices with different heights and widths, so it i
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
 ```
+
+## CSS Animations
+---
+- CSS allows animation of HTML elements without using JavaScript!.
+- An animation lets an element gradually change from one style to another. 
+- You can change as many CSS properties you want, as many times as you want.
+- To use CSS animation, you must first specify some keyframes for the animation. 
+- Keyframes hold what styles the element will have at certain times.
+- Animations is just transaction from initial to final position.
+
+### The @keyframes Rule:
+When you specify CSS styles inside the `@keyframes` rule, the animation will gradually change from the current to the new style at certain times.
+
+```css
+@keyframes animation-name {
+    to{
+     /* Intial properties */
+        left: 0%;
+        rotate: 0;
+        top: 0;
+    }
+    from{
+    /* final properties */
+        left: 75%;
+        rotate: 360deg;
+        border-radius: 50%;
+        background-color: green;
+    }
+    
+}
+/* we can also give animation in percenatge so when the animation is 25% complete, 50% complete, and again when the animation is 100% complete: */
+@keyframes animation-name {
+    0%{
+        left: 0%;
+        rotate: 0;
+        top: 0;
+    }
+    25%{
+        left: 75%;
+        top: 0;
+        background-color: blue;
+    }
+    50%{
+        left: 75%;
+        top: 73%;
+        rotate: 360deg;
+        background-color: green;
+    }
+    75%{
+        left: 0;
+        top: 73%; 
+        background-color: aqua;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+```
+
+### CSS Animation Properties
+
+| Property                  | Description                                                                                                                                                  |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| @keyframes                | Specifies the animation code                                                                                                                                 |
+| animation                 | A shorthand property for setting all the animation properties. `animation: example 5s linear 2s infinite alternate;`                                         |
+| animation-delay           | specifies a delay for start of an animation. like `1s`,`5s`                                                                                                  |
+| animation-direction       | Specifies whether an animation should be played forwards, backward or in alternate cycles.`normal`,`reverse`,`alternate`,`alternate-reverse`.                |
+| animation-duration        | specifies how long time an animation should take to complete one cycle like. `2s`,`4s`.                                                                      |
+| animation-iteration-count | Specifies the number of times an animation should be played. like `2`,`4`, or `infinite`.                                                                    |
+| animation-name            | Specifies the name of the @keyframes animation.                                                                                                              |
+| animation-fill-mode       | Specifies a style for the element when animation is not playing or completed(before it starts, after it ends, or both).`none`,`forwards`,`backwards`,`both`. |
+| animation-timing-function | Specifes the speed curve of the animation like `ease`,`linear`,`ease-in`,`ease-out`,`ease-in-out`,`cubic-bezier(n,n,n,n)`                                    |
+**Animation-timing-function:**
+- `ease` - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+- `linear` - Specifies an animation with the same speed from start to end
+- `ease-in` - Specifies an animation with a slow start
+- `ease-out` - Specifies an animation with a slow end
+- `ease-in-out` - Specifies an animation with a slow start and end
+- `cubic-bezier(n,n,n,n)` - Lets you define your own values in a cubic-bezier function.
+

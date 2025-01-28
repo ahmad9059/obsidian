@@ -139,13 +139,16 @@ b. Above 7 points are also the Advantages of DBMS (answer to "why to use DBMS")
 Client machines, on which remote DB users work, and server machines on which DB system runs.
 1. **T1** Architecture:
 	1. The client,server, and DB all present on the same machine.
+	
 	![](Pasted%20image%2020250126005436.png)
-2. **T2** Architecture:
+	
+1. **T2** Architecture:
 	1. App is partitioned into 2-components.
 	2. Client Machine, which invokes DB system functionality at server end through query language statements.
 	3. API standards like *ODBC* & *JDBC* are used to interact between client and server.
 	![](Pasted%20image%2020250126005449.png)
-3. **T3** Architecture:
+	
+1. **T3** Architecture:
 	1. App is partitioned into 3 logical components.
 	2. Client machine is just a frontend and doesn't contain any direct DB calls.
 	3. Client machine communicates with App server, and App server communicated with DB system to access data.
@@ -156,3 +159,4 @@ Client machines, on which remote DB users work, and server machines on which DB 
 		2. *Data Integrity*, App server acts as a middle layer between client and DB, which minimize the chances of data corruption/hacking.
 		3. *Security*, client can't directly access DB, hence it is more secure.
 		![](Pasted%20image%2020250126005503.png)
+
