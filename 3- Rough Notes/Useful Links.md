@@ -41,4 +41,6 @@ http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html
 
 Build and Sell API Online : https://mega.nz/folder/KnQT0ZSZ#V9ntNtTfyBURGgblT11Q4w
 
-Udemy courses : https://mega.nz/folder/emBGmIbR#Z_-ykuBjCZQdVHDyyS-6Mw
+Udemy courses : https://mega.nz/folder/emBGmIbR#Z_-ykuBjCZQdVHDyyS-
+
+https://ahmad9059.substack.com/subscribe

@@ -69,6 +69,9 @@ Add the line after tittle tag in your html file
 19. `gap:` The `gap` property defines the size of the gap between the rows and between the columns in flexbox.
 20. `overflow:` The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area. like `visible`, `hidden`,`scroll`,`auto`.
 21. `overflow-x and overflow-y:` `overflow-x` specifies what to do with the left/right edges of the content.`overflow-y` specifies what to do with the top/bottom edges of the content.
+22. `z-index:` The `z-index` property specifies the stack order of an element.`z-index` only works on positioned elements like relative,absolute, or fixed. [read more](https://www.w3schools.com/cssref/pr_pos_z-index.php) about z-index.
+23. `transform:` The `transform` property applies a 2D or 3D transformation to an element. The property allow you to *rotate*,*scale*,*move*,*skew*, etc,. elements.
+24. `transition:` CSS transitions allows you to change property values smoothly, over a given duration.- `transition`,`transition-delay` `transition-duration`,`transition-property`,`transition-timing-function`
 
 ## Margin VS Padding:
 ---
