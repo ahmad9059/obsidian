@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "d3da22df24beea67",
+        "id": "e0df8be023186232",
         "type": "tabs",
         "children": [
           {
-            "id": "478e4f982488d85a",
+            "id": "24f1f68ab83b81b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6- Tools/lua.md",
+                "file": "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "lua"
+              "title": "JavaScript Part - 2"
             }
           }
         ]
@@ -163,10 +163,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "478e4f982488d85a",
+  "active": "24f1f68ab83b81b3",
   "lastOpenFiles": [
-    "3- Rough Notes/lua.md",
+    "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
+    "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
+    "6- Tools/Neovim-Vim.md",
+    "6- Tools/Archlinux(BTW).md",
+    "6- Tools/awk, sed, grep, ripgrep.md",
+    "6- Tools/Git.md",
+    "Untitled.md",
+    "().md",
+    "7. Full-Stack Development/JavaScript",
     "6- Tools/lua.md",
+    "3- Rough Notes/lua.md",
     "6- Tools/Yazi.md",
     "7. Full-Stack Development/CSS/CSS.md",
     "7. Full-Stack Development/CSS/Tailwind CSS.md",
@@ -185,7 +194,6 @@
     "1- Notes/Operating System/Operating System.md",
     "4- University Stuff/Finals Exams -Preperatoin.md",
     "3- Rough Notes/Research Papers.md",
-    "Untitled.md",
     "1- Notes/Operating System",
     "1- Notes/DBMS/Complete DBMS.md",
     "4 Disciplines of Execution v2.1.md/input.md",
@@ -201,20 +209,12 @@
     "7. Full-Stack Development/CSS/assets/Pasted image 20250124214905.png",
     "7. Full-Stack Development/CSS/assets/Pasted image 20250124214815.png",
     "7. Full-Stack Development/CSS/assets/Pasted image 20250124214844.png",
-    "3- Rough Notes/Linkedin Post/DSA Complete Linkedin Post.md",
     "7. Full-Stack Development/CSS/assets",
-    "2025-01-20.md",
     "7. Full-Stack Development/CSS",
     "1- Notes/Fundamentals of AI/assets/healthcare.canvas",
     "1- Notes/Fundamentals of AI/assets/finance.canvas",
-    "2.1- Notes/Fundamentals of AI/assets/AI in Healthcare.md",
-    "2.1- Notes/Fundamentals of AI/Untitled.md",
     "1- Notes/DBMS/assets",
-    "7. Full-Stack Development/HTML/Introduction to HTML.md",
-    "1- Notes/DBMS",
-    "7. Full-Stack Development/Roadmap/Complete Web Development + DSA + Aptitude Reasoning.md",
     "7. Full-Stack Development/Untitled.canvas",
-    "7. Full-Stack Development/HTML.md",
     "5- Daily Tasks/Roadmap.canvas"
   ]
 }

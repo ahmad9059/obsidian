@@ -50,27 +50,10 @@
       "key": "S"
     }
   ],
-  "editor:toggle-code": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "C"
-    }
-  ],
-  "editor:insert-codeblock": [
-    {
-      "modifiers": [
-        "Alt",
-        "Mod"
-      ],
-      "key": "C"
-    }
-  ],
   "editor:toggle-bold": [
     {
       "modifiers": [
-        "Alt"
+        "Mod"
       ],
       "key": "B"
     }
@@ -93,12 +76,46 @@
       "key": "B"
     }
   ],
-  "editor:toggle-italics": [
+  "vimium:show-markers": [
     {
       "modifiers": [
         "Alt"
       ],
-      "key": "I"
+      "key": "V"
+    }
+  ],
+  "editor:insert-table": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "workspace:new-tab": [],
+  "editor:toggle-blockquote": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Q"
+    }
+  ],
+  "editor:insert-codeblock": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "C"
+    }
+  ],
+  "editor:toggle-code": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "C"
     }
   ]
 }
