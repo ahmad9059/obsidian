@@ -734,8 +734,8 @@ console.log( Boolean("") ); // false
 Some languages (namely PHP) treat `"0"` as `false`. But in JavaScript, a non-empty string is always `true`.
 
 ```js
-alert( Boolean("0") ); // true
-alert( Boolean(" ") ); // spaces, also true (any non-empty string is true)
+console.log( Boolean("0") ); // true
+console.log( Boolean(" ") ); // spaces, also true (any non-empty string is true)
 ```
 
 
@@ -963,7 +963,7 @@ let n = 2;
 n += 5; // now n = 7 (same as n = n + 5)
 n *= 2; // now n = 14 (same as n = n * 2)
 
-alert( n ); // 14
+console.log( n ); // 14
 ```
 
 ### Increment/decrement
@@ -977,7 +977,7 @@ So, there are special operators for it:
 ```js
 let counter = 2;
 counter++;        // works the same as counter = counter + 1, but is shorter
-alert( counter ); // 3
+console.log( counter ); // 3
 ```
 
 - **Decrement** `--` decreases a variable by 1:
@@ -985,7 +985,7 @@ alert( counter ); // 3
 ```js
 let counter = 2;
 counter--;        // works the same as counter = counter - 1, but is shorter
-alert( counter ); // 1
+console.log( counter ); // 1
 ```
 
 **Important:** Increment/decrement can only be applied to variables. Trying to use it on a value like `5++` will give an error.
@@ -1006,10 +1006,10 @@ To see the difference, here’s an example:
 ```js
 let counter = 1;
 let a = ++counter; // (*)
-alert(a); // 2
+console.log(a); // 2
 ```
 
-In the line `(*)`, the _prefix_ form `++counter` increments `counter` and returns the new value, `2`. So, the `alert` shows `2`.
+In the line `(*)`, the _prefix_ form `++counter` increments `counter` and returns the new value, `2`. So, the `console.log` shows `2`.
 
 Now, let’s use the postfix form:
 
@@ -1017,10 +1017,10 @@ Now, let’s use the postfix form:
 let counter = 1;
 let a = counter++; // (*) changed ++counter to counter++
 
-alert(a); // 1
+console.log(a); // 1
 ```
 
-In the line `(*)`, the _postfix_ form `counter++` also increments `counter` but returns the _old_ value (prior to increment). So, the `alert` shows `1`.
+In the line `(*)`, the _postfix_ form `counter++` also increments `counter` but returns the _old_ value (prior to increment). So, the `console.log` shows `1`.
 
 **Increment/decrement among other operators**
 
@@ -1030,14 +1030,14 @@ For instance:
 
 ```js
 let counter = 1;
-alert( 2 * ++counter ); // 4
+console.log( 2 * ++counter ); // 4
 ```
 
 Compare With:
 
 ```js
 let counter = 1;
-alert( 2 * counter++ ); // 2, because counter++ returns the "old" value
+console.log( 2 * counter++ ); // 2, because counter++ returns the "old" value
 ```
 
 Though technically okay, such notation usually makes code less readable. One line does multiple things – not good.
@@ -1048,7 +1048,7 @@ We advise a style of “one line – one action”:
 
 ```js
 let counter = 1;
-alert( 2 * counter );
+console.log( 2 * counter );
 counter++;
 ```
 
@@ -1080,7 +1080,7 @@ The comma operator allows us to evaluate several expressions, dividing them with
 ```js
 let a = (1 + 2, 3 + 4);
 
-alert( a ); // 7 (the result of 3 + 4)
+console.log( a ); // 7 (the result of 3 + 4)
 ```
 
 Here, the first expression `1 + 2` is evaluated and its result is thrown away. Then, `3 + 4` is evaluated and returned as the result.
@@ -1193,8 +1193,8 @@ For boolean values, `true` becomes `1` and `false` becomes `0`.
 For example:
 
 ```js
-alert( true == 1 ); // true
-alert( false == 0 ); // true
+console.log( true == 1 ); // true
+console.log( false == 0 ); // true
 ```
 
 
@@ -1209,12 +1209,12 @@ For example:
 
 ```js
 let a = 0;
-alert( Boolean(a) ); // false
+console.log( Boolean(a) ); // false
 
 let b = "0";
-alert( Boolean(b) ); // true
+console.log( Boolean(b) ); // true
 
-alert(a == b); // true!
+console.log(a == b); // true!
 ```
 
 From JavaScript’s standpoint, this result is quite normal. An equality check converts values using the numeric conversion (hence `"0"` becomes `0`), while the explicit `Boolean` conversion uses another set of rules.
@@ -1224,13 +1224,13 @@ From JavaScript’s standpoint, this result is quite normal. An equality check c
 A regular equality check `==` has a problem. It cannot differentiate `0` from `false`:
 
 ```js
-alert( 0 == false ); // true
+console.log( 0 == false ); // true
 ```
 
 The same thing happens with an empty string:
 
 ```javascript
-alert( '' == false ); // true
+console.log( '' == false ); // true
 ```
 
 This happens because operands of different types are converted to numbers by the equality operator `==`. An empty string, just like `false`, becomes a zero.
@@ -1244,7 +1244,7 @@ In other words, if `a` and `b` are of different types, then `a === b` imme
 Let’s try it:
 
 ```js
-alert( 0 === false ); // false, because the types are different
+console.log( 0 === false ); // false, because the types are different
 ```
 
 
@@ -1261,7 +1261,7 @@ There’s a non-intuitive behavior when `null` or `undefined` are compared t
 These values are different, because each of them is a different type.
 
 ```javascript
-alert( null === undefined ); // false
+console.log( null === undefined ); // false
 ```
 
 **For a non-strict check `==`**
@@ -1279,9 +1279,9 @@ Now let’s see some funny things that happen when we apply these rules. And, wh
 Let’s compare `null` with a zero:
 
 ```js
-alert( null > 0 );  // (1) false
-alert( null == 0 ); // (2) false
-alert( null >= 0 ); // (3) true
+console.log( null > 0 );  // (1) false
+console.log( null == 0 ); // (2) false
+console.log( null >= 0 ); // (3) true
 ```
 
 Mathematically, that’s strange. The last result states that “`null` is greater than or equal to zero”, so in one of the comparisons above it must be `true`, but they are both false.
@@ -1296,9 +1296,9 @@ On the other hand, the equality check `==` for `undefined` and `null` is d
 The value `undefined` shouldn’t be compared to other values:
 
 ```js
-alert( undefined > 0 ); // false (1)
-alert( undefined < 0 ); // false (2)
-alert( undefined == 0 ); // false (3)
+console.log( undefined > 0 ); // false (1)
+console.log( undefined < 0 ); // false (2)
+console.log( undefined == 0 ); // false (3)
 ```
 
 
@@ -1332,7 +1332,7 @@ For example:
 ```js
 let year = prompt("In which year was ECMAScript-2015 specification published?","");
 
-if (year == 2015) alert("You are right!");
+if (year == 2015) console.log("You are right!");
 ```
 
 In the example above, the condition is a simple equality check (`year == 2015`), but it can be much more complex.
@@ -1341,8 +1341,8 @@ If we want to execute more than one statement, we have to wrap our code block in
 
 ```js
 if (year == 2015) {
-  alert( "That's correct!" );
-  alert( "You're so smart!" );
+  console.log( "That's correct!" );
+  console.log( "You're so smart!" );
 }
 ```
 
@@ -1392,9 +1392,9 @@ For example:
 let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
 
 if (year == 2015) {
-  alert( 'You guessed it right!' );
+  console.log( 'You guessed it right!' );
 } else {
-  alert( 'How can you be so wrong?' ); // any value except 2015
+  console.log( 'How can you be so wrong?' ); // any value except 2015
 }
 ```
 
@@ -1407,15 +1407,15 @@ For example:
 let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
 
 if (year < 2015) {
-  alert( 'Too early...' );
+  console.log( 'Too early...' );
 } else if (year > 2015) {
-  alert( 'Too late' );
+  console.log( 'Too late' );
 } else {
-  alert( 'Exactly!' );
+  console.log( 'Exactly!' );
 }
 ```
 
-In the code above, JavaScript first checks `year < 2015`. If that is falsy, it goes to the next condition `year > 2015`. If that is also falsy, it shows the last `alert`.
+In the code above, JavaScript first checks `year < 2015`. If that is falsy, it goes to the next condition `year > 2015`. If that is also falsy, it shows the last `console.log`.
 
 There can be more `else if` blocks. The final `else` is optional.
 
@@ -1434,7 +1434,7 @@ if (age > 18) {
   accessAllowed = false;
 }
 
-alert(accessAllowed);
+console.log(accessAllowed);
 ```
 
 The so-called “conditional” or “question mark” operator lets us do that in a shorter and simpler way.
@@ -1492,7 +1492,7 @@ let message =
     ? "Greetings!"
     : "What an unusual age!";
 
-alert(message);
+console.log(message);
 ```
 
 
@@ -1554,7 +1554,7 @@ For instance, the number `1` is treated as `true`, the number `0` as `fals
 
 ```js
 if (1 || 0) { // works just like if( true || false )
-  alert( 'truthy!' );
+  console.log( 'truthy!' );
 }
 ```
 
@@ -1567,7 +1567,7 @@ For example:
 let hour = 9;
 
 if (hour < 10 || hour > 18) {
-  alert( 'The office is closed.' );
+  console.log( 'The office is closed.' );
 }
 ```
 
@@ -1578,7 +1578,7 @@ let hour = 12;
 let isWeekend = true;
 
 if (hour < 10 || hour > 18 || isWeekend) {
-  alert( 'The office is closed.' ); // it is the weekend
+  console.log( 'The office is closed.' ); // it is the weekend
 }
 ```
 
@@ -1642,11 +1642,11 @@ The importance of this feature becomes obvious if an operand isn’t just a valu
 In the example below, only the second message is printed:
 
 ```js
-true || alert("not printed");
-false || alert("printed");
+true || console.log("not printed");
+false || console.log("printed");
 ```
 
-In the first line, the OR `||` operator stops the evaluation immediately upon seeing `true`, so the `alert` isn’t run.
+In the first line, the OR `||` operator stops the evaluation immediately upon seeing `true`, so the `console.log` isn’t run.
 
 Sometimes, people use this feature to execute commands only if the condition on the left part is falsy.
 
@@ -1674,7 +1674,7 @@ let hour = 12;
 let minute = 30;
 
 if (hour == 12 && minute == 30) {
-  alert( 'The time is 12:30' );
+  console.log( 'The time is 12:30' );
 }
 ```
 
@@ -1682,7 +1682,7 @@ Just as with OR, any value is allowed as an operand of AND:
 
 ```js
 if (1 && 0) { // evaluated as true && false
-  alert( "won't work, because the result is falsy" );
+  console.log( "won't work, because the result is falsy" );
 }
 ```
 
@@ -1710,25 +1710,25 @@ Examples:
 ```js
 // if the first operand is truthy,
 // AND returns the second operand:
-alert( 1 && 0 ); // 0
-alert( 1 && 5 ); // 5
+console.log( 1 && 0 ); // 0
+console.log( 1 && 5 ); // 5
 
 // if the first operand is falsy,
 // AND returns it. The second operand is ignored
-alert( null && 5 ); // null
-alert( 0 && "no matter what" ); // 0
+console.log( null && 5 ); // null
+console.log( 0 && "no matter what" ); // 0
 ```
 
 We can also pass several values in a row. See how the first falsy one is returned:
 
 ```js
-alert( 1 && 2 && null && 3 ); // null
+console.log( 1 && 2 && null && 3 ); // null
 ```
 
 When all values are truthy, the last value is returned:
 
 ```js
-alert( 1 && 2 && 3 ); // 3, the last one
+console.log( 1 && 2 && 3 ); // 3, the last one
 ```
 
 > Precedence of AND && is higher than OR ||
@@ -1746,7 +1746,7 @@ For instance:
 ```js
 let x = 1;
 
-(x > 0) && alert( 'Greater than zero!' );
+(x > 0) && console.log( 'Greater than zero!' );
 ```
 
 The action in the right part of `&&` would execute only if the evaluation reaches it. That is, only if `(x > 0)` is true.
@@ -1756,7 +1756,7 @@ So we basically have an analogue for:
 ```js
 let x = 1;
 
-if (x > 0) alert( 'Greater than zero!' );
+if (x > 0) console.log( 'Greater than zero!' );
 ```
 
 Although, the variant with `&&` appears shorter, `if` is more obvious and tends to be a little bit more readable. So we recommend using every construct for its purpose: use `if` if we want `if` and use `&&` if we want AND.
@@ -1778,15 +1778,15 @@ Returns the inverse value.
 For instance:
 
 ```js
-alert( !true ); // false
-alert( !0 ); // true
+console.log( !true ); // false
+console.log( !0 ); // true
 ```
 
 A double NOT `!!` is sometimes used for converting a value to boolean type:
 
 ```js
-alert( !!"non-empty string" ); // true
-alert( !!null ); // false
+console.log( !!"non-empty string" ); // true
+console.log( !!null ); // false
 ```
 
 That is, the first NOT converts the value to boolean and returns the inverse, and the second NOT inverses it again. In the end, we have a plain value-to-boolean conversion.
@@ -1794,8 +1794,8 @@ That is, the first NOT converts the value to boolean and returns the inverse, an
 There’s a little more verbose way to do the same thing – a built-in `Boolean` function:
 
 ```js
-alert( Boolean("non-empty string") ); // true
-alert( Boolean(null) ); // false
+console.log( Boolean("non-empty string") ); // true
+console.log( Boolean(null) ); // false
 ```
 
 The precedence of NOT `!` is the highest of all logical operators, so it always executes first, before `&&` or `||`.
@@ -1830,14 +1830,14 @@ For example, here we show user if its value isn’t null/undefined, otherwise An
 ```js
 let user;
 
-alert(user ?? "Anonymous"); // Anonymous (user is undefined)
+console.log(user ?? "Anonymous"); // Anonymous (user is undefined)
 ```
 
 Here’s the example with `user` assigned to a name:
 
 ```js
 let user = "John";
-alert(user ?? "Anonymous"); // John (user is not null/undefined)
+console.log(user ?? "Anonymous"); // John (user is not null/undefined)
 ```
 
 We can also use a sequence of `??` to select the first value from a list that isn’t `null/undefined`.
@@ -1854,7 +1854,7 @@ let lastName = null;
 let nickName = "Supercoder";
 
 // shows the first defined value:
-alert(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder
+console.log(firstName ?? lastName ?? nickName ?? "Anonymous"); // Supercoder
 ```
 
 
@@ -1879,7 +1879,7 @@ For instance, the loop below outputs i while i < 3:
 ```js
 let i = 0;
 while (i < 3) { // shows 0, then 1, then 2
-  alert( i );
+  console.log( i );
   i++;
 }
 ```
@@ -1896,7 +1896,7 @@ For instance, a shorter way to write `while (i != 0)` is `while (i)`:
 ```js
 let i = 3;
 while (i) { // when i becomes 0, the condition becomes falsy, and the loop stops
-  alert( i );
+  console.log( i );
   i--;
 }
 ```
@@ -1907,7 +1907,7 @@ If the loop body has a single statement, we can omit the curly braces `{…}`:
 
 ```js
 let i = 3;
-while (i) alert(i--);
+while (i) console.log(i--);
 ```
 
 
@@ -1926,7 +1926,7 @@ The loop will first execute the body, then check the condition, and, while it’
 ```js
 let i = 0;
 do {
-  alert( i );
+  console.log( i );
   i++;
 } while (i < 3);
 ```
@@ -1945,11 +1945,11 @@ for (begin; condition; step) {
 }
 ```
 
-Let’s learn the meaning of these parts by example. The loop below runs alert(i) for i from 0 up to (but not including) 3:
+Let’s learn the meaning of these parts by example. The loop below runs console.log(i) for i from 0 up to (but not including) 3:
 
 ```js
 for (let i = 0; i < 3; i++) { // shows 0, then 1, then 2
-  alert(i);
+  console.log(i);
 }
 ```
 
@@ -1959,7 +1959,7 @@ Let’s examine the `for` statement part-by-part:
 | --------- | ----------- | ------------------------------------------------------------- |
 | begin     | `let i = 0` | executes once upon entering the loop                          |
 | condition | `i< 3`      | Checked before every loop iteration. If false, the loop stops |
-| body      | `alert(i)`  | Run again and again while the condition is truthy             |
+| body      | `console.log(i)`  | Run again and again while the condition is truthy             |
 | step      | `i++`       | Executes after the body on each iteration.                    |
 The general loop algorithm works like this:
 
@@ -1979,16 +1979,16 @@ Here’s exactly what happens in our case:
 
 
 ```js
-// for (let i = 0; i < 3; i++) alert(i)
+// for (let i = 0; i < 3; i++) console.log(i)
 
 // run begin
 let i = 0
 // if condition → run body and run step
-if (i < 3) { alert(i); i++ }
+if (i < 3) { console.log(i); i++ }
 // if condition → run body and run step
-if (i < 3) { alert(i); i++ }
+if (i < 3) { console.log(i); i++ }
 // if condition → run body and run step
-if (i < 3) { alert(i); i++ }
+if (i < 3) { console.log(i); i++ }
 // ...finish, because now i == 3
 ```
 
@@ -2008,10 +2008,10 @@ while (true) {
   if (!value) break; // (*)
   sum += value;
 }
-alert( 'Sum: ' + sum );
+console.log( 'Sum: ' + sum );
 ```
 
-The `break` directive is activated at the line `(*)` if the user enters an empty line or cancels the input. It stops the loop immediately, passing control to the first line after the loop. Namely, `alert`.
+The `break` directive is activated at the line `(*)` if the user enters an empty line or cancels the input. It stops the loop immediately, passing control to the first line after the loop. Namely, `console.log`.
 
 The combination “infinite loop + `break` as needed” is great for situations when a loop’s condition must be checked not in the beginning or end of the loop, but in the middle or even in several places of its body.
 
@@ -2029,11 +2029,11 @@ for (let i = 0; i < 10; i++) {
 
   // if true, skip the remaining part of the body
   if (i % 2 == 0) continue;
-  alert(i); // 1, then 3, 5, 7, 9
+  console.log(i); // 1, then 3, 5, 7, 9
 }
 ```
 
-For even values of `i`, the `continue` directive stops executing the body and passes control to the next iteration of `for` (with the next number). So the `alert` is only called for odd values.
+For even values of `i`, the `continue` directive stops executing the body and passes control to the next iteration of `for` (with the next number). So the `console.log` is only called for odd values.
 
 
 **No `break/continue` to the right side of ‘?’**
@@ -2044,7 +2044,7 @@ For example, if we take this code:
 
 ```js
 if (i > 5) {
-  alert(i);
+  console.log(i);
 } else {
   continue;
 }
@@ -2053,7 +2053,7 @@ if (i > 5) {
 …and rewrite it using a question mark:
 
 ```javascript
-(i > 5) ? alert(i) : continue; // continue isn't allowed here
+(i > 5) ? console.log(i) : continue; // continue isn't allowed here
 ```
 
 …it stops working: there’s a syntax error.
@@ -2077,7 +2077,7 @@ for (let i = 0; i < 3; i++) {
   }
 }
 
-alert('Done!');
+console.log('Done!');
 ```
 
 We need a way to stop the process if the user cancels the input.
@@ -2107,12 +2107,12 @@ outer: for (let i = 0; i < 3; i++) {
     // do something with the value...
   }
 }
-alert('Done!');
+console.log('Done!');
 ```
 
 In the code above, `break outer` looks upwards for the label named `outer` and breaks out of that loop.
 
-So the control goes straight from `(*)` to `alert('Done!')`.
+So the control goes straight from `(*)` to `console.log('Done!')`.
 
 We can also move the label onto a separate line:
 
@@ -2193,23 +2193,23 @@ let arg = prompt("Enter a value?");
 switch (arg) {
   case '0':
   case '1':
-    alert( 'One or zero' );
+    console.log( 'One or zero' );
     break;
 
   case '2':
-    alert( 'Two' );
+    console.log( 'Two' );
     break;
 
   case 3:
-    alert( 'Never executes!' );
+    console.log( 'Never executes!' );
     break;
   default:
-    alert( 'An unknown value' );
+    console.log( 'An unknown value' );
 }
 ```
 
-1. For `0`, `1`, the first `alert` runs.
-2. For `2` the second `alert` runs.
+1. For `0`, `1`, the first `console.log` runs.
+2. For `2` the second `console.log` runs.
 3. But for `3`, the result of the `prompt` is a string `"3"`, which is not strictly equal `===` to the number `3`. So we’ve got a dead code in `case 3`! The `default` variant will execute.
 
 # Functions
@@ -2220,7 +2220,7 @@ For example, we need to show a nice-looking message when a visitor logs in, logs
 
 Functions are the main “building blocks” of the program. They allow the code to be called many times without repetition.
 
-We’ve already seen examples of built-in functions, like alert(message), prompt(message, default) and confirm(question). But we can create functions of our own as well.
+We’ve already seen examples of built-in functions, like console.log(message), prompt(message, default) and confirm(question). But we can create functions of our own as well.
 
 ## Function Declaration
 
@@ -2230,7 +2230,7 @@ It looks like this:
 
 ```js
 function showMessage() {
-  alert( 'Hello everyone!' );
+  console.log( 'Hello everyone!' );
 }
 ```
 
@@ -2260,12 +2260,12 @@ For example:
 function showMessage() {
   let message = "Hello, I'm JavaScript!"; // local variable
 
-  alert( message );
+  console.log( message );
 }
 
 showMessage(); // Hello, I'm JavaScript!
 
-alert( message ); // <-- Error! The variable is local to the function
+console.log( message ); // <-- Error! The variable is local to the function
 ```
 
 ## Outer Variables
@@ -2277,7 +2277,7 @@ let userName = 'John';
 
 function showMessage() {
   let message = 'Hello, ' + userName;
-  alert(message);
+  console.log(message);
 }
 
 showMessage(); // Hello, John
@@ -2294,14 +2294,14 @@ function showMessage() {
   userName = "Bob"; // (1) changed the outer variable
 
   let message = 'Hello, ' + userName;
-  alert(message);
+  console.log(message);
 }
 
-alert( userName ); // John before the function call
+console.log( userName ); // John before the function call
 
 showMessage();
 
-alert( userName ); // Bob, the value was modified by the function
+console.log( userName ); // Bob, the value was modified by the function
 ```
 
 The outer variable is only used if there’s no local one.
@@ -2315,13 +2315,13 @@ function showMessage() {
   let userName = "Bob"; // declare a local variable
 
   let message = 'Hello, ' + userName; // Bob
-  alert(message);
+  console.log(message);
 }
 
 // the function will create and use its own userName
 showMessage();
 
-alert( userName ); // John, unchanged, the function did not access the outer variable
+console.log( userName ); // John, unchanged, the function did not access the outer variable
 ```
 
 ## Parameters
@@ -2332,7 +2332,7 @@ In the example below, the function has two parameters: `from` and `text`.
 
 ```js
 function showMessage(from, text) { // parameters: from, text
-  alert(from + ': ' + text);
+  console.log(from + ': ' + text);
 }
 
 showMessage('Ann', 'Hello!'); // Ann: Hello! (1)
@@ -2348,7 +2348,7 @@ function showMessage(from, text) {
 
   from = '*' + from + '*'; // make "from" look nicer
 
-  alert( from + ': ' + text );
+  console.log( from + ': ' + text );
 }
 
 let from = "Ann";
@@ -2356,7 +2356,7 @@ let from = "Ann";
 showMessage(from, "Hello"); // *Ann*: Hello
 
 // the value of "from" is the same, the function modified a local copy
-alert( from ); // Ann
+console.log( from ); // Ann
 ```
 
 When a value is passed as a function parameter, it’s also called an argument.
@@ -2377,7 +2377,7 @@ For instance, the aforementioned function showMessage(from, text) can be called 
 
 ```js
 function showMessage(from, text = "no text given") {
-  alert( from + ": " + text );
+  console.log( from + ": " + text );
 }
 
 showMessage("Ann"); // Ann: no text given
@@ -2396,7 +2396,7 @@ function showMessage(from, text) {
     text = 'no text given';
   }
 
-  alert( from + ": " + text );
+  console.log( from + ": " + text );
 }
 ```
 
@@ -2426,7 +2426,7 @@ function showMessage(text) {
     text = 'empty message';
   }
 
-  alert(text);
+  console.log(text);
 }
 
 showMessage(); // empty message
@@ -2457,7 +2457,7 @@ If a function does not return a value, it is the same as if it returns `undefin
 ```js
 function doNothing() { /* empty */ }
 
-alert( doNothing() === undefined ); // true
+console.log( doNothing() === undefined ); // true
 ```
 
 An empty `return` is also the same as `return undefined`:
@@ -2467,7 +2467,7 @@ function doNothing() {
   return;
 }
 
-alert( doNothing() === undefined ); // true
+console.log( doNothing() === undefined ); // true
 ```
 
 **One function – one action**
@@ -2478,7 +2478,7 @@ Two independent actions usually deserve two functions, even if they are usually 
 
 A few examples of breaking this rule:
 
-- `getAge` – would be bad if it shows an `alert` with the age (should only get).
+- `getAge` – would be bad if it shows an `console.log` with the age (should only get).
 - `createForm` – would be bad if it modifies the document, adding a form to it (should only create it and return).
 - `checkPermission` – would be bad if it displays the `access granted/denied` message (should only perform the check and return the result).
 
@@ -2493,7 +2493,7 @@ The syntax that we used before is called a _Function Declaration_:
 
 ```js
 function sayHi() {
-  alert( "Hello" );
+  console.log( "Hello" );
 }
 ```
 
@@ -2505,11 +2505,11 @@ For example:
 
 ```js
 let sayHi = function() {
-  alert( "Hello" );
+  console.log( "Hello" );
 };
 ```
 
-Here we can see a variable `sayHi` getting a value, the new function, created as `function() { alert("Hello"); }`.
+Here we can see a variable `sayHi` getting a value, the new function, created as `function() { console.log("Hello"); }`.
 
 As the function creation happens in the context of the assignment expression (to the right side of `=`), this is a _Function Expression_.
 
@@ -2523,14 +2523,14 @@ In more advanced situations, that we’ll come across later, a function may be c
 
 Let’s reiterate: no matter how the function is created, a function is a value. Both examples above store a function in the `sayHi` variable.
 
-We can even print out that value using `alert`:
+We can even print out that value using `console.log`:
 
 ```js
 function sayHi() {
-  alert( "Hello" );
+  console.log( "Hello" );
 }
 
-alert( sayHi ); // shows the function code
+console.log( sayHi ); // shows the function code
 ```
 
 Please note that the last line does not run the function, because there are no parentheses after `sayHi`. There are programming languages where any mention of a function name causes its execution, but JavaScript is not like that.
@@ -2545,7 +2545,7 @@ We can copy a function to another variable:
 
 ```js
 function sayHi() {   // (1) create
-  alert( "Hello" );
+  console.log( "Hello" );
 }
 
 let func = sayHi;    // (2) copy
@@ -2564,7 +2564,7 @@ We could also have used a Function Expression to declare `sayHi`, in the first 
 
 ```js
 let sayHi = function() { // (1) create
-  alert( "Hello" );
+  console.log( "Hello" );
 };
 
 let func = sayHi;
@@ -2618,11 +2618,11 @@ function ask(question, yes, no) {
 }
 
 function showOk() {
-  alert( "You agreed." );
+  console.log( "You agreed." );
 }
 
 function showCancel() {
-  alert( "You canceled the execution." );
+  console.log( "You canceled the execution." );
 }
 
 // usage: functions showOk, showCancel are passed as arguments to ask
@@ -2645,8 +2645,8 @@ function ask(question, yes, no) {
 
 ask(
   "Do you agree?",
-  function() { alert("You agreed."); },
-  function() { alert("You canceled the execution."); }
+  function() { console.log("You agreed."); },
+  function() { console.log("You canceled the execution."); }
 );
 ```
 
@@ -2709,7 +2709,7 @@ For example, this works:
 sayHi("John"); // Hello, John
 
 function sayHi(name) {
-  alert( `Hello, ${name}` );
+  console.log( `Hello, ${name}` );
 }
 ```
 
@@ -2721,7 +2721,7 @@ The Function Declaration sayHi is created when JavaScript is preparing to start 
 sayHi("John"); // error!
 
 let sayHi = function(name) {  // (*) no magic any more
-  alert( `Hello, ${name}` );
+  console.log( `Hello, ${name}` );
 };
 ```
 
@@ -2779,7 +2779,7 @@ let sum = function(a, b) {
 };
 */
 
-alert( sum(1, 2) ); // 3
+console.log( sum(1, 2) ); // 3
 ```
 
 As you can see, `(a, b) => a + b` means a function that accepts two arguments named `a` and `b`. Upon the execution, it evaluates the expression `a + b` and returns the result.
@@ -2792,13 +2792,13 @@ For example:
 let double = n => n * 2;
 // roughly the same as: let double = function(n) { return n * 2 }
 
-alert( double(3) ); // 6
+console.log( double(3) ); // 6
 ```
 
 - If there are no arguments, parentheses are empty, but they must be present:
 
 ```js
-let sayHi = () => alert("Hello!");
+let sayHi = () => console.log("Hello!");
 
 sayHi();
 ```
@@ -2811,8 +2811,8 @@ For instance, to dynamically create a function:
 let age = prompt("What is your age?", 18);
 
 let welcome = (age < 18) ?
-  () => alert('Hello!') :
-  () => alert("Greetings!");
+  () => console.log('Hello!') :
+  () => console.log("Greetings!");
 
 welcome();
 ```
@@ -2835,7 +2835,7 @@ let sum = (a, b) => {  // the curly brace opens a multiline function
   return result; // if we use curly braces, then we need an explicit "return"
 };
 
-alert( sum(1, 2) ); // 3
+console.log( sum(1, 2) ); // 3
 ```
 
 **More to come**
