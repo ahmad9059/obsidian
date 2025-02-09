@@ -831,9 +831,56 @@ increment(); // 2
 ```
 
 
-### **1️⃣ What is an Event Listener in JavaScript?**
+# What is an Event Listener in JavaScript?
 
 An **event listener** is a method that allows you to wait for a specific event (like a click, keypress, hover, etc.) and run a function when the event occurs.
 
 ### ✅ Example of `addEventListener()`
+
+```js
+document.getElementById("btn").addEventListener("click", function() {
+ console.log("Button Clicked!");
+});
+```
+
+- Here, `addEventListener("click", function)` listens for a **click event** on the button with `id="btn"`.
+- When clicked, it logs `"Button Clicked!"`.
+
+### Common Events
+
+| Event       | Description                           |
+| ----------- | ------------------------------------- |
+| `click`     | When an element is clicked            |
+| `mouseover` | When the mouse hovers over an element |
+| `keydown`   | When a key is pressed                 |
+| `submit`    | When a form is submitted              |
+
+## What is `querySelector` in JavaScript?
+
+`querySelector()` is a method used to select an element from the DOM using CSS selectors.
+
+### Example of `querySelector()`
+
+```js
+const heading = document.querySelector("h1"); // Selects the first `<h1>` element
+heading.style.color = "red"; // Changes its color to red
+```
+
+#### Selecting Elements
+
+```js
+document.querySelector("#myId");    // Selects an element by ID
+document.querySelector(".myClass"); // Selects the first element with this class
+document.querySelector("p");        // Selects the first <p> element
+```
+
+# Event Delegation in JavaScript
+
+Event Delegation is a **pattern** that allows you to handle events **efficiently** by attaching a **single event listener** to a **parent element** instead of adding multiple listeners to child elements.
+
+## 🤔 Why Use Event Delegation?
+
+✅ **Better Performance** → Avoids adding multiple event listeners.  
+✅ **Handles Dynamic Elements** → Works even for elements added later via JavaScript.  
+✅ **Less Memory Usage** → Reduces the number of event listeners.
 
