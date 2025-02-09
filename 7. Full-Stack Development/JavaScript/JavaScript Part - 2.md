@@ -715,7 +715,52 @@ sayHi.call( admin ); // Admin
 ```
 
 
-## [func.apply](h
+## apply
+
 Instead of `func.call(this, ...arguments)` we could use `func.apply(this, arguments)`.
 
 The syntax of built-in method [func.apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) is:
+
+```js
+func.apply(context, args)
+```
+
+It runs the `func` setting `this=context` and using an array-like object `args` as the list of arguments.
+
+The only syntax difference between `call` and `apply` is that `call` expects a list of arguments, while `apply` takes an array-like object with them.
+
+So these two calls are almost equivalent:
+
+```js
+func.call(context, ...args);
+func.apply(context, args);
+```
+
+Example:
+
+```js
+function func(a, b, c) {
+  console.log(this, a, b, c);
+}
+func.call(obj, [1, 2, 3]);
+```
+
+
+## bind()
+
+The **`bind()`** method of [`Function`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) instances creates a new function that, when called, calls this function with its `this` keyword set to the provided value, and a given sequence of arguments preceding any provided when the new function is called.
+
+It does not call function. It just return another function that we can store in variable to call it 
+
+```js
+function func() {
+  console.log(this);
+}
+let n = func.bind("ahmad");
+
+n();
+```
+
+
+# Prototypal inheritance
+
