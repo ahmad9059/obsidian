@@ -604,3 +604,118 @@ let user = {
 
 ## “this” is not bound
 
+In JavaScript, keyword `this` behaves unlike most other programming languages. It can be used in any function, even if it’s not a method of an object.
+
+There’s no syntax error in the following example:
+
+```js
+function sayHi() {
+  alert( this.name );
+}
+```
+
+The value of `this` is evaluated during the run-time, depending on the context.
+
+For instance, here the same function is assigned to two different objects and has different “this” in the calls:
+
+```js
+let user = { name: "John" };
+let admin = { name: "Admin" };
+function sayHi() {
+  alert( this.name );
+}
+// use the same function in two objects
+user.f = sayHi;
+admin.f = sayHi;
+// these calls have different this
+// "this" inside the function is the object "before the dot"
+user.f(); // John  (this == user)
+admin.f(); // Admin  (this == admin)
+admin['f'](); // Admin (dot or square brackets access the method – doesn't matter)
+```
+
+
+## Arrow functions have no “this”
+Arrow functions are special: they don’t have their “own” this. If we reference this from such a function, it’s taken from the outer “normal” function.
+
+For instance, here arrow() uses this from the outer user.sayHi() method:
+
+```js
+let user = {
+  firstName: "Ilya",
+  sayHi() {
+    let arrow = () => alert(this.firstName);
+    arrow();
+  }
+};
+
+user.sayHi(); // Ilya
+```
+
+That’s a special feature of arrow functions, it’s useful when we actually do not want to have a separate `this`, but rather to take it from the outer context. Later in the chapter [Arrow functions revisited](https://javascript.info/arrow-functions) we’ll go more deeply into arrow functions.
+
+## Summary
+
+- Functions that are stored in object properties are called “methods”.
+- Methods allow objects to “act” like `object.doSomething()`.
+- Methods can reference the object as `this`.
+
+The value of `this` is defined at run-time.
+
+- When a function is declared, it may use `this`, but that `this` has no value until the function is called.
+- A function can be copied between objects.
+- When a function is called in the “method” syntax: `object.method()`, the value of `this` during the call is `object`.
+
+Please note that arrow functions are special: they have no `this`. When `this` is accessed inside an arrow function, it is taken from outside.
+
+## Key Points
+
+1. In Global Scope the value of `this` is window.
+2. In function the value of `this` is window
+3. In Method the value of `this` is object
+4. function inside the method es5(deceleration function) the value of `this` is window.
+5. function inside the method es6(expression function) the value of `this` is object.
+6. the value of `this` in constructor function is blank object.
+7. In event listener value of `this` will be according to the element.
+
+# call/apply/bind
+
+## call
+
+There’s a special built-in function method [func.call(context, …args)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) that allows to call a function explicitly setting `this`.
+
+The syntax is:
+
+```javascript
+func.call(context, arg1, arg2, ...)
+```
+
+It runs `func` providing the first argument as `this`, and the next as the arguments.
+
+To put it simply, these two calls do almost the same:
+
+```js
+func(1, 2, 3);
+func.call(obj, 1, 2, 3)
+```
+
+They both call `func` with arguments `1`, `2` and `3`. The only difference is that `func.call` also sets `this` to `obj`.
+
+As an example, in the code below we call `sayHi` in the context of different objects: `sayHi.call(user)` runs `sayHi` providing `this=user`, and the next line sets `this=admin`:
+
+```js
+function sayHi() {
+  alert(this.name);
+}
+let user = { name: "John" };
+let admin = { name: "Admin" };
+// use call to pass different objects as "this"
+sayHi.call( user ); // John
+sayHi.call( admin ); // Admin
+```
+
+
+## [func.apply](h
+Instead of `func.call(this, ...arguments)` we could use `func.apply(this, arguments)`.
+
+The syntax of built-in method [func.apply](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) is:
