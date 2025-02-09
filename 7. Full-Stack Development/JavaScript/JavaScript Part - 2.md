@@ -809,3 +809,31 @@ So, the setter call `admin.fullName=` uses `admin` as `this`, not `user`.
 That is actually a super-important thing, because we may have a big object with many methods, and have objects that inherit from it. And when the inheriting objects run the inherited methods, they will modify only their own states, not the state of the big object.
 
 
+# Closures in JS
+
+A **closure** in JavaScript is a function that remembers the variables from its **lexical scope**, even when the function is executed outside that scope.
+
+### How It Works:
+
+When a function is created inside another function, it **captures** the outer function’s variables, even after the outer function has finished executing.
+
+```js
+function counter() {
+    let count = 0;
+    return function() {
+        count++;
+        console.log(count);
+    };
+}
+const increment = counter();
+increment(); // 1
+increment(); // 2
+```
+
+
+### **1️⃣ What is an Event Listener in JavaScript?**
+
+An **event listener** is a method that allows you to wait for a specific event (like a click, keypress, hover, etc.) and run a function when the event occurs.
+
+### ✅ Example of `addEventListener()`
+
