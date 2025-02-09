@@ -933,3 +933,64 @@ returned(); // Call the returned function
 |`filter()`|Filters an array based on a condition.|
 |`reduce()`|Reduces an array to a single value.|
 |`forEach()`|Iterates over an array but does not return a new one.|
+
+# Handling Errors with `try...catch
+
+The `try...catch` block allows you to handle errors gracefully.
+The `try...catch` statement is used to handle errors, and `throw` is used to create custom errors.
+
+Basic Example of `try...catch`
+
+```js
+try {
+    let x = y + 5;  // ❌ ReferenceError: y is not defined
+} catch (error) {
+    console.log("An error occurred:", error.message);
+}
+```
+
+🔹 If an error occurs inside `try`, execution moves to `catch`, preventing a crash.
+
+## Using `throw` to Create Custom Error
+
+```js
+function divide(a, b) {
+    if (b === 0) {
+        throw new Error("Cannot divide by zero!");  // 🚀 Custom error
+    }
+    return a / b;
+}
+
+try {
+    console.log(divide(10, 0)); // ❌ Throws an error
+} catch (error) {
+    console.log("Error:", error.message);
+}
+
+```
+
+🔹 **`throw` allows custom error messages** instead of generic JavaScript errors.
+
+#### `finally` Block (Always Executes)
+
+```js
+try {
+    console.log("Trying something...");
+    throw new Error("Something went wrong!");
+} catch (error) {
+    console.log("Caught Error:", error.message);
+} finally {
+    console.log("This runs no matter what!");
+}
+```
+
+# Custom Events in JavaScript
+
+A **Custom Event** in JavaScript is an event that you manually create and dispatch using the `CustomEvent` constructor. This allows communication between different parts of your application.
+
+## Creating and Dispatching a Custom Event
+
+The `CustomEvent` constructor takes two arguments: 1️⃣ **Event Name** (string)  
+2️⃣ **Event Options** (optional, includes `detail` for extra data)
+
+
