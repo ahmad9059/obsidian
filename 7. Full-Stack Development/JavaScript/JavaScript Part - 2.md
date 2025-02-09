@@ -557,4 +557,22 @@ Note that all “for” constructs allow us to declare the looping variable insi
 
 Also, we could use another variable name here instead of `key`. For instance, `"for (let prop in obj)"` is also widely used.
 
+# Object methods, "this"
+
+Objects are usually created to represent entities of the real world, like users, orders and so on:
+
+```js
+let user = {
+  name: "John",
+  age: 30
+};
+```
+
+And, in the real world, a user can _act_: select something from the shopping cart, login, logout etc.
+
+Actions are represented in JavaScript by functions in properties.
+
+## Method examples
+
+For a start, let’s teach the user to say hello:
 
