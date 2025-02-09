@@ -764,3 +764,48 @@ n();
 
 # Prototypal inheritance
 
+In JavaScript, objects have a special hidden property `[[Prototype]]` (as named in the specification), that is either `null` or references another object. That object is called “a prototype”:
+
+When we read a property from `object`, and it’s missing, JavaScript automatically takes it from the prototype. In programming, this is called “prototypal inheritance”. And soon we’ll study many examples of such inheritance, as well as cooler language features built upon it.
+
+The property `[[Prototype]]` is internal and hidden, but there are many ways to set it.
+
+**Prototypal inheritance** in JavaScript is a mechanism that allows objects to inherit properties and methods from other objects. Instead of using classes like in classical inheritance (as in Java or C++), JavaScript uses prototypes.
+
+```js
+function makeHuman(name,age){
+  this.name = name;
+  this.age = age;
+}
+
+makeHuman.prototype.greet = 12;
+
+makeHuman.prototype.func = function(){
+  console.log(this.name);
+}
+
+let human1 = new makeHuman("ahmad",20);
+let human2 = new makeHuman("ali",30);
+
+```
+
+### How It Works:
+
+- Every JavaScript object has an internal property called [[Prototype]], which points to another object.
+
+- When you try to access a property or method on an object, JavaScript first looks for it on the object itself.
+
+- If the property/method is not found, JavaScript looks up the prototype chain until it either finds the property or reaches null.
+## The value of “this”
+
+An interesting question may arise in the example above: what’s the value of `this` inside `set fullName(value)`? Where are the properties `this.name` and `this.surname` written: into `user` or `admin`?
+
+The answer is simple: `this` is not affected by prototypes at all.
+
+**No matter where the method is found: in an object or its prototype. In a method call, `this` is always the object before the dot.**
+
+So, the setter call `admin.fullName=` uses `admin` as `this`, not `user`.
+
+That is actually a super-important thing, because we may have a big object with many methods, and have objects that inherit from it. And when the inheriting objects run the inherited methods, they will modify only their own states, not the state of the big object.
+
+
