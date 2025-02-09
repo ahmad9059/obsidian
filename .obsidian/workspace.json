@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. Full-Stack Development/CSS/CSS.md",
+                "file": "7. Full-Stack Development/CSS/Tailwind CSS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CSS"
+              "title": "Tailwind CSS"
             }
           }
         ]
@@ -166,6 +166,7 @@
   },
   "active": "24f1f68ab83b81b3",
   "lastOpenFiles": [
+    "7. Full-Stack Development/CSS/CSS.md",
     "7. Full-Stack Development/HTML/Introduction to HTML.md",
     "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
     "README.md",
@@ -180,7 +181,6 @@
     "6- Tools/lua.md",
     "3- Rough Notes/lua.md",
     "6- Tools/Yazi.md",
-    "7. Full-Stack Development/CSS/CSS.md",
     "7. Full-Stack Development/CSS/Tailwind CSS.md",
     "3- Rough Notes/Useful Links.md",
     "1- Notes/Computer Networks/Computer Networks(CN).md",
