@@ -559,20 +559,48 @@ Also, we could use another variable name here instead of `key`. For instance, 
 
 # Object methods, "this"
 
-Objects are usually created to represent entities of the real world, like users, orders and so on:
+
+## “this” in methods
+
+It’s common that an object method needs to access the information stored in the object to do its job.
+
+For instance, the code inside `user.sayHi()` may need the name of the `user`.
+
+**To access the object, a method can use the `this` keyword.**
+
+The value of `this` is the object “before dot”, the one used to call the method.
+
+For instance:
 
 ```js
 let user = {
   name: "John",
-  age: 30
+  age: 30,
+
+  sayHi() {
+    // "this" is the "current object"
+    alert(this.name);
+  }
+
+};
+
+user.sayHi(); // John
+```
+
+Here during the execution of `user.sayHi()`, the value of `this` will be `user`.
+
+Technically, it’s also possible to access the object without `this`, by referencing it via the outer variable:
+
+```js
+let user = {
+  name: "John",
+  age: 30,
+  sayHi() {
+    alert(user.name); // "user" instead of "this"
+  }
 };
 ```
 
-And, in the real world, a user can _act_: select something from the shopping cart, login, logout etc.
 
-Actions are represented in JavaScript by functions in properties.
-
-## Method examples
-
-For a start, let’s teach the user to say hello:
+## “this” is not bound
 
