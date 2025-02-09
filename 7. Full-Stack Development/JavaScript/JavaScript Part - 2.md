@@ -884,3 +884,52 @@ Event Delegation is a **pattern** that allows you to handle events **efficiently
 ✅ **Handles Dynamic Elements** → Works even for elements added later via JavaScript.  
 ✅ **Less Memory Usage** → Reduces the number of event listeners.
 
+**Example**
+
+```js
+let parent = document.querySelector("#parent");
+parent.addEventListener("click", function (ev) {
+  if (ev.target.id === "play") {
+    console.log("Play Song");
+  } else if (ev.target.id === "pause") {
+    console.log("Pause Song");
+  }
+});
+```
+
+### When Should You Use Event Delegation?
+
+- Handling clicks on **lists, tables, menus, or dynamically added elements**.
+- Handling **form inputs** when adding fields dynamically.
+- Improving **performance** for elements inside large containers.
+
+# Higher-Order Functions in JavaScript
+
+A **Higher-Order Function (HOF)** is a function that **takes another function as an argument** or **returns a function**.
+
+```js
+function func1(f1) {  // func1 takes a function as an argument (HOF property)
+  f1();  // Calls the passed function
+  return function () {  // Returns a new function (HOF property)
+    console.log("returned fun");
+  };
+}
+
+fun = function () {
+  console.log("Passed Function");
+};
+
+let returned = func1(fun); // Call func1 with 'fun' function
+
+returned(); // Call the returned function
+```
+
+
+### Built-in Higher-Order Functions in JavaScript
+
+|Method|Description|
+|---|---|
+|`map()`|Transforms an array by applying a function to each element.|
+|`filter()`|Filters an array based on a condition.|
+|`reduce()`|Reduces an array to a single value.|
+|`forEach()`|Iterates over an array but does not return a new one.|
