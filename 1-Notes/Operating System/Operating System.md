@@ -22,7 +22,20 @@ An **Operating System** is a piece of software that manages all resources of a c
 
 The operating system provides the means for proper use of the resources in the operation of the computer system.
 
-
-
+```chart
+type: pie
+labels: [Monday, Tuesday,Wednesday,Thursday,Friday]
+series:
+  - title: 
+    data: [20,20,20,20,20]
+tension: 1
+width: 47%
+labelColors: true
+fill: false
+beginAtZero: false
+bestFit: false
+bestFitTitle: undefined
+bestFitNumber: 0
+```
 
 

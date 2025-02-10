@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/JavaScript Part - 2.md",
+                "file": "1-Notes/Operating System/Operating System.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JavaScript Part - 2"
+              "title": "Operating System"
             }
           }
         ]
@@ -145,13 +145,23 @@
               "icon": "lucide-list",
               "title": "Outline of software-engineering-notes"
             }
+          },
+          {
+            "id": "4e575ef989641609",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,23 +176,28 @@
   },
   "active": "d08e2252bec0849a",
   "lastOpenFiles": [
-    "2001-02-01.md",
+    "1-Notes/Fundamentals of AI/assets/healthcare.canvas",
+    "1-Notes/Fundamentals of AI/Introduction to Machine Learning.md",
+    "1-Notes/Operating System/Operating System.md",
+    "1-Notes/Operating System/assets/img-1.png",
+    "1-Notes/Operating System/assets/img.png",
+    "1-Notes/Operating System/assets/os2.png",
+    "posts/markdown.md",
     "posts/JavaScript Part - 2.md",
+    "posts/html.md",
+    "posts/Fundamentals-of-JavaScript.md",
+    "2001-02-01.md",
     "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
     "posts/assets/js-part2.png",
     "posts/assets/JavaScript Part - 2.png",
-    "1-Notes/Operating System/Operating System.md",
     "1-Notes/Operating System/assets/1-Operating System.png",
     "1-Notes/Operating System/assets/Operating System.png",
     "posts/hello",
     "posts/assets/web/JS/js.webp",
     "posts/assets/web/CSS/mobile.webp",
     "posts/assets/web/CSS/margin-padding.webp",
-    "posts/assets/web/CSS/flex.webp",
-    "posts/assets/archlinux/installation.png",
     "posts/assets/web/JS",
     "posts/assets/web/CSS",
-    "posts/assets/web-dev-roadmap/web-dev-roadmap.webp",
     "posts/assets/web-dev-roadmap",
     "posts/assets/web",
     "posts/assets/forher",
@@ -193,13 +208,10 @@
     "posts/Templetes/date-template.md",
     "posts/web-dev-roadmap.md",
     "posts/tailwind-css.md",
-    "posts/markdown.md",
-    "posts/html.md",
     "posts/forher.md",
     "posts/css.md",
     "posts/assets",
     "posts/Templetes",
-    "posts/Fundamentals-of-JavaScript.md",
     "posts/ArchLinux-Installation-Guide.md",
     "posts",
     "3- Rough Notes/Computer Architecture.md",
@@ -210,10 +222,7 @@
     "7. Full-Stack Development/CSS/CSS.md",
     "7. Full-Stack Development/HTML/Introduction to HTML.md",
     "6- Tools/Neovim-Vim.md",
-    "6- Tools/Archlinux(BTW).md",
-    "6- Tools/awk, sed, grep, ripgrep.md",
     "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
-    "1-Notes/Fundamentals of AI/assets/healthcare.canvas",
     "1-Notes/Fundamentals of AI/assets/finance.canvas",
     "7. Full-Stack Development/Untitled.canvas",
     "5- Daily Tasks/Roadmap.canvas"
