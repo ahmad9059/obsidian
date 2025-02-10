@@ -27,4 +27,3 @@ graph TD;
 
 The operating system provides the means for proper use of the resources in the operation of the computer system.
 
-
