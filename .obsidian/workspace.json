@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
+                "file": "7. Full-Stack Development/JavaScript/Asynchronous JavaScript.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JavaScript Part - 2"
+              "title": "Asynchronous JavaScript"
             }
           }
         ]
@@ -177,6 +177,8 @@
   },
   "active": "a4a60ae2bb654526",
   "lastOpenFiles": [
+    "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
+    "7. Full-Stack Development/JavaScript/Asynchronous JavaScript.md",
     "1-Notes/Operating System/Operating System.md",
     "1-Notes/Operating System/assets/os1.png",
     "1-Notes/Fundamentals of AI/assets/healthcare.canvas",
@@ -189,7 +191,6 @@
     "posts/html.md",
     "posts/Fundamentals-of-JavaScript.md",
     "2001-02-01.md",
-    "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
     "posts/assets/js-part2.png",
     "posts/assets/JavaScript Part - 2.png",
     "1-Notes/Operating System/assets/1-Operating System.png",
