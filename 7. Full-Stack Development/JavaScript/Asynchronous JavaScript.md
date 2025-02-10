@@ -38,7 +38,7 @@ JavaScript uses the **Event Loop** and the **Call Stack** to handle asynchronous
 - **Async/Await**
 
 ### Callbacks
-A **callback function** is passed as an argument to be executed later.
+A **callback function** is passed as an argument to be executed later.given example use the both setTimeout and setInterval and clearInterval to stop the setInterval
 
 ```js
 console.log("Start of program");
@@ -60,5 +60,47 @@ let intervalID = setInterval(() => {
 console.log("End of program (before timeouts and intervals execute)");
 ```
 
+### Fetch API
 
+The `fetch()` API is **asynchronous** because it makes network requests **without blocking** the execution of other code. It **returns a Promise**, which resolves when the request completes.
+
+```js
+fetch("https://jsonplaceholder.typicode.com/todos/1") // Fetch data from API
+  .then((response) => response.json()) // Convert response to JSON
+  .then((data) => console.log(data)) // Log the data
+  .catch((error) => console.error("Error fetching data:", error));
+```
+
+🔹 **How it works?** 1️⃣ `fetch()` makes an HTTP request **(returns a Promise).**  
+2️⃣ `.json()` parses the response into JavaScript object **(also async, returns a Promise).**  
+3️⃣ `.then()` handles the resolved data.  
+4️⃣ `.catch()` handles errors (e.g., network failure).
+
+### Axios
+
+**Axios is asynchronous** because it makes network requests **without blocking** execution. It is built on top of JavaScript Promises, similar to `fetch()`, but with more features.
+
+**Why use Axios?**
+
+- **No need to manually parse JSON** (Axios does it automatically).
+- **Better error handling** (Fetch only rejects on network errors, while Axios rejects on HTTP errors too).
+- **More readable with async/await**.
+
+```js
+axios.get("https://jsonplaceholder.typicode.com/todos/1")
+    .then(response => console.log(response.data)) // Axios auto-parses JSON
+    .catch(error => console.error("Error fetching data:", error));
+```
+
+### 🔥 Comparison: Axios vs. Fetch
+
+|Feature|Axios|Fetch|
+|---|---|---|
+|JSON Parsing|✅ Auto|❌ Manual (`.json()`)|
+|Error Handling|✅ Rejects on HTTP errors|❌ Only rejects on network errors|
+|Request Headers|✅ Easy|❌ Manual setup required|
+|`async/await` Support|✅ Yes|✅ Yes|
+|Default Timeout|✅ Yes (`timeout` option)|❌ No|
+
+**👉 Best Practice:** Use **Axios** when working with APIs that require headers, authentication, or advanced error handling.
 
