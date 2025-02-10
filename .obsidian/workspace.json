@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
+                "file": "1- Notes/Operating System/Operating System.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JavaScript Part - 2"
+              "title": "Operating System"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "607c7a0d4e2cc986",
@@ -166,13 +167,16 @@
   },
   "active": "24f1f68ab83b81b3",
   "lastOpenFiles": [
+    "1- Notes/Operating System/assets/Pasted image 20250210222108.png",
+    "1- Notes/Operating System/assets",
+    "3- Rough Notes/Computer Architecture.md",
+    "README.md",
+    "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
     "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
     "3- Rough Notes/Useful Links.md",
-    "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
     "7. Full-Stack Development/CSS/Tailwind CSS.md",
     "7. Full-Stack Development/CSS/CSS.md",
     "7. Full-Stack Development/HTML/Introduction to HTML.md",
-    "README.md",
     "6- Tools/Neovim-Vim.md",
     "6- Tools/Archlinux(BTW).md",
     "6- Tools/awk, sed, grep, ripgrep.md",
@@ -196,9 +200,7 @@
     "1- Notes/Fundamentals of AI/assets/cybersecurity.canvas",
     "1- Notes/Operating System/Operating System.md",
     "4- University Stuff/Finals Exams -Preperatoin.md",
-    "3- Rough Notes/Research Papers.md",
     "1- Notes/Operating System",
-    "1- Notes/DBMS/Complete DBMS.md",
     "1- Notes/DBMS/assets/Pasted image 20250126005503.png",
     "1- Notes/DBMS/assets/Pasted image 20250126005449.png",
     "1- Notes/DBMS/assets/Pasted image 20250126005436.png",
@@ -214,7 +216,6 @@
     "7. Full-Stack Development/CSS",
     "1- Notes/Fundamentals of AI/assets/healthcare.canvas",
     "1- Notes/Fundamentals of AI/assets/finance.canvas",
-    "1- Notes/DBMS/assets",
     "7. Full-Stack Development/Untitled.canvas",
     "5- Daily Tasks/Roadmap.canvas"
   ]
