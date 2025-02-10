@@ -18,7 +18,13 @@ An **Operating System** is a piece of software that manages all resources of a c
 - Hides the underlying complexity of the hardware. (Aka, Abstraction)
 - facilitates execution of application programs by providing isolation and protection.
 
-<img style="display: block; margin: 0 auto;" src="assets/os1.png" alt="">
+```mermaid
+graph TD;
+    User(["🧍 User"]) --> |Uses| Application["Application programs"];
+    Application --> |Runs on| OS["Operating system"];
+    OS --> |Manages| Hardware["Computer hardware"];
+```
 
 The operating system provides the means for proper use of the resources in the operation of the computer system.
+
 
