@@ -993,4 +993,36 @@ A **Custom Event** in JavaScript is an event that you manually create and dispat
 The `CustomEvent` constructor takes two arguments: 1️⃣ **Event Name** (string)  
 2️⃣ **Event Options** (optional, includes `detail` for extra data)
 
+```js
+let ev = new Event("newEv");
+
+document.querySelector("button").addEventListener("newEv", function () {
+  console.log("Custom Event");
+});
+document.querySelector("button").dispatchEvent(ev);
+```
+
+
+**Full Example: Custom Event with Data**
+
+```js
+// Create and dispatch custom event
+const customEvent = new CustomEvent("userLoggedIn", {
+   detail: { username: "ahmad9059", role: "admin" }
+});
+
+document.addEventListener("userLoggedIn", function (event) {
+   console.log(`User: ${event.detail.username}, Role: ${event.detail.role}`);
+});
+
+// Dispatch the event
+document.dispatchEvent(customEvent);
+```
+
+
+**When to Use Custom Events?**
+
+1. For component communication (e.g., sending data between different UI components).
+2. When working with user interactions that don't have built-in events.
+3. For event-driven architectures where actions trigger custom behavior.
 
