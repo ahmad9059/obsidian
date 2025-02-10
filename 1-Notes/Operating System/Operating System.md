@@ -18,7 +18,9 @@ An **Operating System** is a piece of software that manages all resources of a c
 - Hides the underlying complexity of the hardware. (Aka, Abstraction)
 - facilitates execution of application programs by providing isolation and protection.
 
-![](Pasted%20image%2020250210222108.png)
+<img style="display: block; margin: 0 auto;" src="./assets/os1.png" alt="">
 
 The operating system provides the means for proper use of the resources in the operation of the computer system.
+
+
 
