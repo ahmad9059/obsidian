@@ -116,27 +116,24 @@ A **Promise** in JavaScript is an object that represents the eventual **completi
 
 
 ```js
-fetch(`https://randomuser.me/api/`)
-  .then(raw => raw.json())
-  .then(result =>{
-      console.log(result.results[0].gender);
-      if(result.results[0].gender === "male"){
+let promise = new Promise(function (resolve, reject) {
+  fetch(`https://randomuser.me/api/`)
+    .then((raw) => raw.json())
+    .then((result) => {
+      if (result.results[0].gender === "male") {
         resolve();
-      }
-      else{
-       reject(); 
+      } else {
+        reject();
       }
     });
-
 });
 promise
-.then(function(){
+  .then(function () {
     console.log("Male Received");
   })
-.catch(function(){
+  .catch(function () {
     console.log("Female Received");
-  })
-
+  });
 ```
 
 ## Callbacks in JavaScript
@@ -296,4 +293,70 @@ console.log("End");
 ## Generators in JavaScript
 
 Generators are **special functions** in JavaScript that allow us to **pause and resume** execution. Unlike normal functions, they **do not execute all at once**; instead, they produce values **one at a time** as requested.
+
+### Key Features of Generators
+
+✔ Uses the `function*` syntax (notice the `*` after `function`).  
+✔ Uses the `yield` keyword to **pause execution** and return values.  
+✔ The function doesn’t run immediately; instead, it returns an **iterator object**.  
+✔ The `next()` method resumes execution from the last `yield`.
+
+```js
+function* myGenerator() {
+    console.log("Start");
+    yield 1; // Pause and return 1
+    console.log("Resume");
+    yield 2; // Pause and return 2
+    console.log("End");
+}
+
+const gen = myGenerator(); // Creates the generator object
+
+console.log(gen.next()); // { value: 1, done: false }
+console.log(gen.next().value); // 2
+console.log(gen.next()); // { value: undefined, done: true }
+```
+
+
+### **📌 How it Works?**
+
+1. **Calling `myGenerator()` doesn't execute it immediately.** It returns a generator object (`gen`).
+2. **`gen.next()` starts execution** until the first `yield`, returning `{ value: 1, done: false }`.
+3. **Calling `gen.next()` again** resumes execution after the first `yield`, printing `"Resume"` and yielding `{ value: 2, done: false }`.
+4. **When there are no more `yield` statements, `done: true` is returned.**
+
+
+### Generator with `for...of` Loop
+
+Instead of calling `next()` manually, we can use a `for...of` loop.
+
+```js
+function* fruits() {
+    yield "🍎 Apple";
+    yield "🍌 Banana";
+    yield "🍇 Grapes";
+}
+
+for (let fruit of fruits()) {
+    console.log(fruit);
+}
+```
+
+
+### Generators vs Async/Await
+
+|Feature|Generators|Async/Await|
+|---|---|---|
+|**Execution**|Can be paused/resumed using `yield`|Pauses execution until a Promise resolves|
+|**Returns**|Iterator object|Promise|
+|**Use Case**|Custom iteration, state management|Handling async operations|
+
+---
+
+### When to Use Generators?
+
+✔ **Custom Iterators** – Iterating over data in a custom way.  
+✔ **Lazy Execution** – Generate values on demand instead of all at once.  
+✔ **Infinite Sequences** – Generate values infinitely without memory issues.  
+✔ **Asynchronous Programming (with co-routines)** – Generators can be combined with Promises.
 
