@@ -263,3 +263,23 @@ console.log("End");
 5. **Microtask Queue executes first** → `console.log("Promise Resolved")`.
 6. **Callback Queue executes** → `console.log("Timeout Callback")`.
 
+### How the Event Loop Works
+
+1️⃣ JavaScript executes synchronous code in the Call Stack.
+2️⃣ If an async task is encountered, it moves to the Web API.
+3️⃣ Once completed, it moves the callback to the Callback Queue or Microtask Queue.
+4️⃣ The Event Loop checks if the Call Stack is empty.
+5️⃣ If empty, it first executes Microtasks, then moves Callbacks from the Callback Queue.
+6️⃣ Repeats the process infinitely.
+
+
+## 🚀 Key Takeaways
+
+✔ **JavaScript is single-threaded** but handles async tasks with the **Event Loop**.  
+✔ **Microtask Queue (Promises) runs before the Callback Queue (`setTimeout`)**.  
+✔ **The Event Loop ensures JavaScript never blocks execution.**  
+✔ **Long-running tasks should be asynchronous to avoid UI freezing.**
+
+
+
+
