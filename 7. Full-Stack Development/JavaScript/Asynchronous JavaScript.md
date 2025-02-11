@@ -281,5 +281,19 @@ console.log("End");
 ✔ **Long-running tasks should be asynchronous to avoid UI freezing.**
 
 
+### **Difference Between Callbacks, Promises, and Async/Await**
 
+|Feature|Callbacks|Promises|Async/Await|
+|---|---|---|---|
+|**Definition**|A function passed as an argument to another function and executed later.|An object representing the eventual completion (or failure) of an asynchronous operation.|A modern way to handle asynchronous code using `async` and `await` keywords.|
+|**Syntax**|Nested functions, leading to **callback hell**.|Uses `.then()`, `.catch()`, and `.finally()`.|Uses `async` to declare functions and `await` to handle promises.|
+|**Readability**|Hard to read and maintain due to **callback nesting**.|More readable but still involves chaining.|Clean and synchronous-like syntax.|
+|**Error Handling**|Error-prone, requires manual handling (`if-else` or separate error callback).|Uses `.catch()` to handle errors.|Uses `try...catch` for better error handling.|
+|**Chaining**|Difficult, leads to **callback hell (Pyramid of Doom)**.|Easy with `.then()` chaining.|Simplifies chaining with `await`.|
+|**Execution Flow**|Asynchronous but difficult to manage for multiple tasks.|More manageable, but chaining can still be tricky.|Most intuitive, executes sequentially like synchronous code.|
+|**Best For**|Simple async operations, event listeners.|Handling multiple asynchronous operations in a cleaner way.|Writing clean, readable, and maintainable async code.|
+
+## Generators in JavaScript
+
+Generators are **special functions** in JavaScript that allow us to **pause and resume** execution. Unlike normal functions, they **do not execute all at once**; instead, they produce values **one at a time** as requested.
 
