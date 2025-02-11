@@ -167,3 +167,99 @@ getData("https://randomuser.me/api/", function (result) {
 ```
 
 
+## async/await
+
+`async/await` is a modern **way to handle asynchronous code** in JavaScript.  
+It allows you to write **asynchronous code** in a way that looks **synchronous**, making it **easier to read and debug**.
+
+👉 **Key Features:**  
+✔️ **`async`: **The `async` keyword is used **before a function definition** to make it return a **Promise**.
+✔️ **`await`:** The `await` keyword is used **inside an `async` function** to pause execution **until a Promise resolves**.
+✔️ **Avoids callback hell** and complex `.then()` chains.  
+✔️ **Handles errors** with `try/catch`.
+
+```js
+async function func() {
+  let n = await fetch(`https://randomuser.me/api/`);
+  n = await n.json();
+  console.log(n.results[0].gender);
+}
+func();
+```
+
+### When to Use `async/await`?
+
+✔️ **Fetching data from an API**  
+✔️ **Performing database queries**  
+✔️ **Reading/Writing files (in Node.js)**  
+✔️ **Processing multiple async requests together**  
+✔️ **Avoiding callback hell**
+
+## Event Loop
+
+To understand the Event Loop, you need to know how JavaScript executes code. It has three main components:
+
+### Call Stack
+
+- The **Call Stack** follows the **LIFO (Last In, First Out)** principle.
+- It executes **synchronous** JavaScript code **line by line**.
+
+```js
+function greet() {
+    console.log("Hello!");
+}
+greet();
+```
+
+📌 **Execution:**
+
+1. `greet()` is **pushed** onto the **Call Stack**.
+2. `console.log("Hello!")` runs and is **popped** from the stack.
+
+### Web APIs (Async Tasks)
+
+- JavaScript **delegates async tasks** (e.g., `setTimeout`, `fetch`, event listeners) to **Web APIs**.
+- These APIs handle the task in the **background** and **return the result later**.
+
+Example:
+
+```js
+console.log("Start");
+setTimeout(() => {
+    console.log("Inside setTimeout");
+}, 1000);
+
+console.log("End");
+```
+
+📌 **Execution Flow:**
+
+1. `console.log("Start")` → **Executes immediately**.
+2. `setTimeout()` → **Sent to Web API, NOT executed immediately**.
+3. `console.log("End")` → **Executes immediately**.
+4. After 1 second, the callback (`console.log("Inside setTimeout")`) moves to **Callback Queue**.
+
+### Callback Queue & Microtask Queue
+
+- **Callback Queue:** Stores callbacks from **setTimeout, setInterval, event listeners**.
+- **Microtask Queue:** Stores callbacks from **Promises (`.then()`, `catch()`, `finally()`) and `MutationObserver`**.
+- **Microtasks always run before Callbacks** (higher priority).
+
+Example:
+
+```js
+console.log("Start");
+setTimeout(() => console.log("Timeout Callback"), 0);
+Promise.resolve().then(() => console.log("Promise Resolved"));
+console.log("End");
+```
+
+📌 **Execution Flow:**
+
+1. `console.log("Start")` → **Runs immediately**.
+2. `setTimeout()` → **Sent to Web API** (callback moved to Callback Queue).
+3. `Promise.resolve().then(...)` → **Sent to Microtask Queue**.
+4. `console.log("End")` → **Runs immediately**.
+5. **Microtask Queue executes first** → `console.log("Promise Resolved")`.
+6. **Callback Queue executes** → `console.log("Timeout Callback")`.
+
