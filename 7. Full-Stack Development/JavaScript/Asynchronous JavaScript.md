@@ -139,3 +139,31 @@ promise
 
 ```
 
+## Callbacks in JavaScript
+
+A **callback** is a **function passed as an argument** to another function and executed later.  
+👉 **Why use callbacks?**
+
+- Handle **asynchronous operations** (like fetching data, timers, or reading files).
+- Execute **code after another function completes**.
+
+
+```js
+function getData(url, callback) {
+  fetch(`https://randomuser.me/api/`)
+    .then((raw) => raw.json())
+    .then((result) => {
+      callback(result);
+    });
+}
+
+getData("https://randomuser.me/api/", function (result) {
+  console.log(
+    result.results[0].gender,
+    result.results[0].name.first,
+    result.results[0].email,
+  );
+});
+```
+
+
