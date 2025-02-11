@@ -15,7 +15,7 @@
               "state": {
                 "file": "7. Full-Stack Development/JavaScript/Asynchronous JavaScript.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Asynchronous JavaScript"
@@ -191,8 +191,12 @@
   },
   "active": "a4a60ae2bb654526",
   "lastOpenFiles": [
-    "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
+    "posts/asynchronous-js.md~",
+    "posts/async-js.md",
+    "posts/asynchronous-js.md",
+    "posts/async-js.md~",
     "7. Full-Stack Development/JavaScript/Asynchronous JavaScript.md",
+    "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
     "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
     "3- Rough Notes/Useful Links.md",
     "1-Notes/Operating System/Operating System.md",
@@ -231,13 +235,9 @@
     "posts/assets",
     "posts/Templetes",
     "posts/ArchLinux-Installation-Guide.md",
-    "posts",
     "3- Rough Notes/Computer Architecture.md",
     "README.md",
     "7. Full-Stack Development/CSS/Tailwind CSS.md",
-    "7. Full-Stack Development/CSS/CSS.md",
-    "7. Full-Stack Development/HTML/Introduction to HTML.md",
-    "6- Tools/Neovim-Vim.md",
     "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
     "1-Notes/Fundamentals of AI/assets/finance.canvas",
     "7. Full-Stack Development/Untitled.canvas",

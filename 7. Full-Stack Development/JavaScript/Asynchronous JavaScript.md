@@ -360,3 +360,43 @@ for (let fruit of fruits()) {
 ✔ **Infinite Sequences** – Generate values infinitely without memory issues.  
 ✔ **Asynchronous Programming (with co-routines)** – Generators can be combined with Promises.
 
+## Web Worker
+
+Web Workers allow JavaScript to run **background tasks** in a **separate thread** without blocking the main UI thread. This helps in **handling heavy computations** and keeping the web page responsive.
+
+### Why Use Web Workers?
+
+✔ JavaScript is **single-threaded** (blocking UI when executing long tasks).  
+✔ Web Workers allow running tasks **in parallel** on a different thread.  
+✔ Helps in **CPU-intensive tasks** like image processing, large calculations, etc.  
+✔ Keeps the **UI smooth** and prevents the page from freezing.
+
+**🚀 Step 1: Create the Worker (`heavyWorker.js`)**
+
+```js
+onmessage = function (data) {
+  let ans = data.data.reduce((acc, item) => item + acc, 0);
+  postMessage(ans);
+};
+```
+
+**🚀 Step 2: Use the Worker in Your Main Script (`main.js`)**
+
+```js
+let nums = Array.from({ length: 10000 }, (_, b) => b + 1);
+
+let worker = new Worker("worker.js");
+
+worker.postMessage(nums);
+
+worker.onmessage = function (data) {
+  console.log(data.data);
+};
+```
+
+### Limitations of Web Workers
+
+❌ **No DOM Access** – Cannot manipulate HTML directly.  
+❌ **Cannot use `window`, `document`, or `alert()`** – Only limited APIs like `fetch()`, `WebSockets`, and IndexedDB.  
+❌ **Same-Origin Policy** – Workers must be loaded from the same domain.  
+❌ **Extra Resource Consumption** – Creating multiple workers consumes more memory.
