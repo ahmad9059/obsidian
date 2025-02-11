@@ -104,3 +104,38 @@ axios.get("https://jsonplaceholder.typicode.com/todos/1")
 
 **👉 Best Practice:** Use **Axios** when working with APIs that require headers, authentication, or advanced error handling.
 
+## Promise in JavaScript
+
+A **Promise** in JavaScript is an object that represents the eventual **completion (or failure)** of an asynchronous operation.
+
+👉 It has **three states**:
+
+1. **Pending** → Initial state, neither resolved nor rejected.
+2. **Fulfilled** → Operation completed successfully.
+3. **Rejected** → Operation failed.
+
+
+```js
+fetch(`https://randomuser.me/api/`)
+  .then(raw => raw.json())
+  .then(result =>{
+      console.log(result.results[0].gender);
+      if(result.results[0].gender === "male"){
+        resolve();
+      }
+      else{
+       reject(); 
+      }
+    });
+
+});
+promise
+.then(function(){
+    console.log("Male Received");
+  })
+.catch(function(){
+    console.log("Female Received");
+  })
+
+```
+
