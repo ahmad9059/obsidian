@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
+                "file": "3- Rough Notes/Topics to Discuss.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JavaScript Part - 2"
+              "title": "Topics to Discuss"
             }
           }
         ]
@@ -177,8 +177,8 @@
   },
   "active": "ec2a4d47fac408db",
   "lastOpenFiles": [
-    "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
     "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
+    "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
     "1-Notes/Fundamentals of AI/assets/AI.webp",
     "1-Notes/Fundamentals of AI/Introduction to Machine Learning.md",
     "posts/asynchronous-js.md",
