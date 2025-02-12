@@ -11,14 +11,17 @@
             "id": "a4a60ae2bb654526",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "7. Full-Stack Development/JavaScript/Asynchronous JavaScript.md",
-                "mode": "source",
-                "source": true
+                "file": "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
+                "viewState": {
+                  "x": -1492.7319720613389,
+                  "y": -56.23196689970733,
+                  "zoom": -1.1022022841267203
+                }
               },
-              "icon": "lucide-file",
-              "title": "Asynchronous JavaScript"
+              "icon": "lucide-layout-dashboard",
+              "title": "cybersecurity"
             }
           },
           {
@@ -191,18 +194,22 @@
   },
   "active": "a4a60ae2bb654526",
   "lastOpenFiles": [
+    "1-Notes/Fundamentals of AI/assets/AI.webp",
+    "1-Notes/Fundamentals of AI/Introduction to Machine Learning.md",
+    "posts/asynchronous-js.md",
+    "3- Rough Notes/Boot Process.md",
+    "3- Rough Notes/assets/calcul.png",
+    "3- Rough Notes/assets",
+    "7. Full-Stack Development/JavaScript/Asynchronous JavaScript.md",
     "posts/asynchronous-js.md~",
     "posts/async-js.md",
-    "posts/asynchronous-js.md",
     "posts/async-js.md~",
-    "7. Full-Stack Development/JavaScript/Asynchronous JavaScript.md",
     "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
     "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
     "3- Rough Notes/Useful Links.md",
     "1-Notes/Operating System/Operating System.md",
     "1-Notes/Operating System/assets/os1.png",
     "1-Notes/Fundamentals of AI/assets/healthcare.canvas",
-    "1-Notes/Fundamentals of AI/Introduction to Machine Learning.md",
     "1-Notes/Operating System/assets/img-1.png",
     "1-Notes/Operating System/assets/img.png",
     "1-Notes/Operating System/assets/os2.png",
@@ -217,7 +224,6 @@
     "1-Notes/Operating System/assets/Operating System.png",
     "posts/hello",
     "posts/assets/web/JS/js.webp",
-    "posts/assets/web/CSS/mobile.webp",
     "posts/assets/web/JS",
     "posts/assets/web/CSS",
     "posts/assets/web-dev-roadmap",
@@ -232,10 +238,7 @@
     "posts/tailwind-css.md",
     "posts/forher.md",
     "posts/css.md",
-    "posts/assets",
-    "posts/Templetes",
     "posts/ArchLinux-Installation-Guide.md",
-    "3- Rough Notes/Computer Architecture.md",
     "README.md",
     "7. Full-Stack Development/CSS/Tailwind CSS.md",
     "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
