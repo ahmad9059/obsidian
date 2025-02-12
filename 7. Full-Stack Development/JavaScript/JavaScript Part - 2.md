@@ -1027,3 +1027,61 @@ document.dispatchEvent(customEvent);
 3. For event-driven architectures where actions trigger custom behavior.
 
 
+# DOM Manipulation in JavaScript
+
+DOM (Document Object Model) Manipulation in JavaScript refers to **modifying HTML elements dynamically** using JavaScript. This includes **selecting, modifying, adding, or removing elements** from the webpage.
+
+## Selecting Elements in the DOM
+
+Before modifying elements, we need to **select** them. Here are the different ways:
+
+|**Method**|**Description**|**Example**|
+|---|---|---|
+|`document.getElementById(id)`|Selects an element by its **ID**|`document.getElementById("myDiv")`|
+|`document.getElementsByClassName(className)`|Selects elements by **class name** (returns an HTMLCollection)|`document.getElementsByClassName("myClass")`|
+|`document.getElementsByTagName(tagName)`|Selects elements by **tag name** (returns an HTMLCollection)|`document.getElementsByTagName("p")`|
+|`document.querySelector(selector)`|Selects **the first** element that matches the CSS selector|`document.querySelector(".myClass")`|
+|`document.querySelectorAll(selector)`|Selects **all** elements that match the CSS selector (returns a NodeList)|`document.querySelectorAll("div")`|
+
+
+## Examples of Selection Methods
+
+### 1. Selecting an Element by ID
+
+```js
+let title = document.getElementById("main-title");
+console.log(title.innerText); // Logs the text inside the element
+```
+
+### 2. Selecting Elements by Class Name
+
+```js
+let items = document.getElementsByClassName("item");
+console.log(items[0].innerText); // Logs the first element's text
+```
+
+### 3. Selecting Elements by Tag Name
+
+```js
+let paragraphs = document.getElementsByTagName("p");
+console.log(paragraphs.length); // Logs the number of <p> elements
+```
+
+### 4. Selecting an Element Using querySelector()
+
+Returns **only the first matching** element.
+
+```js
+let firstItem = document.querySelector(".item"); // Selects the first `.item`
+console.log(firstItem.innerText);
+```
+
+### 5. Selecting Multiple Elements Using querySelectorAll()
+
+Returns a **NodeList**, supports `.forEach()`.
+
+```js
+let allItems = document.querySelectorAll(".item"); // Selects all `.item`
+allItems.forEach((item) => console.log(item.innerText));
+```
+
