@@ -1162,3 +1162,44 @@ JavaScript allows us to **dynamically change** the styles and classes of HTML el
 ✅ **Before Clicking:** Red box (100x100)  
 ✅ **After Clicking:** Blue box (200x200)
 
+## 1. `element.classList` (Manipulating Classes)
+
+✅ **Adds, removes, toggles, and checks classes efficiently**  
+✅ **Does NOT override existing styles like `style` does**
+
+### Methods of `classList`
+
+|Method|Description|Example|
+|---|---|---|
+|`add(className)`|Adds a class|`element.classList.add("new-class")`|
+|`remove(className)`|Removes a class|`element.classList.remove("old-class")`|
+|`toggle(className)`|Toggles a class (adds if not present, removes if present)|`element.classList.toggle("active")`|
+|`contains(className)`|Checks if a class exists|`element.classList.contains("hidden")`|
+|`replace(oldClass, newClass)`|Replaces an old class with a new one|`element.classList.replace("old", "new")`|
+
+```js
+<style>
+    .box { width: 100px; height: 100px; background: red; }
+    .big { width: 200px; height: 200px; }
+    .blue { background: blue; }
+</style>
+
+<div id="box" class="box"></div>
+<button onclick="toggleSize()">Toggle Size</button>
+<button onclick="toggleColor()">Toggle Color</button>
+
+<script>
+    let box = document.getElementById("box");
+
+    function toggleSize() {
+        box.classList.toggle("big"); // Toggles between small and big size
+    }
+
+    function toggleColor() {
+        box.classList.toggle("blue"); // Toggles background color
+    }
+</script>
+```
+
+
+
