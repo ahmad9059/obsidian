@@ -1085,3 +1085,49 @@ let allItems = document.querySelectorAll(".item"); // Selects all `.item`
 allItems.forEach((item) => console.log(item.innerText));
 ```
 
+## innerHTML vs innerText vs textContent in JavaScript
+
+### 1. `innerHTML`
+
+✅ **Gets or sets the HTML content** (including tags) inside an element.  
+✅ Parses and renders HTML if assigned.  
+❌ Can expose security risks (XSS attacks) if inserting user input.
+
+```js
+let h1 = document.querySelector("h1");
+
+h1.innerHTML += " <i>hello</i>";
+```
+
+### 2. `innerText`
+
+✅ **Gets or sets only the visible text** inside an element.  
+✅ Ignores hidden elements (like `display: none;`).  
+❌ Does not retain HTML tags.
+
+```js
+let h1 = document.querySelector("h1");
+
+h1.innerText += "Hack the Planat";
+```
+
+### 3. `textContent`
+
+✅ **Gets or sets all text (including hidden text)** inside an element.  
+✅ Preserves whitespace and hidden elements (e.g., `display: none;`).  
+❌ Does not interpret HTML tags.
+
+```js
+let h1 = document.querySelector("h1");
+
+h1.textContent += "  Hack the Planat";
+```
+
+### Key Differences Between `innerHTML`, `innerText`, and `textContent`
+
+|Property|**HTML Support**|**Includes Hidden Text?**|**Performance**|**Security Risks?**|
+|---|---|---|---|---|
+|`innerHTML`|✅ Supports HTML|✅ Yes|❌ Slower (parses HTML)|❌ Vulnerable to XSS|
+|`innerText`|❌ No HTML|❌ No|✅ Faster|✅ Safe|
+|`textContent`|❌ No HTML|✅ Yes|✅ Fastest|✅ Safe|
+
