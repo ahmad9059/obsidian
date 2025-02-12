@@ -1269,3 +1269,52 @@ newDiv.remove(); // Removes the newly created <div>
 |**Insert before another element**|`insertBefore(newElement, existingChild)`|
 |**Remove an element from the DOM**|`removeChild(element)`, `remove()`|
 
+## What is `addEventListener()`
+
+An **event listener** is a method that allows you to wait for a specific event (like a click, keypress, hover, etc.) and run a function when the event occurs.
+
+```js
+element.addEventListener(event, function, useCapture);
+```
+
+|Parameter|Description|
+|---|---|
+|`event`|The type of event (e.g., `"click"`, `"mouseover"`, `"keydown"`)|
+|`function`|The function to run when the event occurs|
+|`useCapture` (optional)|`true` for event capturing, `false` for bubbling (default: `false`)|
+
+**Basic Example: Click Event**
+
+```js
+<button id="myBtn">Click Me</button>
+
+<script>
+    document.getElementById("myBtn").addEventListener("click", function() {
+        alert("Button Clicked!");
+    });
+</script>
+```
+
+### Removing an Event Listener with `removeEventListener()`
+
+To remove an event, you must **use a named function**.
+
+```js
+<button id="myBtn">Click Me</button>
+<button id="remove">Remove Event</button>
+
+<script>
+    function showAlert() {
+        alert("Button Clicked!");
+    }
+
+    let btn = document.getElementById("myBtn");
+    btn.addEventListener("click", showAlert);
+
+    document.getElementById("remove").addEventListener("click", function() {
+        btn.removeEventListener("click", showAlert); // Removes event
+    });
+</script>
+```
+
+
