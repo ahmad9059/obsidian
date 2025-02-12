@@ -101,19 +101,20 @@
       "key": "Q"
     }
   ],
-  "editor:insert-codeblock": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "C"
-    }
-  ],
   "editor:toggle-code": [
     {
       "modifiers": [
         "Alt",
         "Mod"
+      ],
+      "key": "C"
+    }
+  ],
+  "editor:insert-codeblock": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
       ],
       "key": "C"
     }

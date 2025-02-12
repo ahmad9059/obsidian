@@ -1162,7 +1162,7 @@ JavaScript allows us to **dynamically change** the styles and classes of HTML el
 ✅ **Before Clicking:** Red box (100x100)  
 ✅ **After Clicking:** Blue box (200x200)
 
-## 1. `element.classList` (Manipulating Classes)
+### 2. `element.classList` (Manipulating Classes)
 
 ✅ **Adds, removes, toggles, and checks classes efficiently**  
 ✅ **Does NOT override existing styles like `style` does**
@@ -1202,4 +1202,70 @@ JavaScript allows us to **dynamically change** the styles and classes of HTML el
 ```
 
 
+
+## Creating and Deleting Elements in JavaScript DOM Manipulation
+
+Once you've selected elements in the DOM, the next step in DOM manipulation is **creating new elements** and **removing existing ones** dynamically.
+
+- **`document.createElement(tagName)`** → Creates a new element
+- **`parent.appendChild(childElement)`** → Adds an element inside another element
+- **`parent.removeChild(childElement)`** → Removes a child element from its parent
+
+### Creating Elements – `document.createElement()`
+
+✅ **Creates a new element in memory** (not yet visible in the DOM).  
+✅ **You can set attributes, styles, and inner content before adding it to the DOM.**  
+❌ **Must be appended manually to be visible in the DOM.**
+
+```js
+const newDiv = document.createElement('div'); // Creates a <div> element
+newDiv.textContent = "Hello, this is a new div!"; // Adds text inside the div
+newDiv.classList.add('new-class'); // Adds a class to the div
+console.log(newDiv); // Logs the newly created <div>
+```
+
+### Appending Elements – `appendChild()`
+
+✅ Inserts a new child element inside a parent.
+✅ Moves elements if they already exist (won't duplicate them).
+
+```js
+const parent = document.getElementById('container'); // Select an existing parent element
+parent.appendChild(newDiv); // Adds the new div inside the parent element
+```
+
+### `insertBefore()` – Insert Before a Specific Element
+
+Inserts a new element before an existing child element.
+
+```js
+const firstChild = parent.firstElementChild; // Get the first child of the parent
+parent.insertBefore(newDiv, firstChild); // Insert newDiv before the first child
+```
+
+### Removing Elements – `removeChild()`
+
+✅ **Deletes a child element from its parent.**  
+❌ **If the element does not exist inside the parent, it throws an error.**
+
+```js
+parent.removeChild(firstChild); // Removes the first child from the parent
+```
+
+### Removing an Element Directly (`remove()`)
+
+Instead of `removeChild()`, you can use `element.remove()` **(modern method)**.
+
+```js
+newDiv.remove(); // Removes the newly created <div>
+```
+
+### Summary
+
+|Action|Method|
+|---|---|
+|**Create an element**|`document.createElement('tag')`|
+|**Add an element inside another**|`appendChild(element)`, `append(element)`|
+|**Insert before another element**|`insertBefore(newElement, existingChild)`|
+|**Remove an element from the DOM**|`removeChild(element)`, `remove()`|
 
