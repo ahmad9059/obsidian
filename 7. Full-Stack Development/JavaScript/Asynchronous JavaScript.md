@@ -400,3 +400,7 @@ worker.onmessage = function (data) {
 ❌ **Cannot use `window`, `document`, or `alert()`** – Only limited APIs like `fetch()`, `WebSockets`, and IndexedDB.  
 ❌ **Same-Origin Policy** – Workers must be loaded from the same domain.  
 ❌ **Extra Resource Consumption** – Creating multiple workers consumes more memory.
+
+
+
+#JS
