@@ -1318,3 +1318,75 @@ To remove an event, you must **use a named function**.
 ```
 
 
+### Event Object (`event`)
+
+Every event passes an **event object (`e`)** that gives details about the event.
+
+```js
+<button id="btn">Click Me</button>
+
+<script>
+    document.getElementById("btn").addEventListener("click", function(event) {
+        console.log("Event Type:", event.type);
+        console.log("Clicked Element:", event.target);
+        console.log("Mouse Coordinates:", event.clientX, event.clientY);
+    });
+</script>
+```
+
+
+## JavaScript Events – Cheat Sheet
+
+|**Category**|**Event**|**Description**|
+|---|---|---|
+|**🖱️ Mouse Events**|`click`|Fires when an element is clicked|
+||`dblclick`|Fires when an element is double-clicked|
+||`mousedown`|Fires when a mouse button is pressed down|
+||`mouseup`|Fires when a mouse button is released|
+||`mousemove`|Fires when the mouse moves over an element|
+||`mouseenter`|Fires when the mouse enters an element (does not bubble)|
+||`mouseleave`|Fires when the mouse leaves an element (does not bubble)|
+||`mouseover`|Fires when the mouse enters an element or its children (bubbles)|
+||`mouseout`|Fires when the mouse leaves an element or its children (bubbles)|
+||`contextmenu`|Fires when the right mouse button is clicked (opens the context menu)|
+|**⌨️ Keyboard Events**|`keydown`|Fires when any key is pressed down (includes special keys like Shift, Enter)|
+||`keyup`|Fires when a key is released|
+||`keypress` (deprecated)|Fires when a key is pressed (only for character keys)|
+|**📝 Form Events**|`submit`|Fires when a form is submitted|
+||`change`|Fires when an input/select field value changes|
+||`input`|Fires when the user types in an input field|
+||`focus`|Fires when an element gains focus|
+||`blur`|Fires when an element loses focus|
+||`reset`|Fires when a form is reset|
+|**🌍 Window/Document Events**|`load`|Fires when the entire page has loaded (including images)|
+||`DOMContentLoaded`|Fires when the HTML document is fully loaded (before images & stylesheets)|
+||`resize`|Fires when the window is resized|
+||`scroll`|Fires when the user scrolls the page|
+||`unload`|Fires when the user leaves the page|
+||`beforeunload`|Fires when the user is about to leave the page (can show a confirmation)|
+||`visibilitychange`|Fires when the page visibility changes (e.g., switching tabs)|
+|**📋 Clipboard Events**|`copy`|Fires when content is copied|
+||`cut`|Fires when content is cut|
+||`paste`|Fires when content is pasted|
+|**🏗️ Drag & Drop Events**|`drag`|Fires when an element is being dragged|
+||`dragstart`|Fires when dragging starts|
+||`dragend`|Fires when dragging ends|
+||`dragover`|Fires when a dragged element is over a valid drop target|
+||`dragenter`|Fires when a dragged element enters a drop target|
+||`dragleave`|Fires when a dragged element leaves a drop target|
+||`drop`|Fires when a dragged element is dropped|
+|**🎵📽️ Media Events**|`play`|Fires when media (audio/video) starts playing|
+||`pause`|Fires when media is paused|
+||`ended`|Fires when media reaches the end|
+||`volumechange`|Fires when the volume is changed|
+||`timeupdate`|Fires when the current playback position changes|
+|**👀 Focus & Blur Events**|`focus`|Fires when an element gains focus|
+||`blur`|Fires when an element loses focus|
+|**📱 Touch Events (Mobile)**|`touchstart`|Fires when a touch point is placed on the screen|
+||`touchmove`|Fires when a touch point moves across the screen|
+||`touchend`|Fires when a touch point is removed from the screen|
+|**⚡ Other Useful Events**|`error`|Fires when an error occurs while loading an image, script, or resource|
+||`online`|Fires when the browser goes online|
+||`offline`|Fires when the browser goes offline|
+||`hashchange`|Fires when the URL hash changes (`window.location.hash`)|
+
