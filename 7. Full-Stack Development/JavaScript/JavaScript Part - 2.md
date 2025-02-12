@@ -1131,3 +1131,34 @@ h1.textContent += "  Hack the Planat";
 |`innerText`|❌ No HTML|❌ No|✅ Faster|✅ Safe|
 |`textContent`|❌ No HTML|✅ Yes|✅ Fastest|✅ Safe|
 
+
+## Manipulating Styles & Classes in JavaScript
+
+JavaScript allows us to **dynamically change** the styles and classes of HTML elements using:
+
+- `element.style` – for **inline styles**
+- `element.classList` – for **adding, removing, toggling, and checking classes**
+
+### 1. `element.style` (Manipulating Inline Styles)
+
+✅ **Modifies individual CSS properties directly**  
+✅ **Only applies inline styles**, does NOT affect CSS classes  
+❌ **Does not allow setting multiple styles at once using a string**
+
+```js
+<div id="box" style="width: 100px; height: 100px; background: red;"></div>
+<button onclick="changeStyle()">Change Style</button>
+
+<script>
+    function changeStyle() {
+        let box = document.getElementById("box");
+        box.style.backgroundColor = "blue";  // Change background color
+        box.style.width = "200px";           // Change width
+        box.style.height = "200px";          // Change height
+    }
+</script>
+```
+
+✅ **Before Clicking:** Red box (100x100)  
+✅ **After Clicking:** Blue box (200x200)
+
