@@ -8,23 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a4a60ae2bb654526",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
-                "viewState": {
-                  "x": -1492.7319720613389,
-                  "y": -56.23196689970733,
-                  "zoom": -1.1022022841267203
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "cybersecurity"
-            }
-          },
-          {
             "id": "ec2a4d47fac408db",
             "type": "leaf",
             "state": {
@@ -192,10 +175,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a4a60ae2bb654526",
+  "active": "ec2a4d47fac408db",
   "lastOpenFiles": [
-    "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
     "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
+    "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
     "1-Notes/Fundamentals of AI/assets/AI.webp",
     "1-Notes/Fundamentals of AI/Introduction to Machine Learning.md",
     "posts/asynchronous-js.md",
