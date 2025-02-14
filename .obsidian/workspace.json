@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
+                "file": "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JavaScript Part - 2"
+              "title": "Fundamentals of JavaScript"
             }
           }
         ]
@@ -175,13 +175,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ec2a4d47fac408db",
+  "active": "7aaa13b447ffedea",
   "lastOpenFiles": [
+    "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
     "1-Notes/Fundamentals of AI/assets/finance.canvas",
     "Prototype.md",
     "7. Full-Stack Development/JavaScript/Asynchronous JavaScript.md",
     "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
-    "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
     "3- Rough Notes/Topics to Discuss.md",
     "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
     "1-Notes/Fundamentals of AI/assets/AI.webp",
