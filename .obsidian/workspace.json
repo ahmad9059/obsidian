@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
+                "file": "6- Tools/Docker.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Fundamentals of JavaScript"
+              "title": "Docker"
             }
           }
         ]
@@ -175,13 +175,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7aaa13b447ffedea",
+  "active": "ec2a4d47fac408db",
   "lastOpenFiles": [
+    "6- Tools/assets/img.png",
+    "6- Tools/assets",
+    "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
+    "6- Tools/Docker.md",
     "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
     "1-Notes/Fundamentals of AI/assets/finance.canvas",
     "Prototype.md",
     "7. Full-Stack Development/JavaScript/Asynchronous JavaScript.md",
-    "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
     "3- Rough Notes/Topics to Discuss.md",
     "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
     "1-Notes/Fundamentals of AI/assets/AI.webp",
@@ -215,7 +218,6 @@
     "posts/assets/web-dev-roadmap",
     "posts/assets/web",
     "posts/assets/forher",
-    "posts/assets/archlinux",
     "posts/Templetes/thought-template.md",
     "posts/Templetes/frontmatter.md",
     "posts/Templetes/default-template.md",
@@ -224,7 +226,6 @@
     "posts/tailwind-css.md",
     "posts/forher.md",
     "posts/css.md",
-    "posts/ArchLinux-Installation-Guide.md",
     "7. Full-Stack Development/Untitled.canvas",
     "5- Daily Tasks/Roadmap.canvas"
   ]
