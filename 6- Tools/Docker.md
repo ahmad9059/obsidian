@@ -25,3 +25,35 @@ Docker solves the **"works on my machine"** problem by ensuring applications run
 
 ![](6-%20Tools/assets/img.png)
 
+
+## Install Docker in ArchLinux(BTW)
+
+To install Docker on Arch Linux, follow these steps:
+
+1. **Install Docker:**
+
+```bash
+sudo pacman -S docker
+```
+
+2. **Enable and Start Docker:**
+
+```bash
+sudo systemctl enable --now docker
+```
+
+3. **Add User to Docker Group (Optional, for non-root usage):**
+
+```bash
+sudo usermod -aG docker $USER
+newgrp docker
+```
+
+4. **Verify Installation:**
+
+```bash
+docker --version
+docker run hello-world
+```
+
+
