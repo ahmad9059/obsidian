@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6- Tools/Docker.md",
+                "file": "7. Full-Stack Development/GSAP.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker"
+              "title": "GSAP"
             }
           }
         ]
@@ -177,11 +177,12 @@
   },
   "active": "ec2a4d47fac408db",
   "lastOpenFiles": [
+    "6- Tools/Docker.md",
+    "7. Full-Stack Development/GSAP.md",
     "2- My Thoughts/For Her.md",
     "2- My Thoughts/Nothing to Something.md",
     "2- My Thoughts/About Life and Love.md",
     "3- Rough Notes/Accounts.md",
-    "6- Tools/Docker.md",
     "6- Tools/assets/img.png",
     "6- Tools/assets",
     "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
@@ -225,7 +226,6 @@
     "posts/Templetes/frontmatter.md",
     "posts/Templetes/default-template.md",
     "posts/Templetes/date-template.md",
-    "posts/web-dev-roadmap.md",
     "7. Full-Stack Development/Untitled.canvas",
     "5- Daily Tasks/Roadmap.canvas"
   ]
