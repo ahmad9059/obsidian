@@ -49,3 +49,15 @@ gsap.to(".box", { x: 100, scale: 1.5, rotation: 360, duration: 2 });
 ```
 
 
+## 5. Timeline for Sequencing Animations
+
+GSAP’s `gsap.timeline()` helps chain animations in sequence.
+
+
+```js
+let tl = gsap.timeline();
+tl.to(".box", { x: 100, duration: 1 })
+  .to(".box", { y: 100, duration: 1 })
+  .to(".box", { rotation: 360, duration: 1 });
+```
+
