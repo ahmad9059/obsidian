@@ -91,17 +91,29 @@ To trigger animations on scroll:
 Example:
 
 ```js
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.to(".box", {
-  x: 300,
-  duration: 2,
-  scrollTrigger: {
-    trigger: ".box",
-    start: "top 80%",
-    end: "top 30%",
-    scrub: true,
-  },
+gsap.to(".box", {  // Animates the element with class "box"
+  x: 300,          // Moves the element 300 pixels to the right
+  duration: 2,     // Animation lasts for 2 seconds
+  scrollTrigger: { // Uses the ScrollTrigger plugin to trigger animation on scroll
+    trigger: ".box",   // The animation starts when the ".box" element enters the viewport
+    scroller: "body",  // Specifies the scrolling container (default is "body")
+    markers: true,     // Displays visual markers (start and end points) for debugging
+    start: "top 80%",  // Animation starts when the top of ".box" reaches 80% of the viewport height
+    end: "top 30%",    // Animation ends when the top of ".box" reaches 30% of the viewport height
+    scrub: true,       // Makes the animation progress smoothly with scrolling
+  }
 });
 ```
+
+### Explanation of ScrollTrigger Properties
+
+|**Property**|**Description**|
+|---|---|
+|`trigger`|Defines which element should trigger the animation when it enters/exits the viewport.|
+|`scroller`|Specifies the scrollable container (default is `body`). Useful when working with scrollable divs.|
+|`markers`|Adds visual markers to indicate where the animation starts and ends (for debugging).|
+|`start`|Defines when the animation starts. `"top 80%"` means when the top of `.box` reaches 80% of the viewport height.|
+|`end`|Defines when the animation ends. `"top 30%"` means when the top of `.box` reaches 30% of the viewport height.|
+|`scrub`|Syncs the animation with the scroll position. If `true`, the animation plays forward and backward as the user scrolls.|
+
 
