@@ -61,3 +61,47 @@ tl.to(".box", { x: 100, duration: 1 })
   .to(".box", { rotation: 360, duration: 1 });
 ```
 
+## 6. Easing Functions
+
+Easing makes animations feel natural.
+
+```js
+gsap.to(".box", { x: 300, duration: 2, ease: "bounce.out" });
+gsap.to(".circle", { y: -100, duration: 1, ease: "elastic.out(1, 0.3)" });
+```
+
+## 7. Staggering Animations
+
+Use `stagger` to animate multiple elements with delay.
+
+```js
+gsap.to(".boxes", { y: 100, duration: 1, stagger: 0.2 });
+```
+
+
+## 8. ScrollTrigger (GSAP Plugin)
+
+To trigger animations on scroll:
+
+*CDN*
+```js
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+```
+
+Example:
+
+```js
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".box", {
+  x: 300,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".box",
+    start: "top 80%",
+    end: "top 30%",
+    scrub: true,
+  },
+});
+```
+
