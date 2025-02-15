@@ -61,7 +61,12 @@ AzadSeoTools@1@03003540373@1
 
 ====================================
 
+Azure Data Studio
 
+- **Server**: `localhost`
+- **Authentication Type**: `SQL Login`
+- **Username**: `sa`
+- **Password**: The password you set (`YourStrong!Passw0rd`)
 
 
 
