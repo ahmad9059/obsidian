@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. Full-Stack Development/GSAP, ScrollTrigger, Locomotive.md",
+                "file": "3- Rough Notes/tools.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "GSAP, ScrollTrigger, Locomotive"
+              "title": "tools"
             }
           }
         ]
@@ -177,6 +177,8 @@
   },
   "active": "ec2a4d47fac408db",
   "lastOpenFiles": [
+    "7. Full-Stack Development/GSAP, ScrollTrigger, Locomotive.md",
+    "3- Rough Notes/tools.md",
     "7. Full-Stack Development/JavaScript/JavaScript Advanced Concepts.md",
     "posts/javascript-advanced.md~",
     "posts/javascript-advanced.md",
@@ -189,7 +191,6 @@
     "posts/dom-js.md",
     "7. Full-Stack Development/Rough.md",
     "7. Full-Stack Development/HTML/Introduction to HTML.md",
-    "7. Full-Stack Development/GSAP, ScrollTrigger, Locomotive.md",
     "posts/gsap-locomotive.md",
     "6- Tools/Docker.md",
     "2- My Thoughts/For Her.md",
