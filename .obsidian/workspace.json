@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
+                "file": "7. Full-Stack Development/GSAP, ScrollTrigger, Locomotive.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "JavaScript Part - 2"
+              "title": "GSAP, ScrollTrigger, Locomotive"
             }
           }
         ]
@@ -177,8 +177,15 @@
   },
   "active": "ec2a4d47fac408db",
   "lastOpenFiles": [
-    "posts/gsap-locomotive.md~",
+    "7. Full-Stack Development/JavaScript/JavaScript Advanced Concepts.md",
+    "posts/javascript-advanced.md~",
+    "posts/javascript-advanced.md",
     "posts/dom-js.md~",
+    "posts/tailwind-css.md~",
+    "posts/asynchronous-js.md~",
+    "posts/Fundamentals-of-JavaScript.md~",
+    "posts/css.md~",
+    "posts/gsap-locomotive.md~",
     "posts/dom-js.md",
     "7. Full-Stack Development/Rough.md",
     "7. Full-Stack Development/HTML/Introduction to HTML.md",
@@ -192,7 +199,6 @@
     "6- Tools/assets/img.png",
     "6- Tools/assets",
     "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
-    "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
     "1-Notes/Fundamentals of AI/assets/finance.canvas",
     "Prototype.md",
     "7. Full-Stack Development/JavaScript/Asynchronous JavaScript.md",
@@ -204,7 +210,6 @@
     "3- Rough Notes/Boot Process.md",
     "3- Rough Notes/assets/calcul.png",
     "3- Rough Notes/assets",
-    "posts/asynchronous-js.md~",
     "posts/async-js.md",
     "posts/async-js.md~",
     "3- Rough Notes/Useful Links.md",
@@ -217,15 +222,9 @@
     "posts/markdown.md",
     "posts/JavaScript Part - 2.md",
     "posts/html.md",
-    "posts/Fundamentals-of-JavaScript.md",
     "posts/assets/js-part2.png",
     "posts/assets/JavaScript Part - 2.png",
     "1-Notes/Operating System/assets/1-Operating System.png",
-    "posts/hello",
-    "posts/assets/web/JS",
-    "posts/assets/web/CSS",
-    "posts/assets/web-dev-roadmap",
-    "posts/assets/web",
     "7. Full-Stack Development/Untitled.canvas",
     "5- Daily Tasks/Roadmap.canvas"
   ]
