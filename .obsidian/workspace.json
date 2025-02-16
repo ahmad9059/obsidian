@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3- Rough Notes/tools.md",
+                "file": "1-Notes/DBMS/Complete DBMS.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "tools"
+              "title": "Complete DBMS"
             }
           }
         ]
@@ -177,8 +177,12 @@
   },
   "active": "ec2a4d47fac408db",
   "lastOpenFiles": [
-    "7. Full-Stack Development/GSAP, ScrollTrigger, Locomotive.md",
+    "posts/assets/tools/1 desktop.webp",
+    "posts/assets/tools",
+    "1-Notes/Operating System/Operating System.md",
+    "1-Notes/Computer Networks/Computer Networks(CN).md",
     "3- Rough Notes/tools.md",
+    "7. Full-Stack Development/GSAP, ScrollTrigger, Locomotive.md",
     "7. Full-Stack Development/JavaScript/JavaScript Advanced Concepts.md",
     "posts/javascript-advanced.md~",
     "posts/javascript-advanced.md",
@@ -212,17 +216,13 @@
     "3- Rough Notes/assets/calcul.png",
     "3- Rough Notes/assets",
     "posts/async-js.md",
-    "posts/async-js.md~",
     "3- Rough Notes/Useful Links.md",
-    "1-Notes/Operating System/Operating System.md",
     "1-Notes/Operating System/assets/os1.png",
     "1-Notes/Fundamentals of AI/assets/healthcare.canvas",
     "1-Notes/Operating System/assets/img-1.png",
     "1-Notes/Operating System/assets/img.png",
     "1-Notes/Operating System/assets/os2.png",
     "posts/markdown.md",
-    "posts/JavaScript Part - 2.md",
-    "posts/html.md",
     "posts/assets/js-part2.png",
     "posts/assets/JavaScript Part - 2.png",
     "1-Notes/Operating System/assets/1-Operating System.png",
