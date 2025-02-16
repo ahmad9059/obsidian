@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. Full-Stack Development/GSAP, ScrollTrigger, Locomotive.md",
+                "file": "7. Full-Stack Development/JavaScript/JavaScript Part - 2.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "GSAP, ScrollTrigger, Locomotive"
+              "title": "JavaScript Part - 2"
             }
           }
         ]
@@ -177,8 +177,14 @@
   },
   "active": "ec2a4d47fac408db",
   "lastOpenFiles": [
-    "6- Tools/Docker.md",
+    "posts/gsap-locomotive.md~",
+    "posts/dom-js.md~",
+    "posts/dom-js.md",
+    "7. Full-Stack Development/Rough.md",
+    "7. Full-Stack Development/HTML/Introduction to HTML.md",
     "7. Full-Stack Development/GSAP, ScrollTrigger, Locomotive.md",
+    "posts/gsap-locomotive.md",
+    "6- Tools/Docker.md",
     "2- My Thoughts/For Her.md",
     "2- My Thoughts/Nothing to Something.md",
     "2- My Thoughts/About Life and Love.md",
@@ -212,7 +218,6 @@
     "posts/JavaScript Part - 2.md",
     "posts/html.md",
     "posts/Fundamentals-of-JavaScript.md",
-    "2001-02-01.md",
     "posts/assets/js-part2.png",
     "posts/assets/JavaScript Part - 2.png",
     "1-Notes/Operating System/assets/1-Operating System.png",
@@ -221,11 +226,6 @@
     "posts/assets/web/CSS",
     "posts/assets/web-dev-roadmap",
     "posts/assets/web",
-    "posts/assets/forher",
-    "posts/Templetes/thought-template.md",
-    "posts/Templetes/frontmatter.md",
-    "posts/Templetes/default-template.md",
-    "posts/Templetes/date-template.md",
     "7. Full-Stack Development/Untitled.canvas",
     "5- Daily Tasks/Roadmap.canvas"
   ]
