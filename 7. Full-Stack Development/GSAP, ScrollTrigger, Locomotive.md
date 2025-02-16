@@ -120,3 +120,132 @@ gsap.to(".box", {  // Animates the element with class "box"
 
 # Locomotive
 
+**Locomotive Scroll** is a powerful JavaScript library that provides **smooth scrolling**, **parallax effects**, and **scroll-based animations**. It enhances user experience by making scrolling feel more natural.
+
+## 1. Installation
+
+### CDN (Easiest Way)
+
+Add this in your HTML file:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.css">
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+```
+
+### NPM/Yarn (Recommended for Projects)
+
+```sh
+npm install locomotive-scroll
+```
+
+
+## 2. Basic Setup
+
+### HTML Structure
+
+```html
+<body data-scroll-container>
+  <div data-scroll-section>
+    <h1 data-scroll data-scroll-speed="2">Smooth Scrolling</h1>
+  </div>
+</body>
+```
+
+- `data-scroll-container` → Defines the scrollable container.
+- `data-scroll` → Enables scroll animations for elements.
+- `data-scroll-speed="2"` → Adds a **parallax** effect.
+
+### JavaScript Setup
+
+```js
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("[data-scroll-container]"), // Selects the scrollable container
+  smooth: true, // Enables smooth scrolling
+  lerp: 0.1, // Controls scroll smoothness (0 = instant, 1 = no smoothness)
+});
+```
+
+## Key Features & Properties
+
+### (1) Smooth Scrolling
+
+```js
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("[data-scroll-container]"),
+  smooth: true,  // Enables smooth scrolling
+  smoothMobile: false, // Disable smooth scroll on mobile
+});
+```
+
+### (2) Parallax Effects
+
+```js
+<h1 data-scroll data-scroll-speed="3">Parallax Effect</h1>
+```
+
+- `data-scroll-speed="3"` → Moves the text at a different speed than the scroll.
+
+### (3) Sticky Elements
+
+```html
+<div data-scroll data-scroll-sticky>
+  <p>I'm sticky!</p>
+</div>
+```
+
+- `data-scroll-sticky` → Keeps the element fixed while scrolling.
+
+### (4) Scroll-based Animations
+
+```js
+scroll.on("call", (value, way) => {
+  if (value === "animate" && way === "enter") {
+    document.querySelector(".box").classList.add("active");
+  }
+});
+```
+
+- Runs animations when an element enters/exits the viewport.
+
+### (5) Scroll Events
+
+```js
+scroll.on("scroll", (instance) => {
+  console.log(instance.scroll.y); // Get current scroll position
+});
+```
+
+- **Triggers custom functions** on scroll events.
+
+### (6) Destroy & Rebuild Scroll
+
+```js
+scroll.destroy(); // Stops LocomotiveJS
+scroll.init();    // Re-initializes scrolling
+```
+
+- Useful when dynamically updating content.
+
+### (7). LocomotiveJS with GSAP
+
+GSAP works great with LocomotiveJS for advanced animations.
+
+```js
+scroll.on("scroll", (args) => {
+  let progress = args.scroll.y / args.limit;
+  gsap.to(".progress-bar", { scaleX: progress });
+});
+```
+
+- This creates a **scroll progress bar** animation.
+
+## Summary
+
+| **Feature**             | **Usage**                       |
+| ----------------------- | ------------------------------- |
+| Smooth Scrolling        | `smooth: true` in the JS setup  |
+| Parallax Effect         | `data-scroll-speed="X"`         |
+| Sticky Sections         | `data-scroll-sticky`            |
+| Scroll-based Animations | `scroll.on("scroll", callback)` |
+| Integration with GSAP   | `ScrollTrigger.scrollerProxy()` |
