@@ -107,13 +107,16 @@ gsap.to(".box", {  // Animates the element with class "box"
 
 ### Explanation of ScrollTrigger Properties
 
-|**Property**|**Description**|
-|---|---|
-|`trigger`|Defines which element should trigger the animation when it enters/exits the viewport.|
-|`scroller`|Specifies the scrollable container (default is `body`). Useful when working with scrollable divs.|
-|`markers`|Adds visual markers to indicate where the animation starts and ends (for debugging).|
-|`start`|Defines when the animation starts. `"top 80%"` means when the top of `.box` reaches 80% of the viewport height.|
-|`end`|Defines when the animation ends. `"top 30%"` means when the top of `.box` reaches 30% of the viewport height.|
-|`scrub`|Syncs the animation with the scroll position. If `true`, the animation plays forward and backward as the user scrolls.|
+| **Property** | **Description**                                                                                                                                                                                                                       |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `trigger`    | Defines which element should trigger the animation when it enters/exits the viewport.                                                                                                                                                 |
+| `scroller`   | Specifies the scrollable container (default is `body`). Useful when working with scrollable divs.                                                                                                                                     |
+| `markers`    | Adds visual markers to indicate where the animation starts and ends (for debugging).                                                                                                                                                  |
+| `start`      | Defines when the animation starts. `"top 80%"` means when the top of `.box` reaches 80% of the viewport height.                                                                                                                       |
+| `end`        | Defines when the animation ends. `"top 30%"` means when the top of `.box` reaches 30% of the viewport height.                                                                                                                         |
+| `scrub`      | Syncs the animation with the scroll position. If `true`, the animation plays forward and backward as the user scrolls. Delays the animation by **1 second**, creating a smoother transition. if scrub is `scrub: 2` it has range 1-5. |
+| `pin`        | The `pin: true` property **locks (pins) an element in place** while the user scrolls past it.                                                                                                                                         |
 
+
+# Locomotive
 

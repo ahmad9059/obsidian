@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. Full-Stack Development/GSAP.md",
+                "file": "7. Full-Stack Development/GSAP, ScrollTrigger, Locomotive.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GSAP"
+              "title": "GSAP, ScrollTrigger, Locomotive"
             }
           }
         ]
@@ -178,7 +178,7 @@
   "active": "ec2a4d47fac408db",
   "lastOpenFiles": [
     "6- Tools/Docker.md",
-    "7. Full-Stack Development/GSAP.md",
+    "7. Full-Stack Development/GSAP, ScrollTrigger, Locomotive.md",
     "2- My Thoughts/For Her.md",
     "2- My Thoughts/Nothing to Something.md",
     "2- My Thoughts/About Life and Love.md",
