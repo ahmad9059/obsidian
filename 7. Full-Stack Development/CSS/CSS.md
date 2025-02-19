@@ -392,4 +392,3 @@ When you specify CSS styles inside the `@keyframes` rule, the animation will gra
 - `ease-out` - Specifies an animation with a slow end
 - `ease-in-out` - Specifies an animation with a slow start and end
 - `cubic-bezier(n,n,n,n)` - Lets you define your own values in a cubic-bezier function.
-
