@@ -161,5 +161,10 @@ Client machines, on which remote DB users work, and server machines on which DB 
 		![](Pasted%20image%2020250126005503.png)
 
 
-## ER Model
+## Entity-Relationship Model
+### Data Model
+
+Collection of conceptual tools for **describing data, data relationships, data semantics, and consistency constraints**.
+
+
 
