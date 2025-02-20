@@ -160,3 +160,6 @@ Client machines, on which remote DB users work, and server machines on which DB 
 		3. *Security*, client can't directly access DB, hence it is more secure.
 		![](Pasted%20image%2020250126005503.png)
 
+
+## ER Model
+
