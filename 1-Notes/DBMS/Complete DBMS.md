@@ -164,7 +164,54 @@ Client machines, on which remote DB users work, and server machines on which DB 
 ## Entity-Relationship Model
 ### Data Model
 
-Collection of conceptual tools for **describing data, data relationships, data semantics, and consistency constraints**.
+Data Model is Collection of conceptual tools for **describing data, data relationships, data semantics, and consistency constraints**.
 
+### ER Model
 
+1. It is a high level data model based on a perception of a real world that consists of a collection of basic objects, called entities and of relationships among these objects.
+2. Graphical Representation of ER Model is **ER Diagram**, which acts as a blueprint of DB.
+
+### Entity
+
+An Entity is a **thing** or **object** in the real world that is distinguishable from all other objects.
+
+1. Th has physical existence.
+2. Each student in a college is an entity.
+3. Entity can be uniquely identified. (by a primary attribute, aka Primary Key)
+4. **Strong Entity**: Can be uniquely identified.
+5. **Weak Entity**: Can't be uniquely identified, depends on some other strong entity.
+	1. It doesn't have sufficient attributes to select a uniquely identifiable attribute.
+	2. Loan -> Strong Strong, Payment-> Weak, as installments sequential number counter can be generated separate for each loan.
+	3. Weak entity depends on strong entity existence.
+
+### Entity Set
+
+1. It is a set of entities of the same type that share the same properties, or attributes.
+2. E.g., Student is an entity set.
+3. E.g., Customer of a bank.
+
+### Attributes
+
+1. An entity is represented by a set of attributes.
+2. Each entity has a value for each of its attributes.
+3. For each attribute, there is a set of permitted values, called the domain, or value set, of that attribute.
+4. E.g., Student Entity has following attributes
+	A.Student_ID
+	B. Name 
+	C. Standard 
+	D. Course 
+	E. Batch 
+	F. Contact number
+
+### Types of Attributes
+
+1. **Simple:** Attributes which can't be divided further. E.g., Customer's account number in a bank, Student's Roll number etc.
+2. **Composite:** Can be divided into subparts(that is, other attributes).
+	1. E.g., Name of a person, can be divided into first-name,middle-name, last-name. 
+	2. If user want to refers to an entire attribute or to only a component of the attribute. 
+	3. Address an also be divided, street, city, state, PIN code.
+3. **Single-valued:** Only one value attribute. E.g., Student ID, loan-number for a loan.
+4. **Multi-valued:** Attribute having more than one value. E.g., phone-number, nominee-name on some insurance, dependent-name etc. Limit constraint may be applied, upper or lower limits.
+
+5. **Derived:** Value of this type of attribute can be derived from the value of other related attributes. E.g., Age, loan-age, membership-period etc.
 
