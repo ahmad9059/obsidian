@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "MySQL"
             }
+          },
+          {
+            "id": "8e0c6a46acf3011b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1-Notes/DBMS/MySQL Commands.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MySQL Commands"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -175,10 +190,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ec2a4d47fac408db",
+  "active": "8e0c6a46acf3011b",
   "lastOpenFiles": [
-    "1-Notes/DBMS/MySQL Commands.md",
     "1-Notes/DBMS/MySQL.md",
+    "1-Notes/DBMS/MySQL Commands.md",
     "1-Notes/DBMS/Complete DBMS.md",
     "Untitled.md",
     "1-Notes/DBMS/assets/img.png",

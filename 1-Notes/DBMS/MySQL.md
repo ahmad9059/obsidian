@@ -79,4 +79,14 @@ TINYINT UNSIGNED (0 to 255)
 
 TINYINT (-128 to 127)
 
+## Types of SQL Commands
+
+1. **DDL(Database Definition Language):** Used to create, alter, delete database objects like tables, indexes, etc. (CREATE, DROP, ALTER, RENAME, TRUNCATE).
+2. **DQL(Database Query Language):** Used to retrieve data from databases. (SELECT).
+3. **DML(Database Manipulation Language):** Used to modify the database. (INSERT, UPDATE, DELETE).
+4. **DCL(Database Control Language):** Used to grant & revoke permissions. (GRANT, REVOKE).
+5. **TCL(Transaction Control Language):** Used to manage transactions, (COMMIT, ROLLBACK, START TRANSACTIONS, SAVEPOINT).
+
+## DATABASE related Queries
+
 
