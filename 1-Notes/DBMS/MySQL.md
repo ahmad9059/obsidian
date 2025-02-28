@@ -197,3 +197,32 @@ Composite key consists of two or more than two fields. Composite key is also des
 ## Constraints
 ---
 
+SQL constraints are used to specify **rules** for data in a table.
+
+- **NOT NULL** : columns cannot have null value. *col1 INT NOT NULL*
+- **UNIQUE** : all values in column are different. *col2 UNIQUE*
+- **PRIMARY KEY** : makes a column unique & not null but used only for one. *id INT PRIMARY KEY*. also declare as *PRIMARY KEY (id)*.
+
+#### Foreign Key
+
+Prevent actions that would destroy links between tables.
+
+```mysql
+CREATE TABLE temp(
+cust_id INT,
+FOREIGN KEY (cust_id) references customer(id)
+);
+```
+
+#### DEFAULT
+
+sets the default value of a column
+
+```mysql
+salary INT DEFAULT 25000
+```
+
+
+
+
+
