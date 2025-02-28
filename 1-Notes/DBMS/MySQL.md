@@ -173,3 +173,27 @@ VALUES
 ```
 
 
+## Keys
+---
+
+### Primary Key
+
+It is a column (or set of columns) in a table that uniquely identifies each row. (a unique id). There is only 1 Primary Key and it should not be *NOT null*
+
+### Foreign Key
+
+A foreign key is a column (or set of columns) in a table that refers to the primary key in another table. There can be multiple FKs. FKs can be have duplicate & null values.
+
+![](1-Notes/DBMS/assets/img-1.png)
+
+### Secondary Key
+
+Secondary key may or may not be unique field. Some times records are required to access by a field other than the primary key. In these situations another key that is used is called secondary key.
+
+### Composite Key
+
+Composite key consists of two or more than two fields. Composite key is also designed as a primary key. It is created in a situation when no single field fulfills the property of uniqueness. To make unique more than one field are combined and used as primary key.
+
+## Constraints
+---
+
