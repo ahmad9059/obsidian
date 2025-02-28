@@ -219,8 +219,35 @@ FOREIGN KEY (cust_id) references customer(id)
 sets the default value of a column
 
 ```mysql
-salary INT DEFAULT 25000
+salary INT DEFAULT default_value;
 ```
+
+#### CHECK
+
+It can limit the values allowed in a column.
+
+
+```mysql
+CREATE TABLE city(
+
+	id INT PRIMARY KEY,
+	city VARCHAR(50),
+	age INT,
+	CONSTRAINT age_check CHECK (age>= 16 AND city="Delhi")
+);
+```
+
+```mysql
+CREATE TABLE newTab (
+age INT CHECK (age>=18)
+);
+```
+
+
+
+
+
+
 
 
 
