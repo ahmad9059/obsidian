@@ -243,7 +243,22 @@ age INT CHECK (age>=18)
 );
 ```
 
+## Select in Detail
+---
 
+#### SELECT
+
+The SELECT statement is used to select data from a database.
+
+```mysql
+SELECT col1,col2 FROM table_name;
+```
+
+#### To Select All
+
+```mysql
+SELECT * FROM table_name;
+```
 
 
 
