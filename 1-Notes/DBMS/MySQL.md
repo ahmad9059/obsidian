@@ -391,3 +391,6 @@ GROUP BY city;
 ```
 
 
+## Having Clause
+---
+
