@@ -399,3 +399,22 @@ Used when we want to apply any *condition after grouping*.
 
 Count number of students in each city where max marks cross 90.
 
+```mysql
+SELECT city, count(rollno)
+FROM student
+GROUP BY city
+HAVING MAX(marks) > 90;
+```
+
+
+## General Order
+---
+
+*SELECT* column(s)
+*FROM* table_name
+*WHERE* condition
+*GROUP BY* column(s)
+*HAVING* condition
+*ORDER BY* column(s) *ASC*;
+
+
