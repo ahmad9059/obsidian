@@ -306,8 +306,39 @@ SELECT * FROM student WHERE marks > 80 AND city="Multan";
 SELECT * FROM student WHERE marks > 90 OR city="Lahore";
 ```
 
-- 
+- **BETWEEN** : select for a given range
+
+```mysql
+SELECT * FROM student WHERE marks 80 AND 90;
+```
 
 
+- **IN** : (matches any value in the list)
+
+```mysql
+SELECT * FROM student WHERE city IN ("Multan","Karachi")
+```
+
+- **NOT** : (to negate the given condition)
+
+```mysql
+SELECT * FROM student WHERE city NOT IN ("Multan", "Karachi")
+```
+
+## Limit Clause
+
+The limit clause is used to sets an upper limit on number of(tuples)rows to be returned.
+
+```mysql
+SELECT * FROM student LIMIT 3;
+```
+
+```mysql
+SELECT col1,col2 FROM table_name
+LIMIT number;
+```
+
+
+## Order by Clause
 
 
