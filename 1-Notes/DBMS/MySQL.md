@@ -384,3 +384,10 @@ Generally we use the group by with some *aggregation function*.
 
 Count number of students in each city
 
+```mysql
+SELECT city, count(name)
+FROM student
+GROUP BY city;
+```
+
+
