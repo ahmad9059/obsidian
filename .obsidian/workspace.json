@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6- Tools/Neovim-Vim.md",
+                "file": "3- Rough Notes/MLSA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Neovim-Vim"
+              "title": "MLSA"
             }
           },
           {
@@ -191,6 +191,8 @@
   },
   "active": "8e0c6a46acf3011b",
   "lastOpenFiles": [
+    "6- Tools/Neovim-Vim.md",
+    "3- Rough Notes/MLSA.md",
     "7. Full-Stack Development/GSAP, ScrollTrigger, Locomotive.md",
     "7. Full-Stack Development/Rough.md",
     "1-Notes/DBMS/MySQL.md",
@@ -228,7 +230,6 @@
     "3- Rough Notes/Accounts.md",
     "6- Tools/assets/img.png",
     "6- Tools/assets",
-    "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
     "1-Notes/Fundamentals of AI/assets/finance.canvas",
     "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
     "1-Notes/Fundamentals of AI/assets/AI.webp",
