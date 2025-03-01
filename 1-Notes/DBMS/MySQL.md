@@ -417,4 +417,46 @@ HAVING MAX(marks) > 90;
 *HAVING* condition
 *ORDER BY* column(s) *ASC*;
 
+Example:
+
+```mysql
+SELECT city
+FROM student
+WHERE grade = "A"
+GROUP BY city
+HAVING MAX(marks) > 90
+ORDER BY city DESC;
+```
+
+
+## Table related Queries
+---
+
+*UPDATE* is used to update existing rows in a table.
+
+```mysql
+UPDATE table_name
+SET col1=val1, col2=val2
+WHERE condition;
+```
+
+```mysql
+UPDATE student
+SET grade = "O"
+WHERE grade = "A";
+```
+
+
+*DELETE* is used to delete the existing rows in a table
+
+```mysql
+DELETE FROM table_name
+WHERE condition;
+```
+
+```mysql
+DELETE FROM student
+WHERE marks < 33;
+```
+
 
