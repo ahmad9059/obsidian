@@ -391,6 +391,11 @@ GROUP BY city;
 ```
 
 
-## Having Clause
+## HAVING Clause
 ---
+
+Similar to WHERE i.e., applies some condition on rows.
+Used when we want to apply any *condition after grouping*.
+
+Count number of students in each city where max marks cross 90.
 
