@@ -341,4 +341,46 @@ LIMIT number;
 
 ## Order by Clause
 
+To sort in ascending (ASC) or descending (DESC) order.
+
+```mysql
+SELECT * FROM student ORDER BY city ASC;
+```
+
+```mysql
+SELECT col1,col2 FROM table_name ORDER BY col_name(s) ASC;
+```
+
+
+## Aggregate Functions
+
+Aggregate functions perform a calculation on a set of values, and return a single value.
+
+- COUNT()
+- MAX()
+- MIN()
+- SUM()
+- AVG()
+
+Get Maximum Marks
+
+```mysql
+SELECT MAX(marks) FROM student;
+```
+
+Get Average marks
+
+```mysql
+SELECT AVG(marks) FROM student;
+```
+
+
+## Group By Clause
+
+Group rows that have the same values into summary rows.
+It collect data from multiple records(rows) and groups the result by one ore more column.
+
+Generally we use the group by with some *aggregation function*.
+
+Count number of students in each city
 
