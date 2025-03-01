@@ -261,9 +261,52 @@ SELECT * FROM table_name;
 ```
 
 
+*Tip:* **DISTINCT** Keyword Removes duplicate rows from query results.
+
+Syntax: 
+
+```mysql
+SELECT DISTINCT column1, column2 FROM table_name;
+```
 
 
+## Where Clause
+---
 
+To define some conditions
+
+```mysql
+SELECT col1,col2 from table
+WHERE condition(s).
+```
+
+```mysql
+SELECT * FROM student WHERE marks > 80;
+SELECT * FROM student WHERE city="Multan";
+```
+
+## Operator in WHERE
+
+- **Arithmetic Operators** : + , - , * , / , %
+- **Comparison Operators** : = , != , > , >= , < , <=
+- **Logical Operators** : AND, OR, NOT, IN, BETWEEN, ALL, LIKE, ANY
+- **Bitwise Operators** : & , |
+
+#### Operators
+
+- *AND* (to check for both conditions to be true)
+
+```mysql
+SELECT * FROM student WHERE marks > 80 AND city="Multan";
+```
+
+- *OR* (to check for one of the conditions to be true)
+
+```mysql
+SELECT * FROM student WHERE marks > 90 OR city="Lahore";
+```
+
+- 
 
 
 
