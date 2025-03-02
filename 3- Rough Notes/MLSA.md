@@ -24,7 +24,7 @@ Student Learn Plan Invite Link:  https://learn.microsoft.com/en-us/plans/5dyybor
 
 6. Student Learn Plan Title: Copilot for Microsoft 365
 
-Student Learn Plan Invite Link:  https://learn.microsoft.com/en-us/plans/o1mmcm6o12jygw?tab=tab-created&learnerGroupId=f7fef6c9-4343-470a-9157-157a3309c1d0&wt.mc_id=studentamb_345807
+Student Learn Plan Invite Link: https://learn.microsoft.com/en-us/plans/o1mmcm6o12jygw?tab=tab-created&learnerGroupId=f7fef6c9-4343-470a-9157-157a3309c1d0&wt.mc_id=studentamb_345807
 
 
 
