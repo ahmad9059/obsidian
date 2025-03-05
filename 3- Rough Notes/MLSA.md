@@ -27,4 +27,11 @@ Student Learn Plan Invite Link:  https://learn.microsoft.com/en-us/plans/5dyybor
 Student Learn Plan Invite Link: https://learn.microsoft.com/en-us/plans/o1mmcm6o12jygw?tab=tab-created&learnerGroupId=f7fef6c9-4343-470a-9157-157a3309c1d0&wt.mc_id=studentamb_345807
 
 
+8. Student Learn Plan Title: Get started with GitHub and GitHub Copilot
+
+Student Learn Plan Invite Link:  https://learn.microsoft.com/en-us/plans/gm88tr6o5y5zyk?tab=tab-created&learnerGroupId=bb24b38f-7461-4d01-8909-15e720e83077&wt.mc_id=studentamb_345807
+
+9. Student Learn Plan Title: Get started with C#
+
+Student Learn Plan Invite Link:  https://learn.microsoft.com/en-us/plans/31zzc4mw2wk5re?tab=tab-created&learnerGroupId=617c3383-aac3-4a9e-8865-38c6b6f6d613&wt.mc_id=studentamb_345807
 
