@@ -472,4 +472,3 @@ CREATE TABLE Orders (
 );
 ```
 
-
