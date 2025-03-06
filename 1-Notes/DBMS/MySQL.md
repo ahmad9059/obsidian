@@ -460,3 +460,16 @@ WHERE marks < 33;
 ```
 
 
+## Foreign Key
+---
+A **foreign key (FK)** is a column or a set of columns in a table that establishes a link between data in two tables. It refers to the **primary key (PK)** in another table, ensuring data integrity and enforcing referential constraints.
+
+```mysql
+CREATE TABLE Orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
+);
+```
+
+
