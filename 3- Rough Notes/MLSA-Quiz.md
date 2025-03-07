@@ -222,3 +222,54 @@ Describe the authentication capabilities of Microsoft Entra ID
 - **Microsoft Authenticator app, SMS, Voice call, FIDO2, and Windows Hello for Business**
 - **Self-service password reset**
 
+Describe access management capabilities of Microsoft Entra
+
+
+1. **Create policies that enforce organizational rules.**
+2. **The probability that the authentication request isn't authorized by the identity owner.**
+3. **Replace global admin roles with specific Microsoft Entra roles.**
+4. **Global Secure Access app.**
+
+Describe the identity protection and governance capabilities of Microsoft Entra
+
+- **Microsoft Entra Terms of Use.**
+- **Entitlement management.**
+- **Privileged Identity Management.**
+- **Identity Protection.**
+- **Implement a cloud infrastructure entitlement management (CIEM) product like Microsoft Entra Permissions Management that provides comprehensive visibility and control over permissions for any identity and any resource in Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP).**
+
+Describe core infrastructure security services in Azure
+
+- **Create a new network security rule that allows RDP traffic and that has a higher priority than the default rule.**
+- **DDoS Network Protection.**
+- **Azure Bastion is deployed per virtual network, with support for virtual network peering.**
+- **To securely store and retrieve application secrets.**
+
+Describe the security management capabilities in Azure
+
+- **Cloud security posture management (CSPM)**
+- **The enhanced functionality that is provided through the Microsoft Defender plans and is part of the CWP pillar of Microsoft Defender for Cloud.**
+- **Microsoft Cloud security benchmark**
+- **The Defender for DevOps console**
+
+Describe security capabilities of Microsoft Sentinel
+
+- **Collect, Detect, Investigate, and Respond.**
+- **Azure Monitor Workbooks.**
+- **Microsoft Sentinel incident investigation promptbook.**
+
+Describe threat protection with Microsoft Defender XDR
+
+
+- **Microsoft Defender for Office 365.**
+- **Data Security.**
+- **Microsoft Defender for Identity.**
+- **Secure Score.**
+- **Microsoft Defender Vulnerability Management.**
+
+Describe Microsoft’s Service Trust portal and privacy capabilities
+
+- **Save the documents to your My Library.**
+- **Customer control, transparency, and security.**
+- **Priva Subject Rights Requests.**
+
