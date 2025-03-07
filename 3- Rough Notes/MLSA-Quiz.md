@@ -115,4 +115,110 @@ Explore relational database services in Azure
 
 Explore Azure Storage for non-relational data
 
+- **Partition key and row key**
+- **No action is required**
+- **To enable users at different sites to share files.**
+
+Explore fundamentals of Azure Cosmos DB
+
+- **Azure Cosmos DB for NoSQL**
+- **Azure Cosmos DB for Apache Gremlin**
+- **Enable multi-region writes and add the regions where you have users.**
+
+Explore fundamentals of large-scale analytics
+
+- **Data lakehouse**
+- **Microsoft Fabric**
+- **Apache Spark**
+
+Explore fundamentals of real-time analytics
+
+- **Data is processed continually as new data records arrive.**
+- **Real-Time hub**
+
+Explore fundamentals of data visualization
+
+- **Power BI Desktop**
+- **A hierarchy**
+- **A line chart**
+
+## Microsoft Power Platform Fundamentals
+
+Describe the business value of the Microsoft Power Platform
+
+- **Power Pages**
+- **Power Automate**
+- **Microsoft Power Platform offers the ability to create custom connectors for this purpose, which allow you to connect to Power Apps and Power Automate.**
+- **A tool for building copilots.**
+
+
+Identify foundational components of Microsoft Power Platform
+
+
+- **It enables interoperability between different systems and applications.**
+- **Trigger.**
+- **Microsoft Power Platform offers the ability to create custom connectors, which allow you to connect to Power Apps and Power Automate.**
+- **Connectors connect your data source to your app, workflow, or dashboard.**
+
+Describe how to build applications with Microsoft Power Apps
+
+- **A canvas app**
+- **Create a gallery to display the sales rows.**
+- **Enables users to make the processing, building, and using of Power Apps easier.**
+- **Power Apps can use multiple internal and external data sources in the same app.**
+
+Describe building automation with Microsoft Power Automate
+
+- **Copilot allows you to describe what you want your flow to do, and it creates the flow for you based on your description.**
+- **Power Automate can connect to data sources using one of the hundreds of prebuilt connectors or by building your own custom connector.**
+- **Provides process visualization to improve operational efficiency.**
+
+Describe the capabilities of Microsoft Power BI
+
+- **Analyzing and displaying data.**
+- **All of the above.**
+- **Desktop, service, and Mobile apps.**
+- **To easily identify insights such as anomalies and trends in your data.**
+
+Demonstrate the capabilities of Microsoft Power Pages
+
+- **Power Pages allows you to create websites that provide external access to Microsoft Dataverse data.**
+- **Pages, Styling, Data, Set up**
+- **A home page layout and other pages based on the description provided.**
+
+Describe the AI authoring experience in Power Platform
+
+
+- **It empowers teams to build agents without needing intermediaries, coding, or AI expertise.**
+- **Topic**
+- **Entities represent certain types of real-world subjects in user dialog, aiding in understanding the user's intent.**
+- **Document processing**
+
+## Microsoft Security, Compliance, and Identity Fundamentals
+
+
+Describe security and compliance concepts
+
+- **The organization.**
+- **Multifactor authentication for all users.**
+- **Encryption at rest.**
+- **Data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed.**
+
+Describe identity concepts
+
+- **The user signs in once and can then access many applications or resources.**
+- **Trust relationship.**
+- **Verifying that a user or device is who they say they are.**
+
+Describe the function and identity types of Microsoft Entra ID
+
+1. **A Microsoft 365 group**
+2. **These devices are set up as Microsoft Entra joined.**
+3. **Managed identity**
+
+Describe the authentication capabilities of Microsoft Entra ID
+
+- **Windows Hello**
+- **Microsoft Authenticator app, SMS, Voice call, FIDO2, and Windows Hello for Business**
+- **Self-service password reset**
 
