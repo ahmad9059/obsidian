@@ -181,4 +181,53 @@ console.log(evenNumbers); // [2, 4, 6]
 ✅ Use **`filter()`** to **remove** unwanted elements from an array.  
 ✅ **Always use a `key` prop** in React when rendering lists.
 
+## Difference Between Library & Framework
+
+
+|Feature|**Library**|**Framework**|
+|---|---|---|
+|**Definition**|A collection of reusable code that helps developers perform specific tasks.|A full-fledged structure that dictates how the code should be organized.|
+|**Control**|**You control** when and how to use the library.|The framework **controls** the flow of execution.|
+|**Flexibility**|More flexible, can be used with other tools.|Less flexible, enforces a specific architecture.|
+|**Example**|React.js (UI library), Lodash, jQuery|Angular, Django, Ruby on Rails|
+### Key Difference
+
+- **React (Library)**: You decide how to structure the app.
+- **Angular (Framework)**: It dictates the structure.
+
+## Real DOM vs Virtual DOM
+
+### What is the DOM (Document Object Model)?
+
+- The DOM represents the structure of an HTML document as a tree.
+- JavaScript can manipulate the DOM to update elements dynamically.
+
+#### What is Real DOM?
+
+- The **actual** structure of an HTML document in the browser.
+- When a change is made, **the entire page re-renders**.
+- **Slow performance** for frequent updates.
+
+#### What is Virtual DOM?
+
+- A **lightweight copy** of the Real DOM.
+- React **updates the Virtual DOM first**, then compares it with the previous version using **diffing**.
+- Only the **changed parts** of the Real DOM get updated, making React **much faster**.
+
+### Difference Between Real DOM & Virtual DOM
+
+|Feature|**Real DOM**|**Virtual DOM**|
+|---|---|---|
+|**Definition**|Actual representation of the webpage.|Lightweight copy of the Real DOM.|
+|**Updates**|Directly updates the UI.|Updates in memory first, then syncs with the Real DOM.|
+|**Performance**|Slower (entire page re-renders).|Faster (only updates changed parts).|
+|**Efficiency**|Expensive updates, slow rendering.|Optimized updates, fast rendering.|
+|**Used in**|Vanilla JavaScript, jQuery.|React, Vue.js.|
+
+#### Why Virtual DOM is Important in React?
+
+✅ **Faster updates** compared to Real DOM.  
+✅ **Better performance** for dynamic content.  
+✅ **Efficient UI rendering** with minimal reflows.
+
 
