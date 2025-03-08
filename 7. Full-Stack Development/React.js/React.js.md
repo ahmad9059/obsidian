@@ -1,6 +1,6 @@
 
 - React.js is a JavaScript library for building **user interfaces**.
-- Developed by **Facebook** (now Meta).
+- Developed by **Facebook** (now Meta) in 2013.
 - It is **component-based**, **declarative**, and allows for efficient UI updates.
 
 ## Key Features of React
@@ -113,9 +113,6 @@ console.log(data.name); // Ahmad
 console.log(data.greet()); // Hello!
 ```
 
-
-### **Final Summary**
-
 |Concept|Description|
 |---|---|
 |**Mutable**|Can be changed (Objects, Arrays).|
@@ -150,5 +147,38 @@ const numbers = [1, 2, 3, 4];
 const doubled = numbers.map(num => num * 2);
 console.log(doubled); // [2, 4, 6, 8]
 ```
+
+
+### `filter()` Method
+
+- `filter()` is used to **filter elements** based on a condition.
+- It returns a **new array** with only the elements that satisfy the condition.
+- The original array remains **unchanged**.
+
+Syntax:
+
+```js
+const newArray = array.filter((element, index, array) => {
+  return condition;
+});
+```
+
+Example:
+
+```js
+const numbers = [1, 2, 3, 4, 5, 6];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // [2, 4, 6]
+```
+
+|Method|Purpose|Returns|
+|---|---|---|
+|`map()`|Transforms each element in an array|A new array with modified values|
+|`filter()`|Selects elements that match a condition|A new array with filtered values|
+|`map()` + `filter()`|First filters elements, then transforms them|A new modified and filtered array|
+
+✅ Use **`map()`** to **modify** each element in an array.  
+✅ Use **`filter()`** to **remove** unwanted elements from an array.  
+✅ **Always use a `key` prop** in React when rendering lists.
 
 
