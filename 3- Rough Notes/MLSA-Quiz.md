@@ -308,3 +308,55 @@ Create and draft with Microsoft 365 Copilot
 
 Edit and transform content with Microsoft 365 Copilot
 
+- **Coaching by Copilot in Outlook.**
+- **Add an image to slide six of the Women's Olympic gold medalist for figure skating in 1994.**
+- **To give additional information about the situation surrounding the prompt.**
+- **To state the desired objective of the prompt.**
+
+Ask questions and analyze content with Microsoft 365 Copilot
+
+- **Copilot helps capture action items, different perspectives by topic, or unresolved questions.**
+- **Goal**
+- **Source**
+- **Copilot helps users find information quickly and efficiently, improving productivity and reducing errors.**
+
+## Get started with GitHub and GitHub Copilot
+
+Introduction to Git
+
+- **Making experimental changes to your project in an isolated branch.**
+- **Software configuration management (SCM) system**
+- **Git lets you work with one or more local branches and push changes to a remote repository. GitHub acts as the remote repository, which is accessed through a website or command-line tools.**
+- **git help**
+
+Describe how Git manages source control
+
+- **Git merge**
+- **Git checkout** (or **`git switch`** in newer versions)
+
+Introduction to GitHub
+
+- **Search for the bug in the project's existing issues, and create a new one if it hasn't been reported yet.**
+- **Create a pull request to merge your new branch into the main branch.**
+- **Fork the project's repository to your GitHub account, clone the forked repository to your local machine, push changes to your repository, and submit a pull request to the target (upstream) repository.**
+
+Manage repository changes by using pull requests on GitHub
+
+- **Your branch can't be merged into main due to upstream changes made since you created it. Creating a pull request lets the other contributor know they need to pull their changes out so you can put yours in.**
+- **Use a CODEOWNERS file and enable required reviews.**
+- **Start a review and fix obvious typos inline. Add comments in places that require further discussion or offer educational value. Complete the review with changes requested.**
+
+Automate development tasks by using GitHub Actions
+
+- **All of these functions.**
+- **Container actions, JavaScript actions, and composite actions**
+- **Opening a new tab in your browser**
+
+Introduction to GitHub Copilot
+
+- **GitHub Copilot is an AI pair programmer that you can use to get code suggestions.**
+- **VS Code, Visual Studio, Neovim, and JetBrains**
+- **GitHub Copilot Enterprise has an extra layer of personalization. Organizations use their own codebase to train GitHub Copilot.**
+
+Introduction to prompt engineering with GitHub Copilot
+
