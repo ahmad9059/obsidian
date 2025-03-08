@@ -1,3 +1,66 @@
+## Azure Fundamentals
+
+Describe cloud computing
+
+- **Delivery of computing services over the internet.**
+- **Hybrid cloud**
+- **Infrastructure as a Service (IaaS)**
+
+Describe the benefits of using cloud services
+
+- **Horizontal scaling**
+- **Reliability**
+
+Describe cloud service types
+
+- **Infrastructure as a Service (IaaS)**
+- **Software as a Service (SaaS)**
+
+Describe the core architectural components of Azure
+
+- **One**
+- **The setting is applied to current and future resources.**
+- **Region pairs**
+
+Describe Azure compute and networking services
+
+- **Availability sets**
+- **Azure Virtual Desktop**
+- **Route-based VPN gateway**
+
+Describe Azure storage services
+
+- **Azure File Sync**
+- **Geo-zone-redundant storage**
+- **Azure Blobs**
+
+Describe Azure identity, access, and security
+
+- **Conditional Access**
+- **Zero Trust**
+- **Read and write**
+
+Describe cost management in Azure
+
+- **Tags**
+- **Use the Total Cost of Ownership calculator to estimate expected costs.**
+
+Describe features and tools in Azure for governance and compliance
+
+- **Azure Policy**
+- **Azure resource locks**
+
+Describe features and tools for managing and deploying Azure resources
+
+- **Azure Arc**
+- **Bicep and ARM Templates**
+
+Describe monitoring tools in Azure
+
+- **Capacity**
+- **Resource Health**
+
+
 ## Azure AI Fundamentals
 
 Fundamental AI Concepts
@@ -416,4 +479,3 @@ Guided project - Calculate final GPA
 
 - **3**
 - **Dividing two integers performs integer division.**
-
