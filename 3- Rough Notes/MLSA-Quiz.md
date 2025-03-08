@@ -60,7 +60,6 @@ Describe monitoring tools in Azure
 - **Capacity**
 - **Resource Health**
 
-
 ## Azure AI Fundamentals
 
 Fundamental AI Concepts
