@@ -360,3 +360,59 @@ Introduction to GitHub Copilot
 
 Introduction to prompt engineering with GitHub Copilot
 
+- **An assistant for coding, powered by OpenAI.**
+- **It enhances the quality of code suggestions.**
+- **Specify instructions explicitly and in detail.**
+- **It actively filters out personal data to protect user privacy.**
+- **A method that adds trainable elements to each layer of the pretrained model without a complete overhaul.**
+- **It considers the surrounding code, file type, and content of parallel open tabs in the code editor.**
+- **Providing detailed contextual information with clarity.**
+
+Using GitHub Copilot with Python
+
+- **GitHub Copilot uses prompts and natural language text that you type to provide coding suggestions.**
+- **It provides several suggestions and chats per month directly in your IDE and on github.com.**
+- **Press the Tab key.**
+- **A prompt, which is our input, is a collection of instructions or guidelines that tell our copilot what to generate.**
+- **How well you crafted your prompt.**
+
+## Get started with C#
+
+Write your first C# code
+
+- **Console.WriteLine appends a new line after the output.**
+- **The compiler primarily converts your code into an executable format that the computer can understand.**
+- **You use double quotation marks to create a literal string.**
+- **It's missing a semi-colon at the end.**
+
+Store and retrieve data using literal and variable values in C#
+
+1. **$DATA**
+2. **Use of var keyword without initializing the variable.**
+3. **34.40**
+4. **decimal x = 12.3m;**
+
+Perform basic string formatting in C#
+
+- **'\"'**
+- **'Console.WriteLine($"My value: {value}");'**
+- **The user's console doesn't support Unicode characters.**
+- **'directory = directory + @"";'**
+
+Perform basic operations on numbers in C#
+
+- **Console.WriteLine("Windows " + (7 + 4));**
+- **5**
+- **0**
+- **value += 5;**
+
+Guided project - Calculate and print student grades
+
+- **Casts the operands to truncate the result.**
+- **It allows you to use string interpolation to include variables in the string.**
+- **sophiaSum isn't initialized before use.**
+
+Guided project - Calculate final GPA
+
+- **3**
+- **Dividing two integers performs integer division.**
