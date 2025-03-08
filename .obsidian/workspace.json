@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e8ecfe65044a673c",
+        "id": "494d6ed02e2a9fc9",
         "type": "tabs",
         "children": [
           {
-            "id": "be91bef16375c6a5",
+            "id": "8ead2be91e5d58a3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -175,13 +175,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "be91bef16375c6a5",
+  "active": "8ead2be91e5d58a3",
   "lastOpenFiles": [
+    "7. Full-Stack Development/React.js/React.js.md",
     "3- Rough Notes/MLSA-Quiz.md",
     "3- Rough Notes/MLSA.md",
     "1-Notes/DBMS/MySQL.md",
     "1-Notes/DBMS/MySQL Commands.md",
-    "7. Full-Stack Development/React.js/React.js.md",
     "7. Full-Stack Development/React.js",
     "3- Rough Notes/aws.md",
     "6- Tools/Neovim-Vim.md",

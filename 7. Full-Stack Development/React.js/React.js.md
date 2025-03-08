@@ -126,3 +126,29 @@ console.log(data.greet()); // Hello!
 |**Import/Export**|Used to share JavaScript files/modules.|
 |**Spread (`...`)**|Expands arrays/objects into individual values.|
 |**Rest (`...`)**|Gathers multiple values into an array.|
+
+## Map & Filter in JavaScript for React
+
+
+### `map()` Method
+
+- `map()` is used to **iterate** over an array and return a **new array** with modified elements.
+- It **does not modify** the original array.
+
+Syntax:
+
+```js
+const newArray = array.map((element, index, array) => {
+  return modifiedElement;
+});
+```
+
+Example:
+
+```js
+const numbers = [1, 2, 3, 4];
+const doubled = numbers.map(num => num * 2);
+console.log(doubled); // [2, 4, 6, 8]
+```
+
+
