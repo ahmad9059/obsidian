@@ -501,3 +501,54 @@ The **ALTER** is used to change the schema of table in a database.
 
 1. **ADD** Column
 
+```mysql
+ALTER TABLE table_name
+ADD COLUMN column_name datatype constraint;
+```
+
+
+2. **DROP** Column
+
+```mysql
+ALTER TABLE table_name
+DROP COLUMN column_name;
+```
+
+
+3. **RENAME** Column
+
+```mysql
+ALTER TABLE table_name
+RENAME TO new_table_name;
+```
+
+
+4. **CHANGE** Column(rename)
+
+```mysql
+ALTER TABLE table_name
+CHANGE COLUMN old_name new_name new_datatype new_constraint;
+```
+
+
+5. **MODIFY** Column(modify datatype/ constraint)
+
+```mysql
+ALTER TABLE table_name
+MODIFY col_name new_datatype new_constraint;
+```
+
+
+## Truncate
+---
+
+The **TRUNCATE** is used to delete the data of table in database.
+
+```mysql
+TRUNCATE TABLE table_name ;
+```
+
+
+## Joins in SQL
+---
+
