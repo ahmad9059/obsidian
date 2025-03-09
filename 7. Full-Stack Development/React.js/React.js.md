@@ -272,7 +272,7 @@ npm start
 ### 1. JSX (JavaScript XML)
 
 - **JSX** is a syntax extension for JavaScript used in React.
-- Looks like **HTML inside JavaScript** but gets converted to JavaScript functions or create.ReactElement.
+- Looks like **HTML inside JavaScript** but gets converted to JavaScript functions or React.createElement.
 - **Allows embedding JavaScript** inside `{}`.
 - Must return a **single parent element** (use `<>...</>` if needed).
 
