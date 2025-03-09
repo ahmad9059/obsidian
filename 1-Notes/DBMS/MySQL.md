@@ -472,3 +472,32 @@ CREATE TABLE Orders (
 );
 ```
 
+## Cascading for FK
+---
+
+#### On Delete Cascade
+
+When we create a foreign key using this option, it deletes the referencing rows in the child table when the referenced row is deleted in the parent table which has a primary key.
+#### On Update Cascade
+
+When we create a foreign key using UPDATE CASCADE the referencing rows are updated in the child table when the referenced row is updated in the parent table which has a primary key.
+
+```mysql
+CREATE TABLE teacher(
+	id INT PRIMARY KEY,
+    name VARCHAR(50),
+    dept_id INT,
+    FOREIGN KEY (dept_id) references dept(id)
+    ON UPDATE CASCADE
+    ON DELETE CASCADE
+    
+);
+```
+
+
+## Alter
+
+The **ALTER** is used to change the schema of table in a database.
+
+1. **ADD** Column
+
