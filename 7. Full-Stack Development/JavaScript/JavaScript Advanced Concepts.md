@@ -7,7 +7,7 @@ But quite often we find that we need an _ordered collection_, where we have a 1
 It is not convenient to use an object here, because it provides no methods to manage the order of elements. We can’t insert a new property “between” the existing ones. Objects are just not meant for such use.
 
 There exists a special data structure named `Array`, to store ordered collections.
-## [Declaration](https://javascript.info/array#declaration)
+## Declaration
 
 There are two syntaxes for creating an empty array:
 

@@ -552,3 +552,31 @@ TRUNCATE TABLE table_name ;
 ## Joins in SQL
 ---
 
+**JOIN** is used to combine rows from two or more tables, based on a related column between them.
+
+### 1. Inner Join
+
+Returns records that have matching values in both tables
+
+<img src="1-Notes/DBMS/assets/img-2.png" width="300" style="display: block; margin: auto;">
+*Syntax*
+
+```mysql
+SELECT column(s)
+FROM tableA
+INNER JOIN tableB
+ON tableA.col_name = tableB.col_name;
+```
+
+
+*Example*
+
+```mysql
+SELECT *
+FROM student
+INNER JOIN course
+ON student.student_id = course.student_id;
+```
+
+
+### 2. 
