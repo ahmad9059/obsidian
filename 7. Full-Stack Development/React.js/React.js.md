@@ -312,3 +312,76 @@ export default App;
 ✅ **Vite uses `main.jsx`** to mount the React app into `#root`.  
 ✅ **Public files** are served as-is from `/public/`.
 
+## React Components & How They Work
+
+### 1. Component in React
+
+- A **component** is a **reusable, independent UI piece** in React.
+- **Two types:**
+  - **Functional Components** (recommended, use hooks).
+  - **Class Components** (older, uses `this.state`).
+- Components **return JSX** and manage their own logic & state.
+
+```js
+const MyComponent = () => {
+  return <h1>Hello, React!</h1>;
+};
+export default MyComponent;
+```
+
+
+### 2. How They Work
+
+✅ We **create components** inside the `src/components/` folder (e.g., `MyComponent.jsx`).  
+✅ Components **are imported into `App.jsx`**, which acts as the main component.  
+✅ **`main.jsx` is responsible for rendering `App.jsx`** inside the root `<div>` in `index.html`.  
+✅ **`ReactDOM.createRoot(document.getElementById('root'))`** creates the **Virtual DOM** and syncs
+
+#### **Flow of Code in React**
+
+1. **Create a component** (`MyComponent.jsx`):
+
+```js
+const MyComponent = () => <h1>Hello, React!</h1>;
+export default MyComponent;
+```
+
+2. **import it inside `App.jsx`**:
+
+```js
+import MyComponent from "./components/MyComponent";
+
+const App = () => {
+  return (
+    <div>
+      <MyComponent />
+    </div>
+  );
+};
+export default App;
+```
+
+3. **Render `App.jsx` inside `main.jsx`**:
+
+```jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+```
+
+4. **`index.html` contains `root` div**:
+
+```js
+<body>
+  <div id="root"></div>
+</body>
+```
+
+### **Key Points**
+
+✅ **Components are modular & reusable** in React.  
+✅ **`main.jsx` renders `App.jsx` inside the `root` div**.  
+✅ **React Virtual DOM** updates only changed parts for better performance. 🚀
+
