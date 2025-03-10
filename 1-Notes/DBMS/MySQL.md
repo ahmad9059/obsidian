@@ -584,6 +584,87 @@ ON student.student_id = course.student_id;
 SELECT CustomerID AS ID
 FROM Customers;
 ```
+
 ### 2. Left Join
 
+Returns all records from the left table, and the matched records from the right table.
+
+<img src="1-Notes/DBMS/assets/img-3.png" width="300" style="display: block; margin: auto;">
+**Syntax**
+
+```mysql
+SELECT columns(s)
+FROM talbeA
+LEFT JOIN tableB
+ON tableA.col_name = tableB.col_name;
+```
+
+**Example**
+
+```mysql
+SELECT *
+FROM student as s
+LEFT JOIN course as c
+ON s.student_id = c.student_id;
+```
+
+
+### 3. Right Join
+
+Returns all records from the right table, and the matched records from the left table
+
+<img src="1-Notes/DBMS/assets/img-4.png" width="300" style="display: block; margin: auto;">
+**Syntax**
+
+```mysql
+SELECT column(s)
+FROM tableA
+RIGHT JOIN tableB
+ON tableA.col_name = tableB.col_name;
+```
+
+**Example**
+
+```mysql
+SELECT *
+FROM student as s
+RIGHT JOIN course as c
+ON s.student_id = c.student_id;
+```
+
+
+### 4. Full Join
+
+Returns all records when there is a match in either left or right table
+
+<img src="1-Notes/DBMS/assets/img-5.png" width="300" style="display: block; margin: auto;">
+
+```mysql
+SELECT * FROM student AS s
+LEFT JOIN course AS c
+ON s.student_id = c.student_id
+UNION 
+SELECT * FROM student AS s
+LEFT JOIN course AS c
+ON s.student_id = c.student_id;
+```
+
+
+## Exclusive Join
+---
+
+Exclusive joins in SQL are used to retrieve records that exist in one table but not in the other when performing a **LEFT JOIN** or **RIGHT JOIN**.
+
+### Left Exclusive Join
+
+A Left Exclusive Join retrieves records from the left table that do not have matching records in the right table.
+<img src="1-Notes/DBMS/assets/img-6.png" width="300" style="display: block; margin: auto;">
+
+```mysql
+SELECT * 
+FROM student AS a
+LEFT JOIN course AS b 
+ON a.id = b.id
+WHERE b.id IS NULL;
+```
 
