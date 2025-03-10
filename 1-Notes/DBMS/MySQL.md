@@ -649,15 +649,12 @@ LEFT JOIN course AS c
 ON s.student_id = c.student_id;
 ```
 
-
-## Exclusive Join
----
+### Left Exclusive Join
 
 Exclusive joins in SQL are used to retrieve records that exist in one table but not in the other when performing a **LEFT JOIN** or **RIGHT JOIN**.
 
-### Left Exclusive Join
-
 A Left Exclusive Join retrieves records from the left table that do not have matching records in the right table.
+
 <img src="1-Notes/DBMS/assets/img-6.png" width="300" style="display: block; margin: auto;">
 
 ```mysql
@@ -667,4 +664,52 @@ LEFT JOIN course AS b
 ON a.id = b.id
 WHERE b.id IS NULL;
 ```
+
+### Right Exclusive Join
+
+A **Right Exclusive Join** retrieves records from the right table that do not have matching records in the left table.
+
+<img src="1-Notes/DBMS/assets/img-7.png" width="300" style="display: block; margin: auto;">
+
+```mysql
+SELECT * 
+FROM student AS a
+RIGHT JOIN course AS b 
+ON a.id = b.id
+WHERE a.id IS NULL;
+```
+
+
+### Self Join
+
+It is a regular join but the table is joined with itself.
+
+```mysql
+SELECT column(s)
+FROM table as a
+JOIN table as b
+ON a.col_name = b.col_name
+```
+
+
+## Union
+---
+
+It is used to combine the result-set of two or more SELECT statements. Gives UNIQUE records.
+
+- every SELECT should have same no. of columns
+- columns must have similar data types
+- columns in every SELECT should be in same order
+
+```mysql
+SELECT column(s) FROM tableA
+UNION
+SELECT column(s) FROM tableB
+```
+
+and we can also use the **UNION ALL** to give all the values including the duplicates records.
+## SQL Sub Queries
+---
+
+A Subquery or Inner query or a Nested query is a query within another SQL query.
 

@@ -1,8 +1,9 @@
 {
-  "cssTheme": "Tokyo Night",
+  "cssTheme": "Dark Moss",
   "baseFontSize": 16,
   "textFontFamily": "JetBrainsMono Nerd Font",
   "interfaceFontFamily": "JetBrainsMono Nerd Font",
   "monospaceFontFamily": "JetBrainsMono Nerd Font",
-  "theme": "obsidian"
+  "theme": "obsidian",
+  "accentColor": "#0091ff"
 }
