@@ -139,7 +139,7 @@ Fundamentals of Generative AI
 
 - **Models that use deep learning to process and understand natural language on a massive scale.**
 - **Microsoft Copilot in Dynamics 365 Customer Service**
-- **Microsoft Copilot Studio**
+- **Microsoft Azure AI Foundry**
 
 Responsible generative AI
 
