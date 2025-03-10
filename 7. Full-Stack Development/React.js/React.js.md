@@ -337,7 +337,7 @@ export default MyComponent;
 ✅ **`main.jsx` is responsible for rendering `App.jsx`** inside the root `<div>` in `index.html`.  
 ✅ **`ReactDOM.createRoot(document.getElementById('root'))`** creates the **Virtual DOM** and syncs
 
-#### **Flow of Code in React**
+#### Flow of Code in React
 
 1. **Create a component** (`MyComponent.jsx`):
 
