@@ -47,7 +47,7 @@ To make real use Data, we need Database Management Systems(DBMS)
 1. A database-management system(DBMS) is a collection of **interrelated data** and **a set of programs to access those data**. The collection of data, usually referred to as the database, contains information relevant to an enterprise. The Primary of a DBMS is to provide a way to **store and retrieve database information** that is both convenient and efficient.
 2. A DBMS is the database itself, along with all software and functionality. It is used to perform different operations, like **additions**, **access**, **updating**, and **deletion** of the data.
 
-	![](Pasted%20image%2020250118210016.png)
+	![](1-Notes/DBMS/assets/Pasted%20image%2020250118210016.png)
 
 ## 8. DBMS vs File Systems
 ---
@@ -84,7 +84,7 @@ b. Above 7 points are also the Advantages of DBMS (answer to "why to use DBMS")
 3. At the external level, a database contain several schemas that sometimes called subschema. The subschema is used to describe the different view of the database.
 4. At views also provide a *security* mechanism to prevent users from accessing certain parts of DB.
 5
-		![](dbms-three-schema-architecture%201.jpg)
+		![](1-Notes/DBMS/assets/dbms-three-schema-architecture%201.jpg)
 
 *Tip:* Data Point: A "data point" in a database refers to a single piece of information stored within a table.
 
@@ -140,13 +140,13 @@ Client machines, on which remote DB users work, and server machines on which DB 
 1. **T1** Architecture:
 	1. The client,server, and DB all present on the same machine.
 	
-	![](Pasted%20image%2020250126005436.png)
+	![](1-Notes/DBMS/assets/Pasted%20image%2020250126005436.png)
 	
 1. **T2** Architecture:
 	1. App is partitioned into 2-components.
 	2. Client Machine, which invokes DB system functionality at server end through query language statements.
 	3. API standards like *ODBC* & *JDBC* are used to interact between client and server.
-	![](Pasted%20image%2020250126005449.png)
+	![](1-Notes/DBMS/assets/Pasted%20image%2020250126005449.png)
 	
 1. **T3** Architecture:
 	1. App is partitioned into 3 logical components.
@@ -158,7 +158,7 @@ Client machines, on which remote DB users work, and server machines on which DB 
 		1. *Scalability* due to distributed application servers.
 		2. *Data Integrity*, App server acts as a middle layer between client and DB, which minimize the chances of data corruption/hacking.
 		3. *Security*, client can't directly access DB, hence it is more secure.
-		![](Pasted%20image%2020250126005503.png)
+		![](1-Notes/DBMS/assets/Pasted%20image%2020250126005503.png)
 
 
 ## Entity-Relationship Model

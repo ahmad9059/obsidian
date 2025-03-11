@@ -3,9 +3,17 @@
 
 Database is a collection of interrelated data.
 
+- A **database** is an organized collection of data that can be easily accessed, managed, and updated.
+- It stores data in tables, rows, and columns, allowing efficient retrieval and manipulation.
+- Examples include MySQL, PostgreSQL, and MongoDB.
+
 ## DBMS
 
 DBMS(Database Management System) is software used to create, manage, and organize databases.
+
+- A **DBMS** is software that manages and controls database operations like storing, retrieving, and updating data.
+- It ensures data consistency, security, and integrity while providing an interface for users to interact with the database.
+- Examples include MySQL, Oracle, and Microsoft SQL Server. 🚀
 
 ## What is RDBMS
 
@@ -54,7 +62,8 @@ USE db_name;
 SQL is a language used to perform CRUD operations in Relational DB, while MySQL is a RDBMS that uses SQL.
 
 
-![](1-Notes/DBMS/assets/img.png)
+<img src="1-Notes/DBMS/assets/img.png" width="300" style="display: block; margin: auto;">
+
 #### Creating Table
 
 We can create the table in db using the **CREATE TABLE** command whole syntax is given below.
@@ -184,7 +193,7 @@ It is a column (or set of columns) in a table that uniquely identifies each row.
 
 A foreign key is a column (or set of columns) in a table that refers to the primary key in another table. There can be multiple FKs. FKs can be have duplicate & null values.
 
-![](1-Notes/DBMS/assets/img-1.png)
+<img src="1-Notes/DBMS/assets/img-1.png" width="300" style="display: block; margin: auto;">
 
 ### Secondary Key
 
@@ -732,4 +741,16 @@ SELECT MAX(marks)
 FROM (SELECT marks FROM student WHERE city = 'Delhi') AS temp;
 ```
 
+
+## MySQL Views
+
+A view is a virtual table based on the result-set of an SQL statement.
+
+A view always shows up-to-date data. The database engine recreates the view, every time a user queries it.
+
+```mysql
+CREATE VIEW v1 AS  
+SELECT rollno, name, marks  
+FROM student;
+```
 
