@@ -385,3 +385,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ✅ **`main.jsx` renders `App.jsx` inside the `root` div**.  
 ✅ **React Virtual DOM** updates only changed parts for better performance. 🚀
 
+
