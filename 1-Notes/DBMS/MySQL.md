@@ -713,3 +713,23 @@ and we can also use the **UNION ALL** to give all the values including the dupli
 
 A Subquery or Inner query or a Nested query is a query within another SQL query.
 
+<img src="1-Notes/DBMS/assets/img-8.png" width="300" style="display: block; margin: auto;">
+It involves 2 select statements.
+
+```mysql
+Syntax
+SELECT column(s)
+FROM table_name
+WHERE col_name operator
+( subquery );
+```
+
+
+### Example with FROM
+
+```mysql
+SELECT MAX(marks)  
+FROM (SELECT marks FROM student WHERE city = 'Delhi') AS temp;
+```
+
+
