@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "6- Tools/Neovim-Vim.md",
+                "file": "3- Rough Notes/MLSA-Quiz.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Neovim-Vim"
+              "title": "MLSA-Quiz"
             }
           }
         ]
@@ -177,6 +177,7 @@
   },
   "active": "8ead2be91e5d58a3",
   "lastOpenFiles": [
+    "6- Tools/Neovim-Vim.md",
     "1-Notes/DBMS/MySQL.md",
     "posts/mysql.md~",
     "posts/assets/mysql/img.png",
@@ -204,7 +205,6 @@
     "1-Notes/DBMS/Complete DBMS.md",
     "7. Full-Stack Development/React.js",
     "3- Rough Notes/aws.md",
-    "6- Tools/Neovim-Vim.md",
     "7. Full-Stack Development/Rough.md",
     "7. Full-Stack Development/JavaScript/Asynchronous JavaScript.md",
     "Untitled.md",

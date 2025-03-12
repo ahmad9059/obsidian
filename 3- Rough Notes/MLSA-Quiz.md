@@ -79,7 +79,7 @@ Fundamentals of machine learning
 Fundamentals of Azure AI services
 
 - **A single-service resource for each AI service**
-- **Input a key and endpoint into the studio**
+- **Associate a resource with the studio**
 - **A bundle of several AI services in one resource**
 
 Fundamentals of Computer Vision
