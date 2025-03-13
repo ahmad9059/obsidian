@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. Full-Stack Development/React.js/React.js.md",
+                "file": "3- Rough Notes/MLSA-Quiz.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "React.js"
+              "title": "MLSA-Quiz"
             }
           }
         ]
@@ -177,6 +177,7 @@
   },
   "active": "8ead2be91e5d58a3",
   "lastOpenFiles": [
+    "7. Full-Stack Development/React.js/React.js.md",
     "3- Rough Notes/aws.md",
     "3- Rough Notes/Accounts.md",
     "3- Rough Notes/MLSA-Quiz.md",
@@ -196,7 +197,6 @@
     "posts/assets/mysql",
     "posts/assets/assets",
     "posts/mysql.md",
-    "7. Full-Stack Development/React.js/React.js.md",
     "3- Rough Notes/online-bookstore-project.md",
     "3- Rough Notes/MLSA.md",
     "1-Notes/DBMS/MySQL Commands.md",
