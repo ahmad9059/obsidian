@@ -244,9 +244,9 @@ console.log(evenNumbers); // [2, 4, 6]
 **Install React with Vite**
 
 ```bash
-npx create-react-app my-app
-cd my-app
-npm start
+npm create vite@latest
+npm install
+npm run dev
 ```
 
 
@@ -384,5 +384,78 @@ ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 ✅ **Components are modular & reusable** in React.  
 ✅ **`main.jsx` renders `App.jsx` inside the `root` div**.  
 ✅ **React Virtual DOM** updates only changed parts for better performance. 🚀
+
+
+## Conditional Rendering in React
+
+Conditional rendering in React allows components to render dynamically based on conditions.
+
+**Using if-else Statements**
+
+```jsx
+function Greeting(props) {
+  if (props.isLoggedIn) {
+    return <h1>Welcome Back!</h1>;
+  } else {
+    return <h1>Please Sign In</h1>;
+  }
+}
+```
+
+**Using Ternary Operator (? :)**
+
+```jsx
+function Greeting({ isLoggedIn }) {
+  return <h1>{isLoggedIn ? "Welcome Back!" : "Please Sign In"}</h1>;
+}
+```
+
+## Event Handling in React
+
+React follows the Synthetic Event system, making event handling efficient across different browsers.
+
+**Handling Click Events**
+
+```jsx
+function Button() {
+  function handleClick() {
+    alert("Button Clicked!");
+  }
+
+  return <button onClick={handleClick}>Click Me</button>;
+}
+```
+
+
+**Passing Arguments in Event Handlers**
+
+```jsx
+function Greeting({ name }) {
+  function sayHello(name) {
+    alert(`Hello, ${name}!`);
+  }
+
+  return <button onClick={() => sayHello(name)}>Greet</button>;
+}
+```
+
+**Handling Keyboard Events**
+
+```jsx
+function InputBox() {
+  function handleKeyPress(event) {
+    if (event.key === "Enter") {
+      alert("Enter key pressed!");
+    }
+  }
+
+  return <input type="text" onKeyPress={handleKeyPress} />;
+}
+```
+
+✅ **Conditional Rendering:** Use `if-else`, ternary (`? :`), `&&`, or `switch-case` for rendering components based on conditions.  
+✅ **Event Handling:** Use event handlers like `onClick`, `onKeyPress`, `onSubmit`, etc., with functions.  
+✅ **Pass Parameters:** Use arrow functions for passing arguments in event handlers.  
+✅ **Prevent Default Behavior:** Use `event.preventDefault()` to stop default browser actions like form submissions.
 
 
