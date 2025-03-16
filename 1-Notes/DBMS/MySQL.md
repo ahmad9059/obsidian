@@ -765,7 +765,7 @@ Wildcards in MySQL are used with the `LIKE` operator to filter data based on pat
 | `%`                            | Represents zero, one, or multiple characters.                                                           |
 | `_`                            | Represents a single character.                                                                          |
 | `[charlist]`                   | (Sets and ranges of characters to match)Not supported in MySQL. Use REGEXP instead.                     |
-| `[^charlist]` or `[!charlist]` | (Matches only a character NOT specified within the brackets)Not supported in MySQL. Use REGEXP instead. |
+| `^[charlist]` or `![charlist]` | (Matches only a character NOT specified within the brackets)Not supported in MySQL. Use REGEXP instead. |
 #### Examples:
 
 1. Find names starting with "A":
