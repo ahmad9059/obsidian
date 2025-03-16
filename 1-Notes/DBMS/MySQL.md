@@ -318,7 +318,7 @@ SELECT * FROM student WHERE marks > 90 OR city="Lahore";
 - **BETWEEN** : select for a given range
 
 ```mysql
-SELECT * FROM student WHERE marks 80 AND 90;
+SELECT * FROM student WHERE marks BETWEEN 80 AND 90;
 ```
 
 
@@ -752,5 +752,37 @@ A view always shows up-to-date data. The database engine recreates the view, eve
 CREATE VIEW v1 AS  
 SELECT rollno, name, marks  
 FROM student;
+```
+
+## MySQL Wildcard Characters
+
+Wildcards in MySQL are used with the `LIKE` operator to filter data based on patterns.
+
+### **Common Wildcards in MySQL:**
+
+| Wildcard                       | Description                                                                                             |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| `%`                            | Represents zero, one, or multiple characters.                                                           |
+| `_`                            | Represents a single character.                                                                          |
+| `[charlist]`                   | (Sets and ranges of characters to match)Not supported in MySQL. Use REGEXP instead.                     |
+| `[^charlist]` or `[!charlist]` | (Matches only a character NOT specified within the brackets)Not supported in MySQL. Use REGEXP instead. |
+#### Examples:
+
+1. Find names starting with "A":
+
+```mysql
+SELECT * FROM users WHERE name LIKE 'A%';
+```
+
+2. Find names with "a" as the second letter:
+
+```mysql
+SELECT * FROM users WHERE name LIKE '_a%';
+```
+
+3. Using REGEXP for character ranges (since [charlist] is not supported):
+
+```mysql
+SELECT * FROM users WHERE name REGEXP '^[A-C]';
 ```
 
