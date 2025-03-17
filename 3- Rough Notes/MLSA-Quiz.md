@@ -463,7 +463,7 @@ Perform basic string formatting in C#
 
 Perform basic operations on numbers in C#
 
-- **Console.WriteLine("Windows " + (7 + 4));**
+- **Console.Write("Windows " + 1 + 1);**
 - **5**
 - **0**
 - **value += 5;**
