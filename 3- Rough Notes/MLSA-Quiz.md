@@ -252,7 +252,7 @@ Describe the AI authoring experience in Power Platform
 
 
 - **It empowers teams to build agents without needing intermediaries, coding, or AI expertise.**
-- **Topic**
+- **Entity**
 - **Entities represent certain types of real-world subjects in user dialog, aiding in understanding the user's intent.**
 - **Document processing**
 
