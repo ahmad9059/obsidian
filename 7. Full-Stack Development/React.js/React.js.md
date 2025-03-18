@@ -459,3 +459,97 @@ function InputBox() {
 ✅ **Prevent Default Behavior:** Use `event.preventDefault()` to stop default browser actions like form submissions.
 
 
+## State in React
+
+- State is an object that holds dynamic data that affects a component’s rendering.
+- Unlike props, state is **mutable** and can be changed within a component.
+- When state changes, React **re-renders** the component to reflect the updates.
+
+### Types of State in React
+
+1. *Local State:*
+- Managed within a single component using `useState()`.
+- Example: Form inputs, modals, toggles.
+2. *Global State:*
+- Shared across multiple components.
+- Managed using **Context API**, **Redux**, or other state management libraries.
+3. *Server State:*
+- Data fetched from an API that needs to be integrated into UI.
+- Managed using tools like **React Query, SWR, or Redux Thunk**.
+4. *URL State:*
+- State stored in the **URL** (query parameters, path, etc.).
+- Managed using **React Router**.
+
+### Understanding `useState()` Hook
+
+- `useState()` is a React Hook that allows **functional components** to manage state.
+- It returns an **array** with two values:
+    1. The **current state** value.
+    2. A **function** to update the state.
+
+*Syntax:*
+
+```jsx
+const [state, setState] = useState(initialValue);
+```
+
+*Example: Counter App*
+
+```jsx
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0); // Initial state is 0
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+
+export default Counter;
+```
+
+- `useState(0)`: Initializes `count` to `0`.
+- `setCount(count + 1)`: Updates the state, causing a **re-render**.
+
+#### Updating State Correctly
+
+**1. Using Functional Updates (Best Practice)**
+
+- When the new state depends on the previous state, use a function inside `setState()`.
+
+```jsx
+setCount((prevCount) => prevCount + 1);
+```
+
+- This ensures **correct** updates, especially in **async operations**.
+
+**2. Updating Objects in State**
+
+- Use **spread operator (`...`)** to avoid modifying the original state.
+
+```jsx
+const [user, setUser] = useState({ name: "Ahmad", age: 19 });
+setUser(prevUser => ({ ...prevUser, age: prevUser.age + 1 }));
+```
+
+
+**3. Updating Arrays in State**
+
+- Use **spread operator (`...`)** to update arrays.
+
+```jsx
+const [items, setItems] = useState([1, 2, 3]);
+setItems(prevItems => [...prevItems, 4]); // Adds new item
+```
+
+
+✅ **State** is a way to store data inside a component.  
+✅ `useState()` is used to manage **local state** in functional components.  
+✅ Always **use the updater function** when updating state based on previous values.  
+✅ **Never modify state directly**, always use `setState()`.
+
+
