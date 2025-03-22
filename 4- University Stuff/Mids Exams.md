@@ -2,6 +2,7 @@
 ---
 
 ## 📝 Subjects
+
 - [ ] Operating System
 - [ ] Database System
 - [ ] Computer Architecture
@@ -17,18 +18,31 @@
 5. [ ] Chapter 6
 ## 2. Database System
 
-1. [ ] Data
+1. [ ] Data/Information
+2. [ ] Manual File Management System/File Processing System
+3. [ ] Database/Component of DB
+4. [ ] Database Models
+5. [ ] DBMS Architecture: 1-Tier, 2-Tier & 3-Tier
+6. [ ] ER Diagram Representation
+7. [ ] ER Relationship
+8. [ ] Database Keys
+9. [ ] TCL Commands
+10. [ ] Labs (1-4)
 
-## 3. Software Engineering
+## 3. Computer Architecture
 
-1. [x] SE Models
-2. [x] Functional and Non-Functional Requirements
-3. [ ] Use Case Diagram
-4. [x] Activity Diagrams
-5. [x] Swimlane Diagrams
-6. [ ] Sequence Diagrams
-7. [ ] Data Flow Diagrams
-
+1. [ ] Architecture/Organization/Structure/Function/Component
+2. [ ] von Neumann/Turing
+3. [ ] IAS - MBR/MAR/IBR/PC/AC
+4. [ ] The Second Generation:Transistors
+5. [ ] Moore’s Law
+6. [ ] MICROPROCESSORS
+7. [ ] Semiconductor Memory
+8. [ ] Pipelining
+9. [ ] Fetch-Decode-Execute Cycle
+10. [ ] Top Level View of Computer Function and Interconnection
+11. [ ] Interrupts/Types of Interrupts:
+12. [ ] 
 ## 4. Assembly Language
 
 1. [x] Out-of-Bounds Memory References and Buffer Overflows in Assembly Language
