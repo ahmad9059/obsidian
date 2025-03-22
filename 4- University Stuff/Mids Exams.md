@@ -42,30 +42,30 @@
 9. [ ] Fetch-Decode-Execute Cycle
 10. [ ] Top Level View of Computer Function and Interconnection
 11. [ ] Interrupts/Types of Interrupts:
-12. [ ] 
-## 4. Assembly Language
 
-1. [x] Out-of-Bounds Memory References and Buffer Overflows in Assembly Language
-2. [x] GDB: A Powerful Tool for Debugging Assembly Language
-3. [x] Machine-Level Representation of Floating-Point Numbers
-4. [x] Pipelining in Y86: A Step-by-Step Guide
-5. [x] Understanding Pointers in Computer Organization and Assembly Language
-6. [x] x86-64: Extending IA-32 to 64 Bits
-7. [x] x86-64: A Modern Processor Architecture
+**Slides Wise Content**
+1.  01_Introduction.pptx
+2. 02_Computer-Evolution.pptx
+3. IAS.pdf
+4. 02.1_Computer-Evolution.pptx
+5. 2.3_Computer-Evolution updated.pptx
+6. 03_Top Level View of Computer Function.pptx
+7. Interrupts.pptx
 
-## 5. Computer Networking
 
-1. [x] OSI Model
-2. [x] Protocols(DNS, FTP, Telnet and SMTP)
-3. [x] Security
-4. [x] IP Header
-5. [x] Subnetting
+## 4. Statistics and Probability
 
-## 6. DSA
+1. [ ] 
 
-1. [ ] Stack
-2. [ ] Queue
-3. [ ] Graph
-4. [ ] Tree : Binary Tree, Binary Search Tree
-5. [ ] Searching : Linear and Binary Search
-6. [ ] Sorting : Selection, Insertion, Bubble, Merge, Quick Sort
+## 5. Multi-variable Calculus
+
+1. [ ] Limits ()
+2. [ ] Derivative ()
+
+## 6. Analysis of Algorithms
+
+1. [ ] Time Complexity
+2. [ ] Space Complexity
+3. [ ] Asymptotic Notations ((O-notation),(Ω-notation),(Θ-notation))
+4. [ ] Best-Case, Average Case, Worst Case
+5. [ ] 
