@@ -12,10 +12,9 @@
 ## 1. Operating System
 
 1. [ ] Chapter 1 Slides(1-39)
-2. [ ] Chapter 2
-3. [ ] Chapter 3
-4. [ ] Chapter 4
-5. [ ] Chapter 6
+2. [ ] Chapter 3
+3. [ ] Chapter 4
+4. [ ] Chapter 6
 ## 2. Database System
 
 1. [ ] Data/Information
@@ -23,11 +22,12 @@
 3. [ ] Database/Component of DB
 4. [ ] Database Models
 5. [ ] DBMS Architecture: 1-Tier, 2-Tier & 3-Tier
-6. [ ] ER Diagram Representation
-7. [ ] ER Relationship
-8. [ ] Database Keys
-9. [ ] TCL Commands
-10. [ ] Labs (1-4)
+6. [ ] API (Application Programming Interface)
+7. [ ] ER Diagram Representation
+8. [ ] ER Relationship
+9. [ ] Database Keys
+10. [ ] TCL Commands
+11. [ ] Labs (1-4)
 
 ## 3. Computer Architecture
 
@@ -55,12 +55,17 @@
 
 ## 4. Statistics and Probability
 
-1. [ ] 
-
+1. [ ] Definitions
+2. [ ] Group and Ungroup Data
+3. [ ] Means(Arithmetic, Geomatic, Harmonic, Combined)
+4. [ ] Median, Mode
+5. [ ] Historgram, Bar chart, Pie Chart
+6. [ ] ...
 ## 5. Multi-variable Calculus
 
 1. [ ] Limits ()
 2. [ ] Derivative ()
+3. [ ] ...
 
 ## 6. Analysis of Algorithms
 
@@ -68,4 +73,16 @@
 2. [ ] Space Complexity
 3. [ ] Asymptotic Notations ((O-notation),(Ω-notation),(Θ-notation))
 4. [ ] Best-Case, Average Case, Worst Case
-5. [ ] 
+5. [ ] Linear and binary Search Analysis
+6. [ ] Time Space Complexity Analysis of Sorting Algo(Selection/Insertion/Bubble/Merge/Quick)
+7. [ ] Recursion and Its Time and Space Complexity Analysis
+8. [ ] Recursion and Analysis of this types
+9. [ ] Fibonacci sequence/ Factorial / Towers of Hanoi Problems
+
+**Slides Wise Content**
+
+1. Data Structures Lecture 02.ppt
+2. Asymptotic analysis.pdf
+3. DAA lecture 4. pptx
+4. Recursion types.pdf
+5. DAA lecture 5.pptx

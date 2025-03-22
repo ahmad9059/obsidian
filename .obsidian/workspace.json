@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4- University Stuff/Mids Exams.md",
+                "file": "4- University Stuff/Mids 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mids Exams"
+              "title": "Mids 2"
             }
           }
         ]
@@ -177,8 +177,9 @@
   },
   "active": "8ead2be91e5d58a3",
   "lastOpenFiles": [
-    "4- University Stuff/Finals Exams.md",
     "4- University Stuff/Mids Exams.md",
+    "4- University Stuff/Mids 2.md",
+    "4- University Stuff/Finals Exams.md",
     "3- Rough Notes/MLSA-Quiz.md",
     "7. Full-Stack Development/React.js/React.js.md",
     "3- Rough Notes/MLSA.md",
@@ -217,7 +218,6 @@
     "7. Full-Stack Development/CSS/CSS.md",
     "posts/assets/tools",
     "1-Notes/Operating System/Operating System.md",
-    "1-Notes/Computer Networks/Computer Networks(CN).md",
     "posts/javascript-advanced.md~",
     "posts/dom-js.md~",
     "posts/tailwind-css.md~",
