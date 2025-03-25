@@ -49,8 +49,7 @@
               "title": "Mids Exams"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -204,11 +203,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c1bca128643bb1c9",
+  "active": "8ead2be91e5d58a3",
   "lastOpenFiles": [
+    "4- University Stuff/Mids Exams.md",
     "4- University Stuff/Mids 2.md",
     "3- Rough Notes/MLSA-Quiz.md",
-    "4- University Stuff/Mids Exams.md",
     "4- University Stuff/Finals Exams.md",
     "7. Full-Stack Development/React.js/React.js.md",
     "3- Rough Notes/MLSA.md",
