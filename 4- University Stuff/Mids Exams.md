@@ -69,10 +69,10 @@
 
 ## 6. Analysis of Algorithms
 
-1. [ ] Time Complexity
-2. [ ] Space Complexity
-3. [ ] Asymptotic Notations ((O-notation),(Ω-notation),(Θ-notation))
-4. [ ] Best-Case, Average Case, Worst Case
+1. [x] Time Complexity
+2. [x] Space Complexity
+3. [x] Asymptotic Notations ((O-notation),(Ω-notation),(Θ-notation))
+4. [x] Best-Case, Average Case, Worst Case
 5. [ ] Linear and binary Search Analysis
 6. [ ] Time Space Complexity Analysis of Sorting Algo(Selection/Insertion/Bubble/Merge/Quick)
 7. [ ] Recursion and Its Time and Space Complexity Analysis
