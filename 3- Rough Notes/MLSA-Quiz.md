@@ -17,6 +17,7 @@ Describe cloud service types
 - **Software as a Service (SaaS)**
 
 Describe the core architectural components of Azure
+
 - **One**
 - **The setting is applied to current and future resources.**
 - **Region pairs**
