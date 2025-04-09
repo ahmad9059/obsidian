@@ -192,10 +192,11 @@ An Entity is a **thing** or **object** in the real world that is distinguishable
 
 ### Attributes
 
-1. An entity is represented by a set of attributes.
-2. Each entity has a value for each of its attributes.
-3. For each attribute, there is a set of permitted values, called the domain, or value set, of that attribute.
-4. E.g., Student Entity has following attributes
+1. Attributes are the properties of entities
+2. An entity is represented by a set of attributes.
+3. Each entity has a value for each of its attributes.
+4. For each attribute, there is a set of permitted values, called the domain, or value set, of that attribute.
+5. E.g., Student Entity has following attributes
 	A.Student_ID
 	B. Name 
 	C. Standard 
