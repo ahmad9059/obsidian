@@ -35,7 +35,8 @@
               "title": "Mids 2"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -189,10 +190,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8ead2be91e5d58a3",
+  "active": "20a9904c5ca05449",
   "lastOpenFiles": [
-    "4- University Stuff/Mids 2.md",
     "1-Notes/DBMS/Complete DBMS.md",
+    "4- University Stuff/Mids 2.md",
     "4- University Stuff/Mids Exams.md",
     "6- Tools/Docker.md",
     "6- Tools/Neovim-Vim.md",
