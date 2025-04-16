@@ -552,4 +552,59 @@ setItems(prevItems => [...prevItems, 4]); // Adds new item
 ✅ Always **use the updater function** when updating state based on previous values.  
 ✅ **Never modify state directly**, always use `setState()`.
 
+## Props (Properties) in React
+
+### What are Props?
+
+- **Props** stand for **Properties**.
+- Props are **read-only** data passed from a **parent component to a child component**.
+- They allow **components to be dynamic and reusable** by passing different data to them.
+- Think of props as **function arguments** for components.
+
+## How Props Work
+
+- **Parent component passes props to a child component**.
+- **Child component receives them as a parameter** (usually an object).
+- The child accesses props using `props.propName`.
+
+## Syntax
+
+### 1. Passing Props
+
+```jsx
+<ChildComponent name="Ahmad" age={19} />
+```
+
+### 2. Receiving Props
+
+```jsx
+function ChildComponent(props) {
+  return (
+    <div>
+      <p>Name: {props.name}</p>
+      <p>Age: {props.age}</p>
+    </div>
+  );
+}
+```
+
+### ✅ OR Using Destructuring
+
+```jsx
+function ChildComponent({ name, age }) {
+  return (
+    <div>
+      <p>Name: {name}</p>
+      <p>Age: {age}</p>
+    </div>
+  );
+}
+```
+
+## 🧩 Key Points
+
+- **Props are immutable**: You **cannot change** props inside the child component.
+- **Unidirectional flow**: Data flows from **parent to child** (one-way data binding).
+- **Can be any data type**: String, number, boolean, array, object, function, etc.
+- Used to **customize components** and make them reusable.
 
