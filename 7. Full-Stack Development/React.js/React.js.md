@@ -657,3 +657,32 @@ function Button() {
 |Inline Styles|✅|❌|❌|None|
 |Global CSS|❌|✅|✅|None|
 |CSS-in-JS (e.g. styled-components)|✅|✅|❌|More setup|
+
+##  Form Handling in React.js
+
+**Form handling** refers to how input data is captured from HTML forms (like `<input>`, `<textarea>`, `<select>`) and managed using state or references in React.
+
+#### Key Concepts:
+
+- React forms are usually managed through **state** (controlled) or **refs** (uncontrolled).
+- You handle form submissions via an `onSubmit` event handler.
+- You use `onChange` to capture input updates.
+
+###  Uncontrolled Components & useRef()
+
+An **uncontrolled component** lets the **DOM manage the input value**, and React accesses it using a `ref`.
+
+- Used to **directly access a DOM element**
+- Doesn’t re-render the component on value change
+
+```jsx
+const inputRef = useRef();
+
+const handleSubmit = () => {
+  console.log(inputRef.current.value);
+};
+
+<input type="text" ref={inputRef} />
+```
+
+
