@@ -686,3 +686,49 @@ const handleSubmit = () => {
 ```
 
 
+### Controlled Components
+
+A **controlled component** is an input element whose value is **controlled by React state**.
+
+```jsx
+const [name, setName] = useState("");
+
+<input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+```
+
+**Full Example:**
+
+```jsx
+import React, { useState } from "react";
+
+function Form() {
+  const [val, setVal] = useState({ name: "", email: "" });
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(val);
+  };
+  return (
+    <>
+      <form action="" onSubmit={handleSubmit}>
+        <input
+          onChange={(event) => setVal({ ...val, name: event.target.value })}
+          type="text"
+          placeholder="name"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          onChange={(event) => setVal({ ...val, email: event.target.value })}
+        />
+        <input type="submit" />
+      </form>
+    </>
+  );
+}
+export default Form;
+```
+
+
+### React Hook Form (Library)
+
