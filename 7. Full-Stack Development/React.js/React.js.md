@@ -677,7 +677,6 @@ An **uncontrolled component** lets the **DOM manage the input value**, and React
 
 ```jsx
 const inputRef = useRef();
-
 const handleSubmit = () => {
   console.log(inputRef.current.value);
 };
