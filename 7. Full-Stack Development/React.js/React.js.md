@@ -732,3 +732,50 @@ export default Form;
 
 ### React Hook Form (Library)
 
+[React Hook Form](https://react-hook-form.com) is a **popular library** for building performant and flexible forms in React.
+
+#### Why Use It?
+
+- Reduces boilerplate code
+- Built-in validation
+- Integrates well with UI libraries like Material UI, Chakra UI, etc.
+
+**Basic Example:**
+
+```jsx
+import { useForm } from "react-hook-form";
+
+const { register, handleSubmit } = useForm();
+
+const onSubmit = (data) => console.log(data);
+
+<form onSubmit={handleSubmit(onSubmit)}>
+  <input {...register("username")} />
+  <input type="submit" />
+</form>
+```
+
+**Full Example**
+
+```jsx
+import React from "react";
+import { useForm } from "react-hook-form";
+
+function Form() {
+  const { register, handleSubmit } = useForm();
+
+  return (
+    <>
+      <form action="" onSubmit={handleSubmit((data) => console.log(data))}>
+        <input {...register("name")} type="text" placeholder="name" />
+        <input {...register("age")} type="age" placeholder="age" />
+        <input {...register("email")} type="email" placeholder="email" />
+        <input type="submit" />
+      </form>
+    </>
+  );
+}
+
+export default Form;
+```
+
