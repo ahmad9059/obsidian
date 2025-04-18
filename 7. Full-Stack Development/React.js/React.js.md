@@ -608,3 +608,52 @@ function ChildComponent({ name, age }) {
 - **Can be any data type**: String, number, boolean, array, object, function, etc.
 - Used to **customize components** and make them reusable.
 
+
+## CSS Modules
+
+- A **CSS Module** is a **CSS file in which all class and animation names are scoped locally by default**.
+- This means that styles defined in one component **won’t affect other components**, preventing style conflicts.
+- Used in **React.js** to maintain **modular, reusable, and conflict-free CSS**
+
+###  How It Works
+
+- A CSS file is treated as a module when named with the `.module.css` extension.
+  - Example: `MyComponent.module.css`
+- In React, you import it as an object where each CSS class becomes a property of that object.
+
+**📄 Example File:** `Button.module.css`
+
+```css
+.button {
+  background-color: blue;
+  color: white;
+}
+```
+
+
+### Example Usage in Component
+
+```jsx
+import styles from './Button.module.css';
+
+function Button() {
+  return <button className={styles.button}>Click me</button>;
+}
+```
+
+
+### Behind the Scenes
+
+- CSS Modules use a build tool like **Webpack** to **automatically transform class names** into unique identifiers.
+  - Example:
+     - `.button` in the source might become `.Button_button__3hWkj` in the final DOM.
+- The mapping ensures **local scoping** and uniqueness across components.
+
+### Comparison with Other Styling Methods
+
+|Method|Scoped|Reusable|Global Impact|Setup Required|
+|---|---|---|---|---|
+|CSS Modules|✅|✅|❌|Minimal|
+|Inline Styles|✅|❌|❌|None|
+|Global CSS|❌|✅|✅|None|
+|CSS-in-JS (e.g. styled-components)|✅|✅|❌|More setup|
