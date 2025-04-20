@@ -832,7 +832,17 @@ Dynamic routing allows us to create routes where parts of the URL are **variable
 
 In this case, `:id` is a **route parameter**.
 
+### Accessing Dynamic Parameters: `useParams`
 
+```jsx
+import { useParams } from "react-router-dom";
+
+function UserProfile() {
+  const { id } = useParams();
+
+  return <h1>User ID: {id}</h1>;
+}
+```
 ### NavLink in React Router
 
 `NavLink` is a special version of the `<Link>` component in `react-router-dom` that **adds styling attributes to the rendered element when it matches the current URL**.
@@ -903,10 +913,12 @@ function Navbar() {
 
 ### Summary of `NavLink`
 
-|Prop/Feature|Description|
-|---|---|
-|`to="/path"`|Target route|
-|`className`|Function that gives conditional class|
-|`style`|Function that returns conditional style|
-|`end`|Ensures exact matching|
-|`isActive`|Boolean indicating current URL match|
+| Prop/Feature | Description                             |
+| ------------ | --------------------------------------- |
+| `to="/path"` | Target route                            |
+| `className`  | Function that gives conditional class   |
+| `style`      | Function that returns conditional style |
+| `end`        | Ensures exact matching                  |
+| `isActive`   | Boolean indicating current URL match    |
+
+
