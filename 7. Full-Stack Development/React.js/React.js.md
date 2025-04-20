@@ -834,6 +834,9 @@ In this case, `:id` is a **route parameter**.
 
 ### Accessing Dynamic Parameters: `useParams`
 
+- `useParams()` is a **React Router hook** used to **access dynamic parameters** from the current URL.
+- It is most useful with **dynamic routes** like `/user/:id`, `/post/:slug`, etc.
+
 ```jsx
 import { useParams } from "react-router-dom";
 
@@ -843,6 +846,43 @@ function UserProfile() {
   return <h1>User ID: {id}</h1>;
 }
 ```
+
+
+### `useNavigate()` in React Router
+
+- `useNavigate()` is a hook provided by `react-router-dom`.
+- It is used to **programmatically navigate** to different routes (without clicking a `<Link>` or `<NavLink>`).
+- It replaces the older `useHistory()` from React Router v5.
+
+```jsx
+const navigate = useNavigate();
+
+function handleClick() {
+  navigate("/about");
+}
+```
+
+### 🔁 Navigate with Parameters
+
+```jsx
+navigate(`/user/${userId}`);
+```
+
+### ⏮️ Navigate Back or Forward
+
+```jsx
+navigate(-1); // Go back
+navigate(1);  // Go forward
+```
+
+|Feature|Description|
+|---|---|
+|`navigate("/path")`|Navigate to a route|
+|`navigate(-1)`|Go back|
+|`navigate(1)`|Go forward|
+|`{ replace: true }`|Replace history entry|
+|`{ state: {...} }`|Pass data with navigation
+
 ### NavLink in React Router
 
 `NavLink` is a special version of the `<Link>` component in `react-router-dom` that **adds styling attributes to the rendered element when it matches the current URL**.
