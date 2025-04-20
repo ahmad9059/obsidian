@@ -832,3 +832,49 @@ Dynamic routing allows us to create routes where parts of the URL are **variable
 
 In this case, `:id` is a **route parameter**.
 
+
+### NavLink in React Router
+
+`NavLink` is a special version of the `<Link>` component in `react-router-dom` that **adds styling attributes to the rendered element when it matches the current URL**.
+
+It’s perfect when you want to highlight the active page in a navigation menu (e.g., changing the color or adding underline).
+
+
+```jsx
+<NavLink to="/home">Home</NavLink>
+<NavLink to="/about">About</NavLink>
+```
+
+
+### Active Styling with `NavLink`
+
+By default, `NavLink` applies an **`active`** class when the route matches.
+
+You can also provide your own styles or class names based on the active state using:
+
+**✅ className as a Function**
+
+```jsx
+<NavLink 
+  to="/home"
+  className={({ isActive }) => isActive ? "active-link" : "inactive-link"}
+>
+  Home
+</NavLink>
+```
+
+**✅ `style` as a Function**
+
+```jsx
+<NavLink 
+  to="/about"
+  style={({ isActive }) => ({
+    color: isActive ? "green" : "gray",
+    textDecoration: isActive ? "underline" : "none"
+  })}
+>
+  About
+</NavLink>
+```
+
+
