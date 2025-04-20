@@ -961,4 +961,32 @@ function Navbar() {
 | `end`        | Ensures exact matching                  |
 | `isActive`   | Boolean indicating current URL match    |
 
+### `<Outlet />` in React Router
 
+
+- `<Outlet />` is a **placeholder component** used to render **child routes** inside a **parent route**.
+- It's like saying: “Here is where the nested component will appear.”
+
+### ✅ How It Works
+
+- Visiting `/dashboard/profile` will render:
+    - `Dashboard` component
+    - `Profile` component inside the `<Outlet />`
+- Visiting `/dashboard/settings` will render:
+    - `Dashboard` component
+    - `Settings` component inside the `<Outlet />`
+
+
+```jsx
+import { Outlet } from "react-router-dom";
+
+function Dashboard() {
+  return (
+    <div>
+      <h1>Dashboard Layout</h1>
+      {/* Nested route component will be rendered here */}
+      <Outlet />
+    </div>
+  );
+}
+```
