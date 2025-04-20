@@ -778,3 +778,57 @@ function Form() {
 export default Form;
 ```
 
+
+## Dynamic Routing in React.js
+
+**Dynamic Routing** means that the routing is handled **at runtime** (not at compile time like in traditional HTML websites).
+
+In **React.js**, dynamic routing is implemented using **React Router**, a library that enables navigation among views of various components.
+
+Unlike traditional routing where routes are hardcoded in a file (like `routes.php`), React dynamically loads components based on the current URL.
+
+
+**Installation of `react-router-dom`**
+
+```jsx
+npm install react-router-dom
+```
+
+### Core Components of React Router
+
+- **`BrowserRouter`** – Wraps the app and enables routing.
+- **`Routes`** – A container for all the `Route` components.
+- **`Route`** – Defines the path and component to render.
+- **`Link` / `NavLink`** – Used for navigation without reloading the page.
+- **`useParams`** – Hook to access URL parameters (useful for dynamic routes).
+
+### Basic Routing Setup
+
+```jsx
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './Home';
+import About from './About';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+```
+
+
+### What is Dynamic Routing?
+
+Dynamic routing allows us to create routes where parts of the URL are **variables**, e.g., `/user/1`, `/user/2`, etc.
+
+```jsx
+<Route path="/user/:id" element={<UserProfile />} />
+```
+
+In this case, `:id` is a **route parameter**.
+
