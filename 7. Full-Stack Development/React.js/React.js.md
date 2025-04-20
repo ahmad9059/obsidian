@@ -878,3 +878,35 @@ You can also provide your own styles or class names based on the active state us
 ```
 
 
+### Example with Full NavBar
+
+```jsx
+import { NavLink } from "react-router-dom";
+import "./styles.css"; // Assume you have .active-link class here
+
+function Navbar() {
+  return (
+    <nav>
+      <NavLink to="/" end className={({ isActive }) => isActive ? "active-link" : ""}>
+        Home
+      </NavLink>
+      <NavLink to="/about" className={({ isActive }) => isActive ? "active-link" : ""}>
+        About
+      </NavLink>
+      <NavLink to="/contact" className={({ isActive }) => isActive ? "active-link" : ""}>
+        Contact
+      </NavLink>
+    </nav>
+  );
+}
+```
+
+### Summary of `NavLink`
+
+|Prop/Feature|Description|
+|---|---|
+|`to="/path"`|Target route|
+|`className`|Function that gives conditional class|
+|`style`|Function that returns conditional style|
+|`end`|Ensures exact matching|
+|`isActive`|Boolean indicating current URL match|
