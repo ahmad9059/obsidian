@@ -1203,3 +1203,56 @@ Note: 🔍 Think of reconciliation as React saying: "Okay, what exactly changed?
 ```
 
 
+## Axios for Session Management & Separation
+
+### 1. Why Use a Separate Axios File?
+
+- Centralizes config (base URL, headers, interceptors)
+- Cleaner code, reusable instance
+- Easy to maintain sessions (cookies, tokens)
+- Can add error handlers globally
+
+### 2. Basic Axios Setup (Separate File)
+
+🗂️ File: `axiosInstance.js`
+
+```jsx
+import axios from "axios";
+
+// Create an Axios instance
+const instance = axios.create({
+  baseURL: "https://fakestoreapi.com/",  // 🏠 Your backend URL
+  withCredentials: true,                 // ✅ Important for session cookies
+});
+
+export default instance;
+```
+
+
+### 3. What `withCredentials: true` Does
+
+- Allows Axios to send cookies and authentication headers
+- Required when working with sessions (esp. JWT or Express sessions)
+- Must also be enabled on backend (CORS settings)
+
+### 4. Using It in Components
+
+```jsx
+import axios from "../axiosInstance";
+
+const getProducts = async () => {
+  try {
+    const res = await axios.get("/products");
+    console.log(res.data);
+  } catch (err) {
+    console.error(err);
+  }
+};
+```
+
+| Concept           | Purpose                               |
+| ----------------- | ------------------------------------- |
+| `withCredentials` | Send cookies for session management   |
+| `axios.create()`  | Reusable config for base URL, etc.    |
+| `interceptors`    | Add headers (like auth) automatically |
+| `instance.get()`  | Use anywhere like normal Axios        |
