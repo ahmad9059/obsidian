@@ -1091,4 +1091,69 @@ useEffect(() => {
 }, []);
 ```
 
+### React Component Lifecycle
 
+The **component lifecycle** refers to the sequence of methods/functions that are invoked during the life of a React component — from its creation to its removal from the DOM.
+
+#### 🧱 3 Main Phases:
+
+#### 1. **Mounting**
+
+Component is being created and inserted into the DOM.
+
+- `constructor()` → (Class component only)
+- `render()`
+- `componentDidMount()` ✅ _(ideal for API calls, subscriptions)_
+#### 2. **Updating**
+
+When props or state change.
+
+- `shouldComponentUpdate()` → (optional)
+- `render()`
+- `componentDidUpdate()` ✅ _(runs after update)_
+#### 3. **Unmounting**
+
+Component is removed from the DOM.
+
+- `componentWillUnmount()` ✅ _(cleanup tasks: timers, subscriptions, etc.)_
+
+#### Functional Components use `useEffect` for all of this!
+
+- A **React Hook** for handling **side effects** (e.g. API calls, DOM updates, subscriptions).
+- Runs **after the component renders**.
+
+
+#### Basic Syntax
+
+```jsx
+useEffect(() => {
+  // effect logic
+  return () => {
+    // optional cleanup
+  };
+}, [dependencies]);
+```
+
+#### Dependency Array
+
+- `[]`: runs **once** after initial render (like `componentDidMount`)
+- `[var]`: runs when `var` changes
+- No array: runs **after every render**
+
+#### 💡 Common Uses
+
+- API calls
+- Event listeners
+- Timers
+- Cleanups (return function)
+
+#### Full Example
+
+```jsx
+useEffect(() => {
+    console.log("About Component is Created");
+
+    return () => {
+      console.log("About Comonent is Deleted");
+};
+```
