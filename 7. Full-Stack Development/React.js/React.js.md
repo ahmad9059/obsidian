@@ -990,3 +990,105 @@ function Dashboard() {
   );
 }
 ```
+
+## API Integration in React.js using AJAX (`fetch` / `axios`)
+
+
+API integration in React lets your app communicate with backends, external services, or databases. AJAX (Asynchronous JavaScript and XML) is used to make asynchronous requests to APIs.
+
+### 1. Using `fetch`
+
+```jsx
+useEffect(() => {
+  fetch('https://api.example.com/data')
+    .then(res => res.json())
+    .then(data => setData(data))
+    .catch(err => console.error(err));
+}, []);
+
+```
+
+- `fetch()` returns a Promise.
+- Must manually handle JSON parsing (`res.json()`).
+
+### 2. Using `axios`
+
+```jsx
+npm install axios // install this package to use axios
+```
+
+```jsx
+import axios from "axios";
+import React from "react";
+
+const App = () => {
+  const api = "https://fakestoreapi.com/products";
+
+  // 📥 Function to GET products from the API
+  const getProducts = () => {
+    axios
+      .get(api)
+      .then((res) => console.log("GET:", res))
+      .catch((err) => console.error("GET Error:", err));
+  };
+
+  // 📤 Function to POST (add) a new product to the API
+  const addProducts = () => {
+    axios
+      .post(api, {
+        id: 0,
+        title: "Sample Product",
+        price: 0.1,
+        description: "This is a test product.",
+        category: "sample-category",
+        image: "http://example.com/image.jpg",
+      })
+      .then((res) => console.log("POST:", res))
+      .catch((err) => console.error("POST Error:", err));
+  };
+
+  return (
+    <div className="p-5">
+      {/* 🟢 Button to trigger GET request */}
+      <button
+        onClick={getProducts}
+        className="px-3 py-2 m-2 bg-blue-500 rounded-lg text-white"
+      >
+        Get Data
+      </button>
+
+      {/* 🔵 Button to trigger POST request */}
+      <button
+        onClick={addProducts}
+        className="px-3 py-2 m-2 bg-green-600 rounded-lg text-white"
+      >
+        Send Data
+      </button>
+    </div>
+  );
+};
+
+export default App;
+```
+
+
+### Example (with async/await)
+
+```jsx
+useEffect(() => {
+  const fetchData = async () => {
+    try {
+      const response = await axios.get('https://api.example.com/data');
+      setData(response.data);
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchData();
+}, []);
+```
+
+
