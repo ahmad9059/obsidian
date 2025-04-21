@@ -1153,7 +1153,24 @@ useEffect(() => {
 useEffect(() => {
     console.log("About Component is Created");
 
-    return () => {
+return () => {
       console.log("About Comonent is Deleted");
 };
 ```
+
+
+#### Example: Cleanup (like `componentWillUnmount`)
+
+```jsx
+useEffect(() => {
+  const timer = setInterval(() => {
+    console.log("Running interval...");
+  }, 1000);
+
+  return () => {
+    clearInterval(timer); // 🧹 cleanup
+    console.log("Interval cleared");
+  };
+}, []);
+```
+
