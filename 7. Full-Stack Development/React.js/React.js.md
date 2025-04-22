@@ -1256,3 +1256,78 @@ const getProducts = async () => {
 | `axios.create()`  | Reusable config for base URL, etc.    |
 | `interceptors`    | Add headers (like auth) automatically |
 | `instance.get()`  | Use anywhere like normal Axios        |
+
+## ReactJS Context API
+
+- A way to share data between components without passing props manually at every level.
+- Solves **prop drilling** (passing data from parent to child repeatedly).
+
+### When to Use Context API?
+
+- When you need to share state across many components (e.g., theme, user authentication, language, etc.)
+- Good for **global state management** in small to medium-sized apps.
+
+### Key Components of Context API
+
+1. `React.createContext()`
+
+- Creates a context object.
+
+```jsx
+const MyContext = React.createContext();
+```
+
+2. `<Context.Provider>`
+
+- Wraps components to provide the context value.
+
+```jsx
+<MyContext.Provider value={someData}>
+  <ChildComponent />
+</MyContext.Provider>
+```
+
+3. `useContext(Context)`
+
+- A hook to access the context value in a functional component.
+
+```jsx
+const value = useContext(MyContext);
+```
+
+### Example: Basic Usage
+
+```jsx
+// 1. Create Context
+const ThemeContext = React.createContext();
+
+// 2. Create a Provider Component
+const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = React.useState("light");
+
+  return (
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
+
+// 3. Use Context in a Child Component
+const ThemeToggler = () => {
+  const { theme, setTheme } = React.useContext(ThemeContext);
+
+  return (
+    <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+      Switch to {theme === "light" ? "dark" : "light"} mode
+    </button>
+  );
+};
+
+// 4. Wrap in App
+const App = () => (
+  <ThemeProvider>
+    <ThemeToggler />
+  </ThemeProvider>
+);
+```
+
