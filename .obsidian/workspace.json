@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1-Notes/DBMS/MySQL.md",
+                "file": "4- University Stuff/Computer Memory System - Study Material.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MySQL"
+              "title": "Computer Memory System - Study Material"
             }
           }
         ]
@@ -177,6 +177,8 @@
   },
   "active": "ee70a38af7c4bf36",
   "lastOpenFiles": [
+    "1-Notes/DBMS/MySQL.md",
+    "4- University Stuff/Computer Memory System - Study Material.md",
     "4- University Stuff/Assignment.md",
     "2- My Thoughts/About Life and Love.md",
     "2- My Thoughts/For Her.md",
@@ -186,7 +188,6 @@
     "6- Tools/awk, sed, grep, ripgrep.md",
     "6- Tools/Docker.md",
     "6- Tools/Git.md",
-    "1-Notes/DBMS/MySQL.md",
     "1-Notes/DBMS/MySQL Commands.md",
     "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
     "posts/chatbot.md",
@@ -207,7 +208,6 @@
     "3- Rough Notes/MLSA-Quiz.md",
     "3- Rough Notes/MLSA.md",
     "3- Rough Notes/aws.md",
-    "3- Rough Notes/Accounts.md",
     "posts/assets/mysql/img.png",
     "posts/assets/mysql/img-9.png",
     "posts/assets/mysql/img-8.png",
