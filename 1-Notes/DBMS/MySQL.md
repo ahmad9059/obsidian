@@ -786,3 +786,219 @@ SELECT * FROM users WHERE name LIKE '_a%';
 SELECT * FROM users WHERE name REGEXP '^[A-C]';
 ```
 
+
+## Stored Procedures in MySQL
+
+A **Stored Procedure** is a precompiled set of SQL statements stored in the database that can be executed repeatedly. It helps encapsulate logic in a modular way, improving **reusability, maintainability**, and **performance**.
+
+
+### Benefits of Stored Procedures
+
+- **Modularity** – Write once, use many times. 
+- **Performance** – Precompiled for faster execution.
+- **Security** – Users can be granted access to run procedures without giving access to underlying tables.
+- **Reduced network traffic** – Fewer queries sent between application and server.
+
+### Syntax: Creating a Stored Procedure
+
+```mysql
+DELIMITER //
+
+CREATE PROCEDURE procedure_name (
+    IN param1 datatype,
+    OUT param2 datatype,
+    INOUT param3 datatype
+)
+BEGIN
+    -- SQL statements go here
+END //
+
+DELIMITER ;
+```
+
+
+**Example:**
+
+```mysql
+DELIMITER //
+
+CREATE PROCEDURE GetEmployeeByID(IN emp_id INT)
+BEGIN
+    SELECT * FROM employees WHERE id = emp_id;
+END //
+
+DELIMITER ;
+```
+
+### Calling a Stored Procedure
+
+```mysql
+CALL GetEmployeeByID(1);
+```
+
+If there are `OUT` or `INOUT` parameters:
+
+```mysql
+CALL ProcedureName(@out_param);
+SELECT @out_param;
+```
+
+### Types of Parameters
+
+|Type|Description|
+|---|---|
+|`IN`|Input only (passed by value).|
+|`OUT`|Output only (value returned).|
+|`INOUT`|Both input and output (passed by reference).|
+
+### Modifying or Dropping Stored Procedures
+
+```mysql
+DROP PROCEDURE IF EXISTS procedure_name;
+```
+
+- **Alter is not supported**: You must drop and recreate the procedure.
+
+### Control Structures in Stored Procedures
+
+#### IF-ELSE
+
+Used to execute different blocks of code based on a condition.
+
+```mysql
+IF condition THEN
+    -- statements
+ELSE
+    -- statements
+END IF;
+```
+
+**Example:**
+
+```mysql
+DELIMITER //
+
+CREATE PROCEDURE CheckAge(IN age INT)
+BEGIN
+    IF age >= 18 THEN
+        SELECT 'You are an adult' AS result;
+    ELSE
+        SELECT 'You are a minor' AS result;
+    END IF;
+END //
+
+DELIMITER ;
+
+-- Call the procedure
+CALL CheckAge(20);  -- Output: You are an adult
+CALL CheckAge(15);  -- Output: You are a minor
+```
+
+
+#### CASE Statement
+
+Used as an alternative to multiple `IF` statements when checking several conditions.
+
+**Syntax:**
+
+```mysql
+CASE variable
+    WHEN value1 THEN statement1;
+    WHEN value2 THEN statement2;
+    ELSE statement_default;
+END CASE;
+```
+
+**Example:**
+
+```mysql
+DELIMITER //
+
+CREATE PROCEDURE GradeResult(IN grade CHAR(1))
+BEGIN
+    CASE grade
+        WHEN 'A' THEN SELECT 'Excellent' AS Result;
+        WHEN 'B' THEN SELECT 'Good' AS Result;
+        WHEN 'C' THEN SELECT 'Average' AS Result;
+        ELSE SELECT 'Fail or Invalid Grade' AS Result;
+    END CASE;
+END //
+
+DELIMITER ;
+
+-- Call the procedure
+CALL GradeResult('A');  -- Output: Excellent
+CALL GradeResult('D');  -- Output: Fail or Invalid Grade
+```
+
+
+#### WHILE Loop
+
+Repeats a block of statements while the condition is true.
+
+**Syntax**
+
+```mysql
+WHILE condition DO
+    -- statements
+END WHILE;
+```
+
+**Example:**
+
+```mysql
+DELIMITER //
+
+CREATE PROCEDURE CountToFive()
+BEGIN
+    DECLARE i INT DEFAULT 1;
+    
+    WHILE i <= 5 DO
+        SELECT CONCAT('Count: ', i) AS Output;
+        SET i = i + 1;
+    END WHILE;
+END //
+
+DELIMITER ;
+
+-- Call the procedure
+CALL CountToFive();
+```
+
+
+#### ## `REPEAT` Loop
+
+Similar to `WHILE`, but checks the condition **after** executing the block.
+
+**Syntax:**
+
+```mysql
+REPEAT
+    -- statements
+UNTIL condition
+END REPEAT;
+```
+
+**Example:**
+
+```mysql
+DELIMITER //
+
+CREATE PROCEDURE RepeatExample()
+BEGIN
+    DECLARE i INT DEFAULT 1;
+
+    REPEAT
+        SELECT CONCAT('Repeat Count: ', i) AS Output;
+        SET i = i + 1;
+    UNTIL i > 5
+    END REPEAT;
+END //
+
+DELIMITER ;
+
+-- Call the procedure
+CALL RepeatExample();
+```
+
+
