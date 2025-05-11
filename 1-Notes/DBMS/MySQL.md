@@ -1054,4 +1054,3 @@ SHOW PROCEDURE STATUS WHERE Db = 'your_database';
 SHOW CREATE PROCEDURE procedure_name;
 ```
 
-

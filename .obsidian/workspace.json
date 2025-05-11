@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "posts/mysql.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "mysql"
+            }
+          },
+          {
+            "id": "919c88d261a67ec4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "1-Notes/DBMS/MySQL.md",
                 "mode": "source",
                 "source": false
@@ -21,7 +35,8 @@
               "title": "MySQL"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -175,13 +190,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ee70a38af7c4bf36",
+  "active": "919c88d261a67ec4",
   "lastOpenFiles": [
+    "posts/mysql.md",
+    "1-Notes/DBMS/MySQL.md",
+    "posts/Fundamentals-of-JavaScript.md",
     "3- Rough Notes/Linkedin Post/DSA Complete Linkedin Post.md",
     "3- Rough Notes/A Jack of all trades, but master of none, is oftentimes better than master of one..md",
     "4- University Stuff/Assignment.md",
     "4- University Stuff/Computer Memory System - Study Material.md",
-    "1-Notes/DBMS/MySQL.md",
     "2- My Thoughts/About Life and Love.md",
     "2- My Thoughts/For Her.md",
     "7. Full-Stack Development/React.js/React.js.md",
@@ -194,13 +211,11 @@
     "7. Full-Stack Development/JavaScript/Fundamentals of JavaScript.md",
     "posts/chatbot.md",
     "posts/chatbot.md~",
-    "posts/Fundamentals-of-JavaScript.md",
     "posts/assets/tech/chatbot.webp",
     "posts/assets/tech",
     "posts/sqlServer.md",
     "posts/mysql.md~",
     "posts/sqlServer.md~",
-    "posts/mysql.md",
     "4- University Stuff/Finals Exams.md",
     "1-Notes/DBMS/Complete DBMS.md",
     "4- University Stuff/Mids 2.md",
