@@ -1,9 +1,9 @@
 {
-  "cssTheme": "Blue Topaz",
+  "cssTheme": "Tokyo Night",
   "baseFontSize": 16,
   "textFontFamily": "JetBrainsMono Nerd Font",
   "interfaceFontFamily": "JetBrainsMono Nerd Font",
   "monospaceFontFamily": "JetBrainsMono Nerd Font",
-  "theme": "moonstone",
+  "theme": "obsidian",
   "accentColor": "#0091ff"
 }
