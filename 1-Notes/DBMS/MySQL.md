@@ -1002,3 +1002,56 @@ CALL RepeatExample();
 ```
 
 
+### Error Handling
+
+Use `DECLARE ... HANDLER` to define how to handle errors.
+
+**Syntax**
+
+```mysql
+DECLARE CONTINUE HANDLER FOR SQLEXCEPTION
+BEGIN
+    -- Error handling code
+END;
+```
+
+
+**Create the procedure with error handler**
+
+```mysql
+DELIMITER //
+
+CREATE PROCEDURE InsertStudent (
+    IN student_id INT,
+    IN student_name VARCHAR(50)
+)
+BEGIN
+    DECLARE CONTINUE HANDLER FOR SQLEXCEPTION
+    BEGIN
+        SELECT 'Error occurred while inserting student!' AS ErrorMessage;
+    END;
+
+    -- Attempt to insert student
+    INSERT INTO students (id, name) VALUES (student_id, student_name);
+
+    -- Continue execution even if error occurred
+    SELECT 'Insert attempt completed.' AS Status;
+END //
+
+DELIMITER ;
+```
+
+
+### Show Existing Stored Procedures
+
+```mysql
+SHOW PROCEDURE STATUS WHERE Db = 'your_database';
+```
+
+**Or to view the code:**
+
+```mysql
+SHOW CREATE PROCEDURE procedure_name;
+```
+
+
