@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1-Notes/DBMS/MySQL.md",
+                "file": "posts/80-20-rule.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MySQL"
+              "title": "80-20-rule"
             }
           }
         ]
@@ -177,8 +177,10 @@
   },
   "active": "919c88d261a67ec4",
   "lastOpenFiles": [
-    "posts/mysql.md",
+    "posts/80-20-rule.md~",
     "1-Notes/DBMS/MySQL.md",
+    "posts/80-20-rule.md",
+    "posts/mysql.md",
     "posts/Fundamentals-of-JavaScript.md",
     "3- Rough Notes/Linkedin Post/DSA Complete Linkedin Post.md",
     "3- Rough Notes/A Jack of all trades, but master of none, is oftentimes better than master of one..md",
@@ -206,8 +208,6 @@
     "4- University Stuff/Mids 2.md",
     "4- University Stuff/Mids Exams.md",
     "6- Tools/Neovim-Vim.md",
-    "3- Rough Notes/MLSA-Quiz.md",
-    "3- Rough Notes/MLSA.md",
     "posts/assets/mysql/img.png",
     "posts/assets/mysql/img-9.png",
     "posts/assets/mysql/img-8.png",
