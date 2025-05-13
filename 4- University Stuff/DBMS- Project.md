@@ -1,7 +1,18 @@
 
+## Project Description
+
+This project involves creating a backend database system in **MS SQL Server** to support the core functionalities of an online bookstore. It includes managing users (admins and customers), handling book inventories, processing orders and payments, managing customer carts, categorizing books, and collecting customer feedback via reviews.
+
+
+## Project Objective
+
+This project involves creating a backend database system in **MS SQL Server** to support the core functionalities of an online bookstore. It includes managing users (admins and customers), handling book inventories, processing orders and payments, managing customer carts, categorizing books, and collecting customer feedback via review
+
 ## Tables - Schema
 
 ### 1. User Table
+
+Stores information about users including their name, email, address, role (admin/customer), and registration timestamp. It serves as the base for all user-related activities such as placing orders or writing reviews.
 
 |Column|Data Type|Constraints|
 |---|---|---|
@@ -16,6 +27,8 @@
 
 ### 2. Authors Table
 
+Contains detailed information about each book such as title, author, description, price, stock, and category. Each book is linked to a category and can appear in orders, reviews, and carts.
+
 |Column|Data Type|Constraints|
 |---|---|---|
 |AuthorID|INT|PRIMARY KEY, IDENTITY(1,1)|
@@ -23,6 +36,8 @@
 |Bio|TEXT||
 
 ### 3. Publishers Table 
+
+Defines categories like Fiction, Science, History to group books for better browsing and filtering. Each book must belong to one category.
 
 |Column|Data Type|Constraints|
 |---|---|---|
@@ -33,12 +48,16 @@
 
 ### 4. Categories Table
 
+Tracks which users have added which books to their shopping cart, including quantity. Helps simulate a real-time cart system before the user checks out and places an order.
+
 |Column|Data Type|Constraints|
 |---|---|---|
 |CategoryID|INT|PRIMARY KEY, IDENTITY(1,1)|
 |CategoryName|VARCHAR(100)|NOT NULL|
 
 ### 5. Books Table
+
+Stores data about all completed purchases, including user info, date, total amount, and status. Each order can include multiple books, and links to payments and order items.
 
 |Column|Data Type|Constraints|
 |---|---|---|
@@ -55,6 +74,8 @@
 
 ### 6. Cart Table
 
+Breaks down each order into individual items — books, quantity, and price at time of purchase. Acts as a junction table between Orders and Books to normalize many-to-many relationships.
+
 |Column|Data Type|Constraints|
 |---|---|---|
 |CartID|INT|PRIMARY KEY, IDENTITY(1,1)|
@@ -62,4 +83,54 @@
 |BookID|INT|FOREIGN KEY REFERENCES Books(BookID)|
 |Quantity|INT|NOT NULL|
 
-### 7. 
+### 7. Orders Table
+
+Stores user-submitted ratings and comments for books. Helps future users decide whether to buy a particular book based on previous experiences.
+
+| Column      | Data Type     | Constraints                                           |
+| ----------- | ------------- | ----------------------------------------------------- |
+| OrderID     | INT           | PRIMARY KEY, IDENTITY(1,1)                            |
+| UserID      | INT           | FOREIGN KEY REFERENCES Users(UserID)                  |
+| OrderDate   | DATETIME      | DEFAULT GETDATE()                                     |
+| TotalAmount | DECIMAL(10,2) | NOT NULL                                              |
+| Status      | VARCHAR(50)   | CHECK (Status IN ('Pending', 'Shipped', 'Delivered')) |
+### 8. OrderItems Table
+
+Keeps record of all payments made, including method (Cash/Card), amount, status, and linked order. Ensures financial tracking of all completed and pending transactions.
+
+| Column          | Data Type     | Constraints                            |
+| --------------- | ------------- | -------------------------------------- |
+| OrderItemID     | INT           | PRIMARY KEY, IDENTITY(1,1)             |
+| OrderID         | INT           | FOREIGN KEY REFERENCES Orders(OrderID) |
+| BookID          | INT           | FOREIGN KEY REFERENCES Books(BookID)   |
+| Quantity        | INT           | NOT NULL                               |
+| PriceAtPurchase | DECIMAL(10,2) | NOT NULL                               |
+
+### 9. Payments Table
+
+Stores information about book publishers like name, address, and contact details. Each book can be linked to a publisher for credibility and reference.
+
+| Column        | Data Type     | Constraints                            |
+| ------------- | ------------- | -------------------------------------- |
+| PaymentID     | INT           | PRIMARY KEY, IDENTITY(1,1)             |
+| OrderID       | INT           | FOREIGN KEY REFERENCES Orders(OrderID) |
+| PaymentDate   | DATETIME      |                                        |
+| Amount        | DECIMAL(10,2) |                                        |
+| PaymentMethod | VARCHAR(50)   |                                        |
+| PaymentStatus | VARCHAR(50)   |                                        |
+
+### 10. Review Table
+
+Stores detailed information about authors, including their biography and contact info. Each book is associated with an author via foreign keys for proper attribution.
+
+| Column     | Data Type | Constraints                          |
+| ---------- | --------- | ------------------------------------ |
+| ReviewID   | INT       | PRIMARY KEY, IDENTITY(1,1)           |
+| UserID     | INT       | FOREIGN KEY REFERENCES Users(UserID) |
+| BookID     | INT       | FOREIGN KEY REFERENCES Books(BookID) |
+| Rating     | INT       | CHECK (Rating BETWEEN 1 AND 5)       |
+| Comment    | TEXT      |                                      |
+| ReviewDate | DATETIME  | DEFAULT GETDATE()                    |
+|            |           |                                      |
+
+![](4-%20University%20Stuff/assets/Editor%20_%20Mermaid%20Chart-2025-05-13-180901.png)
