@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/80-20-rule.md",
+                "file": "4- University Stuff/DBMS- Project.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "80-20-rule"
+              "title": "DBMS- Project"
             }
           }
         ]
@@ -177,8 +177,9 @@
   },
   "active": "919c88d261a67ec4",
   "lastOpenFiles": [
-    "posts/forher.md",
     "posts/80-20-rule.md",
+    "4- University Stuff/DBMS- Project.md",
+    "posts/forher.md",
     "posts/assets/80-20/80-20.webp",
     "posts/assets/80-20",
     "posts/80-20-rule.md~",
@@ -210,7 +211,6 @@
     "1-Notes/DBMS/Complete DBMS.md",
     "4- University Stuff/Mids 2.md",
     "4- University Stuff/Mids Exams.md",
-    "6- Tools/Neovim-Vim.md",
     "posts/assets/mysql/img.png",
     "posts/assets/mysql/img-9.png",
     "posts/assets/mysql/img-8.png",
