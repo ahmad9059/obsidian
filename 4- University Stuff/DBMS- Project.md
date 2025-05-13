@@ -1,89 +1,65 @@
 
-## 1. Users Table
+## Tables - Schema
 
-| Column Name | Data Type      | Description            |
-| ----------- | -------------- | ---------------------- |
-| `UserID`    | `INT` (PK)     | Unique user ID         |
-| `Name`      | `VARCHAR(100)` | Full name              |
-| `Email`     | `VARCHAR(100)` | Unique                 |
-| `Password`  | `VARCHAR(255)` | Hashed password        |
-| `Phone`     | `VARCHAR(15)`  | Optional               |
-| `Address`   | `TEXT`         | Shipping address       |
-| `Role`      | `VARCHAR(10)`  | `Customer` or `Admin`  |
-| `CreatedAt` | `DATETIME`     | Registration timestamp |
+### 1. User Table
 
-## 2. Books Table
-
-| Column Name   | Data Type       | Description              |
-| ------------- | --------------- | ------------------------ |
-| `BookID`      | `INT` (PK)      | Unique book ID           |
-| `Title`       | `VARCHAR(200)`  | Book title               |
-| `Author`      | `VARCHAR(100)`  | Book author              |
-| `Description` | `TEXT`          | Summary of the book      |
-| `ISBN`        | `VARCHAR(20)`   | Unique identifier        |
-| `Price`       | `DECIMAL(10,2)` | Book price               |
-| `Stock`       | `INT`           | Available quantity       |
-| `CategoryID`  | `INT` (FK)      | Linked to Category table |
-| `ImageURL`    | `VARCHAR(255)`  | Optional book cover      |
-
-## 3. Categories Table
-
-| Column Name    | Data Type      | Description        |
-| -------------- | -------------- | ------------------ |
-| `CategoryID`   | `INT` (PK)     | Unique category ID |
-| `CategoryName` | `VARCHAR(100)` | E.g., "Fiction"    |
-
-## 4. Cart Table
-
-| Column Name | Data Type  | Description             |
-| ----------- | ---------- | ----------------------- |
-| `CartID`    | `INT` (PK) | Unique cart item ID     |
-| `UserID`    | `INT` (FK) | User who added the item |
-| `BookID`    | `INT` (FK) | Book added to cart      |
-| `Quantity`  | `INT`      | Number of copies added  |
-
-
-## 5. Orders Table
-
-|Column Name|Data Type|Description|
+|Column|Data Type|Constraints|
 |---|---|---|
-|`OrderID`|`INT` (PK)|Unique order ID|
-|`UserID`|`INT` (FK)|User who placed the order|
-|`OrderDate`|`DATETIME`|When the order was placed|
-|`TotalAmount`|`DECIMAL(10,2)`|Total cost of order|
-|`Status`|`VARCHAR(50)`|Pending, Shipped, Delivered|
+|UserID|INT|PRIMARY KEY, IDENTITY(1,1)|
+|Name|VARCHAR(100)|NOT NULL|
+|Email|VARCHAR(100)|UNIQUE, NOT NULL|
+|Password|VARCHAR(255)|NOT NULL|
+|Phone|VARCHAR(15)||
+|Address|TEXT||
+|Role|VARCHAR(10)|CHECK (Role IN ('Customer', 'Admin'))|
+|CreatedAt|DATETIME|DEFAULT GETDATE()|
 
-## 6. OrderItems Table
+### 2. Authors Table
 
-| Column Name       | Data Type       | Description                 |
-| ----------------- | --------------- | --------------------------- |
-| `OrderItemID`     | `INT` (PK)      | Unique item ID              |
-| `OrderID`         | `INT` (FK)      | Linked to Orders            |
-| `BookID`          | `INT` (FK)      | Linked to Books             |
-| `Quantity`        | `INT`           | How many copies             |
-| `PriceAtPurchase` | `DECIMAL(10,2)` | Price per copy at that time |
-## Optional Tables (Advanced)
+|Column|Data Type|Constraints|
+|---|---|---|
+|AuthorID|INT|PRIMARY KEY, IDENTITY(1,1)|
+|Name|VARCHAR(100)|NOT NULL|
+|Bio|TEXT||
 
-| Column     | Description   |
-| ---------- | ------------- |
-| `ReviewID` | PK            |
-| `UserID`   | FK to Users   |
-| `BookID`   | FK to Books   |
-| `Rating`   | 1-5           |
-| `Comment`  | Optional text |
+### 3. Publishers Table 
 
-## Author
-## Payment
-## Publisher
+|Column|Data Type|Constraints|
+|---|---|---|
+|PublisherID|INT|PRIMARY KEY, IDENTITY(1,1)|
+|Name|VARCHAR(100)|NOT NULL|
+|Website|VARCHAR(255)||
+|ContactInfo|TEXT||
 
-## 🔗 Relationships Summary
+### 4. Categories Table
 
-- **Users → Orders**: 1 to many
-- **Users → Cart**: 1 to many
-- **Users → Reviews**: 1 to many
-- **Orders → OrderItems**: 1 to many
-- **Books → OrderItems**: 1 to many
-- **Books → Category**: many to 1
-- **Books → Reviews**: 1 to many
-- **Users → Wishlist (Many-to-Many)**
-- **Users → Cart (Many-to-Many through Cart)**
+|Column|Data Type|Constraints|
+|---|---|---|
+|CategoryID|INT|PRIMARY KEY, IDENTITY(1,1)|
+|CategoryName|VARCHAR(100)|NOT NULL|
+
+### 5. Books Table
+
+|Column|Data Type|Constraints|
+|---|---|---|
+|BookID|INT|PRIMARY KEY, IDENTITY(1,1)|
+|Title|VARCHAR(200)|NOT NULL|
+|AuthorID|INT|FOREIGN KEY REFERENCES Authors(AuthorID)|
+|PublisherID|INT|FOREIGN KEY REFERENCES Publishers(PublisherID)|
+|Description|TEXT||
+|ISBN|VARCHAR(20)|UNIQUE|
+|Price|DECIMAL(10,2)|NOT NULL|
+|Stock|INT|NOT NULL|
+|CategoryID|INT|FOREIGN KEY REFERENCES Categories(CategoryID)|
+|ImageURL|VARCHAR(255)||
+
+### 6. Cart Table
+
+|Column|Data Type|Constraints|
+|---|---|---|
+|CartID|INT|PRIMARY KEY, IDENTITY(1,1)|
+|UserID|INT|FOREIGN KEY REFERENCES Users(UserID)|
+|BookID|INT|FOREIGN KEY REFERENCES Books(BookID)|
+|Quantity|INT|NOT NULL|
+
+### 7. 
