@@ -55,22 +55,26 @@
 
 ## 6. OrderItems Table
 
-|Column Name|Data Type|Description|
-|---|---|---|
-|`OrderItemID`|`INT` (PK)|Unique item ID|
-|`OrderID`|`INT` (FK)|Linked to Orders|
-|`BookID`|`INT` (FK)|Linked to Books|
-|`Quantity`|`INT`|How many copies|
-|`PriceAtPurchase`|`DECIMAL(10,2)`|Price per copy at that time|
+| Column Name       | Data Type       | Description                 |
+| ----------------- | --------------- | --------------------------- |
+| `OrderItemID`     | `INT` (PK)      | Unique item ID              |
+| `OrderID`         | `INT` (FK)      | Linked to Orders            |
+| `BookID`          | `INT` (FK)      | Linked to Books             |
+| `Quantity`        | `INT`           | How many copies             |
+| `PriceAtPurchase` | `DECIMAL(10,2)` | Price per copy at that time |
 ## Optional Tables (Advanced)
 
-|Column|Description|
-|---|---|
-|`ReviewID`|PK|
-|`UserID`|FK to Users|
-|`BookID`|FK to Books|
-|`Rating`|1-5|
-|`Comment`|Optional text|
+| Column     | Description   |
+| ---------- | ------------- |
+| `ReviewID` | PK            |
+| `UserID`   | FK to Users   |
+| `BookID`   | FK to Books   |
+| `Rating`   | 1-5           |
+| `Comment`  | Optional text |
+
+## Author
+## Payment
+## Publisher
 
 ## 🔗 Relationships Summary
 
