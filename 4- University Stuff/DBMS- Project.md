@@ -14,16 +14,16 @@ This project involves creating a backend database system in **MS SQL Server** to
 
 Stores information about users including their name, email, address, role (admin/customer), and registration timestamp. It serves as the base for all user-related activities such as placing orders or writing reviews.
 
-|Column|Data Type|Constraints|
-|---|---|---|
-|UserID|INT|PRIMARY KEY, IDENTITY(1,1)|
-|Name|VARCHAR(100)|NOT NULL|
-|Email|VARCHAR(100)|UNIQUE, NOT NULL|
-|Password|VARCHAR(255)|NOT NULL|
-|Phone|VARCHAR(15)||
-|Address|TEXT||
-|Role|VARCHAR(10)|CHECK (Role IN ('Customer', 'Admin'))|
-|CreatedAt|DATETIME|DEFAULT GETDATE()|
+| Column    | Data Type    | Constraints                           |
+| --------- | ------------ | ------------------------------------- |
+| UserID    | INT          | PRIMARY KEY, IDENTITY(1,1)            |
+| Name      | VARCHAR(100) | NOT NULL                              |
+| Email     | VARCHAR(100) | UNIQUE, NOT NULL                      |
+| Password  | VARCHAR(255) | NOT NULL                              |
+| Phone     | VARCHAR(15)  |                                       |
+| Address   | TEXT         |                                       |
+| Role      | VARCHAR(10)  | CHECK (Role IN ('Customer', 'Admin')) |
+| CreatedAt | DATETIME     | DEFAULT GETDATE()                     |
 
 ### 2. Authors Table
 
