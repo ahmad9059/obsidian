@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4- University Stuff/DBMS- Project.md",
+                "file": "4- University Stuff/chart.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DBMS- Project"
+              "title": "chart"
             }
           }
         ]
@@ -177,14 +177,14 @@
   },
   "active": "919c88d261a67ec4",
   "lastOpenFiles": [
+    "3- Rough Notes/online-bookstore-project.md",
+    "4- University Stuff/DBMS- Project.md",
     "4- University Stuff/assets/Editor _ Mermaid Chart-2025-05-13-180901.png",
     "4- University Stuff/assets/ChatGPT Image May 13, 2025, 11_04_31 PM.png",
     "4- University Stuff/assets",
     "4- University Stuff/chart.md",
-    "4- University Stuff/DBMS- Project.md",
     "chart.md",
     "3- Rough Notes/Random.md",
-    "3- Rough Notes/online-bookstore-project.md",
     "3- Rough Notes/MLSA-Quiz.md",
     "3- Rough Notes/MLSA.md",
     "3- Rough Notes/aws.md",
@@ -219,7 +219,6 @@
     "posts/assets/mysql/img-7.png",
     "posts/assets/mysql/img-6.png",
     "posts/assets/mysql/img-5.png",
-    "posts/assets/mysql/img-4.png",
     "posts/assets/mysql",
     "posts/assets/assets",
     "7. Full-Stack Development/React.js",
