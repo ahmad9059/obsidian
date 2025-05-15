@@ -29,48 +29,48 @@ Stores information about users including their name, email, address, role (admin
 
 Contains detailed information about each book such as title, author, description, price, stock, and category. Each book is linked to a category and can appear in orders, reviews, and carts.
 
-|Column|Data Type|Constraints|
-|---|---|---|
-|AuthorID|INT|PRIMARY KEY, IDENTITY(1,1)|
-|Name|VARCHAR(100)|NOT NULL|
-|Bio|TEXT||
+| Column   | Data Type    | Constraints                |
+| -------- | ------------ | -------------------------- |
+| AuthorID | INT          | PRIMARY KEY, IDENTITY(1,1) |
+| Name     | VARCHAR(100) | NOT NULL                   |
+| Bio      | TEXT         |                            |
 
 ### 3. Publishers Table 
 
 Defines categories like Fiction, Science, History to group books for better browsing and filtering. Each book must belong to one category.
 
-|Column|Data Type|Constraints|
-|---|---|---|
-|PublisherID|INT|PRIMARY KEY, IDENTITY(1,1)|
-|Name|VARCHAR(100)|NOT NULL|
-|Website|VARCHAR(255)||
-|ContactInfo|TEXT||
+| Column      | Data Type    | Constraints                |
+| ----------- | ------------ | -------------------------- |
+| PublisherID | INT          | PRIMARY KEY, IDENTITY(1,1) |
+| Name        | VARCHAR(100) | NOT NULL                   |
+| Website     | VARCHAR(255) |                            |
+| ContactInfo | TEXT         |                            |
 
 ### 4. Categories Table
 
 Tracks which users have added which books to their shopping cart, including quantity. Helps simulate a real-time cart system before the user checks out and places an order.
 
-|Column|Data Type|Constraints|
-|---|---|---|
-|CategoryID|INT|PRIMARY KEY, IDENTITY(1,1)|
-|CategoryName|VARCHAR(100)|NOT NULL|
+| Column       | Data Type    | Constraints                |
+| ------------ | ------------ | -------------------------- |
+| CategoryID   | INT          | PRIMARY KEY, IDENTITY(1,1) |
+| CategoryName | VARCHAR(100) | NOT NULL                   |
 
 ### 5. Books Table
 
 Stores data about all completed purchases, including user info, date, total amount, and status. Each order can include multiple books, and links to payments and order items.
 
-|Column|Data Type|Constraints|
-|---|---|---|
-|BookID|INT|PRIMARY KEY, IDENTITY(1,1)|
-|Title|VARCHAR(200)|NOT NULL|
-|AuthorID|INT|FOREIGN KEY REFERENCES Authors(AuthorID)|
-|PublisherID|INT|FOREIGN KEY REFERENCES Publishers(PublisherID)|
-|Description|TEXT||
-|ISBN|VARCHAR(20)|UNIQUE|
-|Price|DECIMAL(10,2)|NOT NULL|
-|Stock|INT|NOT NULL|
-|CategoryID|INT|FOREIGN KEY REFERENCES Categories(CategoryID)|
-|ImageURL|VARCHAR(255)||
+| Column      | Data Type     | Constraints                                    |
+| ----------- | ------------- | ---------------------------------------------- |
+| BookID      | INT           | PRIMARY KEY, IDENTITY(1,1)                     |
+| Title       | VARCHAR(200)  | NOT NULL                                       |
+| AuthorID    | INT           | FOREIGN KEY REFERENCES Authors(AuthorID)       |
+| PublisherID | INT           | FOREIGN KEY REFERENCES Publishers(PublisherID) |
+| Description | TEXT          |                                                |
+| ISBN        | VARCHAR(20)   | UNIQUE                                         |
+| Price       | DECIMAL(10,2) | NOT NULL                                       |
+| Stock       | INT           | NOT NULL                                       |
+| CategoryID  | INT           | FOREIGN KEY REFERENCES Categories(CategoryID)  |
+| ImageURL    | VARCHAR(255)  |                                                |
 
 ### 6. Cart Table
 
