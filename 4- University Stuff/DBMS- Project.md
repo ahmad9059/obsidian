@@ -132,6 +132,82 @@ Stores detailed information about authors, including their biography and contact
 | Comment    | TEXT      |                                      |
 | ReviewDate | DATETIME  | DEFAULT GETDATE()                    |
 
+
+## Relationships ER Diagram
+---
+
+###  1. Users Table 
+-  One-to-Many with: 
+    - `Orders` → One User can place multiple Orders.
+    - `Cart` → One User can have multiple Cart entries.
+    - `Reviews` → One User can give multiple Reviews.
+
+---
+
+###  2. Authors Table 
+-  One-to-Many with: 
+    - `Books` → One Author can write multiple Books.
+---
+
+###  3. Publishers Table 
+-  One-to-Many with: 
+    - `Books` → One Publisher can publish multiple Books.
+
+---
+
+###  4. Categories Table 
+-  One-to-Many with: 
+    - `Books` → One Category can have multiple Books.
+
+---
+###  5. Books Table 
+-  Many-to-One with: 
+    - `Authors` (via `AuthorID`)
+    - `Publishers` (via `PublisherID`)
+    - `Categories` (via `CategoryID`)
+-  One-to-Many with: 
+    - `Cart` → A Book can be in multiple users' carts.
+    - `OrderItems` → A Book can be part of many order items.
+    - `Reviews` → A Book can have many reviews.
+
+---
+
+###  6. Cart Table 
+-  Many-to-One with: 
+    - `Users` (via `UserID`)
+    - `Books` (via `BookID`)
+
+---
+
+###  7. Orders Table 
+-  Many-to-One with: 
+    - `Users` (via `UserID`)
+-  One-to-Many with: 
+    - `OrderItems` → One Order can have many OrderItems.
+    - `Payments` → One Order can have one Payment record.
+
+---
+
+###  8. OrderItems Table 
+-  Many-to-One with: 
+    - `Orders` (via `OrderID`)
+        
+    - `Books` (via `BookID`)
+
+---
+
+###  9. Payments Table
+-  One-to-One or One-to-Many with: 
+    - `Orders` (depending on design; here, assume  One-to-One )
+
+---
+
+###  10. Reviews Table 
+-  Many-to-One with: 
+    - `Users` (via `UserID`)
+        
+    - `Books` (via `BookID`)
+
 ## Cardinalities Diagram
 
 ### 1. User → Orders
@@ -146,4 +222,38 @@ Stores detailed information about authors, including their biography and contact
 
 ![](4-%20University%20Stuff/assets/img-2.png)
 
-### 4. 
+### 4. Author → Books
+
+![](4-%20University%20Stuff/assets/img-3.png)
+
+### 5. Publisher → Books
+
+![](4-%20University%20Stuff/assets/img-4.png)
+
+### 6. Category → Books
+
+![](4-%20University%20Stuff/assets/img-5.png)
+
+### 7. Book → Cart
+
+![](4-%20University%20Stuff/assets/img-6.png)
+
+### 8. Book → OrderItems
+
+![](4-%20University%20Stuff/assets/img-7.png)
+
+### 9. Book → Reviews
+
+![](4-%20University%20Stuff/assets/img-8.png)
+
+### 10. Order → OrderItems
+
+![](4-%20University%20Stuff/assets/img-9.png)
+
+### 11. Order → Payments	
+
+![](4-%20University%20Stuff/assets/img-10.png)
+
+## Full Project Workflow
+
+![](4-%20University%20Stuff/assets/diagram-export-5-18-2025-3_15_02-PM%201.png)

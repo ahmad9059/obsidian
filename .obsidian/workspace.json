@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -177,12 +178,17 @@
   },
   "active": "919c88d261a67ec4",
   "lastOpenFiles": [
+    "4- University Stuff/assets/diagram-export-5-18-2025-3_15_02-PM 1.png",
+    "4- University Stuff/assets/img-10.png",
+    "4- University Stuff/assets/img-9.png",
+    "4- University Stuff/assets/img-8.png",
+    "4- University Stuff/assets/img-7.png",
+    "4- University Stuff/assets/img-6.png",
+    "4- University Stuff/assets/img-5.png",
+    "4- University Stuff/assets/img-4.png",
+    "4- University Stuff/assets/img-3.png",
     "4- University Stuff/assets/img-2.png",
     "4- University Stuff/assets/img-1.png",
-    "4- University Stuff/assets/img.png",
-    "4- University Stuff/assets/diagram1 1.png",
-    "4- University Stuff/assets/diagram1.png",
-    "4- University Stuff/assets/diagram-export-5-18-2025-3_15_02-PM.png",
     "3- Rough Notes/Accounts.md",
     "3- Rough Notes/Research Papers.md",
     "3- Rough Notes/tools.md",
@@ -199,13 +205,10 @@
     "3- Rough Notes/online-bookstore-project.md",
     "3- Rough Notes/MLSA-Quiz.md",
     "4- University Stuff/chart.md",
-    "4- University Stuff/assets/Editor _ Mermaid Chart-2025-05-13-180901.png",
-    "4- University Stuff/assets/ChatGPT Image May 13, 2025, 11_04_31 PM.png",
     "4- University Stuff/assets",
     "chart.md",
     "posts/80-20-rule.md",
     "posts/forher.md",
-    "posts/assets/80-20/80-20.webp",
     "posts/assets/80-20",
     "posts/80-20-rule.md~",
     "1-Notes/DBMS/MySQL.md",
@@ -215,11 +218,9 @@
     "4- University Stuff/Assignment.md",
     "2- My Thoughts/About Life and Love.md",
     "posts/chatbot.md~",
-    "posts/assets/tech/chatbot.webp",
     "posts/assets/tech",
     "posts/mysql.md~",
     "posts/sqlServer.md~",
-    "posts/assets/mysql/img.png",
     "posts/assets/mysql",
     "posts/assets/assets",
     "7. Full-Stack Development/React.js",
