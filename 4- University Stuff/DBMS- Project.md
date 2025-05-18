@@ -132,7 +132,18 @@ Stores detailed information about authors, including their biography and contact
 | Comment    | TEXT      |                                      |
 | ReviewDate | DATETIME  | DEFAULT GETDATE()                    |
 
-![](4-%20University%20Stuff/assets/Editor%20_%20Mermaid%20Chart-2025-05-13-180901.png)
+## Cardinalities Diagram
 
+### 1. User → Orders
 
-![](4-%20University%20Stuff/assets/ChatGPT%20Image%20May%2013,%202025,%2011_04_31%20PM.png)
+![](4-%20University%20Stuff/assets/img-1.png)
+
+### 2. User → Cart
+
+![](4-%20University%20Stuff/assets/img.png)
+
+### 3. User → Reviews
+
+![](4-%20University%20Stuff/assets/img-2.png)
+
+### 4. 
