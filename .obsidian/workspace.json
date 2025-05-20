@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -176,7 +175,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "919c88d261a67ec4",
+  "active": "7aaa13b447ffedea",
   "lastOpenFiles": [
     "4- University Stuff/assets/diagram-export-5-18-2025-3_15_02-PM 1.png",
     "4- University Stuff/assets/img-10.png",
