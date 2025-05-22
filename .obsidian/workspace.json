@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4- University Stuff/DBMS- Project.md",
+                "file": "4- University Stuff/Mids Exams.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DBMS- Project"
+              "title": "Mids Exams"
             }
           }
         ]
@@ -175,8 +175,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7aaa13b447ffedea",
+  "active": "919c88d261a67ec4",
   "lastOpenFiles": [
+    "2- My Thoughts/Nothing to Something.md",
+    "4- University Stuff/chart.md",
+    "1-Notes/Fundamentals of AI/assets/healthcare.canvas",
+    "1-Notes/Fundamentals of AI/Introduction to Machine Learning.md",
+    "1-Notes/DBMS/MySQL Commands.md",
+    "1-Notes/DBMS/MySQL.md",
+    "1-Notes/DBMS/Complete DBMS.md",
+    "1-Notes/Computer Networks/Computer Networks(CN).md",
+    "4- University Stuff/DBMS- Project.md",
     "4- University Stuff/assets/diagram-export-5-18-2025-3_15_02-PM 1.png",
     "4- University Stuff/assets/img-10.png",
     "4- University Stuff/assets/img-9.png",
@@ -187,7 +196,6 @@
     "4- University Stuff/assets/img-4.png",
     "4- University Stuff/assets/img-3.png",
     "4- University Stuff/assets/img-2.png",
-    "4- University Stuff/assets/img-1.png",
     "3- Rough Notes/Accounts.md",
     "3- Rough Notes/Research Papers.md",
     "3- Rough Notes/tools.md",
@@ -196,26 +204,19 @@
     "4- University Stuff/Mids 2.md",
     "4- University Stuff/Finals Exams.md",
     "4- University Stuff/Computer Memory System - Study Material.md",
-    "4- University Stuff/DBMS- Project.md",
     "3- Rough Notes/Linkedin Post/DSA Complete Linkedin Post.md",
     "3- Rough Notes/Useful Links.md",
     "3- Rough Notes/Topics to Discuss.md",
     "3- Rough Notes/Random.md",
     "3- Rough Notes/online-bookstore-project.md",
     "3- Rough Notes/MLSA-Quiz.md",
-    "4- University Stuff/chart.md",
     "4- University Stuff/assets",
     "chart.md",
     "posts/80-20-rule.md",
     "posts/forher.md",
     "posts/assets/80-20",
     "posts/80-20-rule.md~",
-    "1-Notes/DBMS/MySQL.md",
     "posts/mysql.md",
-    "posts/Fundamentals-of-JavaScript.md",
-    "3- Rough Notes/A Jack of all trades, but master of none, is oftentimes better than master of one..md",
-    "4- University Stuff/Assignment.md",
-    "2- My Thoughts/About Life and Love.md",
     "posts/chatbot.md~",
     "posts/assets/tech",
     "posts/mysql.md~",
@@ -225,7 +226,6 @@
     "7. Full-Stack Development/React.js",
     "1-Notes/Fundamentals of AI/assets/finance.canvas",
     "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
-    "1-Notes/Fundamentals of AI/assets/healthcare.canvas",
     "7. Full-Stack Development/Untitled.canvas",
     "5- Daily Tasks/Roadmap.canvas"
   ]
