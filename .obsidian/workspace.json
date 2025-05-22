@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4- University Stuff/Mids Exams.md",
+                "file": "4- University Stuff/DBMS- Project.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mids Exams"
+              "title": "DBMS- Project"
             }
           }
         ]
@@ -177,6 +177,7 @@
   },
   "active": "919c88d261a67ec4",
   "lastOpenFiles": [
+    "4- University Stuff/Mids Exams.md",
     "2- My Thoughts/Nothing to Something.md",
     "4- University Stuff/chart.md",
     "1-Notes/Fundamentals of AI/assets/healthcare.canvas",
@@ -216,7 +217,6 @@
     "posts/forher.md",
     "posts/assets/80-20",
     "posts/80-20-rule.md~",
-    "posts/mysql.md",
     "posts/chatbot.md~",
     "posts/assets/tech",
     "posts/mysql.md~",
