@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4- University Stuff/Analysis of Algorithms.md",
+                "file": "4- University Stuff/Finals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Analysis of Algorithms"
+              "title": "Finals"
             }
           }
         ]
@@ -177,11 +177,14 @@
   },
   "active": "919c88d261a67ec4",
   "lastOpenFiles": [
-    "4- University Stuff/DBMS- Project.md",
-    "4- University Stuff/Analysis of Algorithms.md",
     "4- University Stuff/Mids Exams.md",
-    "2- My Thoughts/Nothing to Something.md",
+    "4- University Stuff/Mids 2.md",
+    "4- University Stuff/Finals.md",
+    "4- University Stuff/Computer Memory System - Study Material.md",
     "4- University Stuff/chart.md",
+    "4- University Stuff/Analysis of Algorithms.md",
+    "4- University Stuff/DBMS- Project.md",
+    "2- My Thoughts/Nothing to Something.md",
     "1-Notes/Fundamentals of AI/assets/healthcare.canvas",
     "1-Notes/Fundamentals of AI/Introduction to Machine Learning.md",
     "1-Notes/DBMS/MySQL Commands.md",
@@ -203,9 +206,7 @@
     "3- Rough Notes/tools.md",
     "3- Rough Notes/aws.md",
     "3- Rough Notes/MLSA.md",
-    "4- University Stuff/Mids 2.md",
     "4- University Stuff/Finals Exams.md",
-    "4- University Stuff/Computer Memory System - Study Material.md",
     "3- Rough Notes/Linkedin Post/DSA Complete Linkedin Post.md",
     "3- Rough Notes/Useful Links.md",
     "3- Rough Notes/Topics to Discuss.md",
@@ -214,7 +215,6 @@
     "3- Rough Notes/MLSA-Quiz.md",
     "4- University Stuff/assets",
     "chart.md",
-    "posts/80-20-rule.md",
     "posts/assets/80-20",
     "posts/80-20-rule.md~",
     "posts/chatbot.md~",
