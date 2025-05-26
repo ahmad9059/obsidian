@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "4- University Stuff/OS - Code.md",
+                "file": "4- University Stuff/OS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OS - Code"
+              "title": "OS"
             }
           }
         ]
@@ -177,8 +177,9 @@
   },
   "active": "919c88d261a67ec4",
   "lastOpenFiles": [
-    "4- University Stuff/Finals.md",
     "4- University Stuff/OS - Code.md",
+    "4- University Stuff/OS.md",
+    "4- University Stuff/Finals.md",
     "4- University Stuff/Mids Exams.md",
     "4- University Stuff/Mids 2.md",
     "4- University Stuff/Computer Memory System - Study Material.md",
@@ -213,7 +214,6 @@
     "3- Rough Notes/Topics to Discuss.md",
     "3- Rough Notes/Random.md",
     "3- Rough Notes/online-bookstore-project.md",
-    "3- Rough Notes/MLSA-Quiz.md",
     "4- University Stuff/assets",
     "posts/assets/80-20",
     "posts/80-20-rule.md~",
