@@ -11,14 +11,17 @@
             "id": "919c88d261a67ec4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "4- University Stuff/OS.md",
-                "mode": "source",
-                "source": false
+                "file": "1-Notes/Fundamentals of AI/assets/finance.canvas",
+                "viewState": {
+                  "x": -824.9250348998955,
+                  "y": -501.59089388462974,
+                  "zoom": -1.2913020090142067
+                }
               },
-              "icon": "lucide-file",
-              "title": "OS"
+              "icon": "lucide-layout-dashboard",
+              "title": "finance"
             }
           }
         ]
@@ -177,8 +180,9 @@
   },
   "active": "919c88d261a67ec4",
   "lastOpenFiles": [
-    "4- University Stuff/OS - Code.md",
+    "1-Notes/Fundamentals of AI/Introduction to Machine Learning.md",
     "4- University Stuff/OS.md",
+    "4- University Stuff/OS - Code.md",
     "4- University Stuff/Finals.md",
     "4- University Stuff/Mids Exams.md",
     "4- University Stuff/Mids 2.md",
@@ -188,7 +192,6 @@
     "4- University Stuff/DBMS- Project.md",
     "2- My Thoughts/Nothing to Something.md",
     "1-Notes/Fundamentals of AI/assets/healthcare.canvas",
-    "1-Notes/Fundamentals of AI/Introduction to Machine Learning.md",
     "1-Notes/DBMS/MySQL Commands.md",
     "1-Notes/DBMS/MySQL.md",
     "1-Notes/DBMS/Complete DBMS.md",
