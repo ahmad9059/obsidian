@@ -11,17 +11,14 @@
             "id": "919c88d261a67ec4",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "1-Notes/Fundamentals of AI/assets/finance.canvas",
-                "viewState": {
-                  "x": -824.9250348998955,
-                  "y": -501.59089388462974,
-                  "zoom": -1.2913020090142067
-                }
+                "file": "4- University Stuff/Probability.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "finance"
+              "icon": "lucide-file",
+              "title": "Probability"
             }
           }
         ]
@@ -180,6 +177,8 @@
   },
   "active": "919c88d261a67ec4",
   "lastOpenFiles": [
+    "1-Notes/Fundamentals of AI/assets/finance.canvas",
+    "4- University Stuff/Probability.md",
     "1-Notes/Fundamentals of AI/Introduction to Machine Learning.md",
     "4- University Stuff/OS.md",
     "4- University Stuff/OS - Code.md",
@@ -215,8 +214,6 @@
     "3- Rough Notes/Linkedin Post/DSA Complete Linkedin Post.md",
     "3- Rough Notes/Useful Links.md",
     "3- Rough Notes/Topics to Discuss.md",
-    "3- Rough Notes/Random.md",
-    "3- Rough Notes/online-bookstore-project.md",
     "4- University Stuff/assets",
     "posts/assets/80-20",
     "posts/80-20-rule.md~",
@@ -227,7 +224,6 @@
     "posts/assets/mysql",
     "posts/assets/assets",
     "7. Full-Stack Development/React.js",
-    "1-Notes/Fundamentals of AI/assets/finance.canvas",
     "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
     "7. Full-Stack Development/Untitled.canvas",
     "5- Daily Tasks/Roadmap.canvas"
