@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "b629dcb6d4f8f60b",
+        "id": "149f9b539375a78c",
         "type": "tabs",
         "children": [
           {
-            "id": "919c88d261a67ec4",
+            "id": "81149617a352c291",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "4- University Stuff/Probability.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Probability"
+              "title": "New tab"
             }
           }
         ]
@@ -175,10 +171,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "919c88d261a67ec4",
+  "active": "7aaa13b447ffedea",
   "lastOpenFiles": [
-    "1-Notes/Fundamentals of AI/assets/finance.canvas",
+    "7. Full-Stack Development/React.js/React.js.md",
     "4- University Stuff/Probability.md",
+    "1-Notes/Fundamentals of AI/assets/finance.canvas",
     "1-Notes/Fundamentals of AI/Introduction to Machine Learning.md",
     "4- University Stuff/OS.md",
     "4- University Stuff/OS - Code.md",
