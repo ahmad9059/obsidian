@@ -1184,10 +1184,10 @@ This makes updates **fast and efficient**, instead of redrawing the whole UI.
 
 Note: 🔍 Think of reconciliation as React saying: "Okay, what exactly changed? Let me only update that part."
 
-|Term|What it Means|Triggered By|Happens In|
-|---|---|---|---|
-|**Updating**|When React detects a **change in props or state**.|`setState`, parent re-render, context change, etc.|Component lifecycle|
-|**Re-rendering**|When the component’s **render method runs again** (or JSX is re-evaluated in function components).|After an update (or forced render)|Virtual DOM|
+| Term             | What it Means                                                                                      | Triggered By                                       | Happens In          |
+| ---------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ------------------- |
+| **Updating**     | When React detects a **change in props or state**.                                                 | `setState`, parent re-render, context change, etc. | Component lifecycle |
+| **Re-rendering** | When the component’s **render method runs again** (or JSX is re-evaluated in function components). | After an update (or forced render)                 | Virtual DOM         |
 
 ```jsx
   const [val, setVal] = useState("This is Normal Data");
