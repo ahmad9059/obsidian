@@ -1331,3 +1331,104 @@ const App = () => (
 );
 ```
 
+
+## Redux Toolkit (RTK)
+
+
+### What is Redux
+
+Redux is a **state management library** used with JavaScript apps (especially React) to manage and share **application-wide state** in a predictable way.
+
+### What is React-Redux?
+
+React-Redux is the **official binding library** that allows React components to interact with the Redux store using hooks like:
+
+- `useSelector()` – read state
+- `useDispatch()` – send actions
+
+It acts as a **bridge between Redux and React**.
+
+
+### Why Redux Toolkit is Useful
+
+- ✅ Reduces boilerplate code (less code, same result)
+- ✅ Built-in support for async actions using `createAsyncThunk`
+- ✅ Uses **Immer.js** internally so you can write mutable-style logic safely
+- ✅ Easy and clean setup via `configureStore` and `createSlice`
+- ✅ Encourages best practices by default
+
+
+### Core Concepts
+
+|Concept|Description|
+|---|---|
+|**Store**|Holds the global state|
+|**Slice**|A piece of the store: includes state + reducers|
+|**Action**|An object describing a change|
+|**Reducer**|A function that updates state based on action|
+|**Dispatch**|A way to send actions to the store|
+|**Selector**|Reads state from the store|
+
+### Redux Toolkit vs Context API
+
+|Feature|Redux Toolkit|Context API|
+|---|---|---|
+|🧠 Purpose|Complex state management|Simple state sharing|
+|🔁 Re-renders|Optimized with `useSelector()`|Causes **re-renders** of all consumers|
+|🔌 DevTools|Built-in support for Redux DevTools|❌ No DevTools|
+|🧵 Async Logic|Built-in with `createAsyncThunk`|Needs custom setup|
+|📦 Scalability|Highly scalable (slices, modular code)|Not ideal for large apps|
+|🔧 Boilerplate|Minimal with RTK|Less than raw Redux, but Context still has limitations|
+|🔒 Predictability|More structured and strict|More flexible but can lead to mess|
+#### Use Context API:
+
+- For **theme**, **language**, **auth user** – simple state
+#### Use Redux Toolkit:
+
+- For **complex state logic**, **shared global data**, **multiple components**, **async logic**
+
+### Redux Flow Diagram:
+
+![](7.%20Full-Stack%20Development/React.js/assets/Redux-Toolkit%20Flow.png)
+
+
+### 📦 `Store` – Global State Container
+
+- The **store** is where all the application state lives.
+- It combines different reducers (e.g., `user`, `products`, `carts`) into one centralized global state.
+- The store is created using `configureStore()` in Redux Toolkit.
+
+---
+
+### 🧩 `Reducers` – Handle State Changes
+
+- Reducers are functions that decide how the state should change in response to actions.
+- Each reducer manages its own **slice of state** (e.g., `user state`, `products state`, `carts state`).
+- Redux Toolkit allows you to define reducers inside `createSlice()`.
+
+---
+
+### 🎯 `Action` – Event Trigger
+
+- An **action** is a plain JavaScript object that describes **what happened**.
+- Actions are sent from components using `dispatch()` and are automatically created via `createSlice()` in RTK.
+- For example:  
+    `{ type: "cart/addToCart", payload: { id: 1, name: "Product A" } }`
+
+---
+
+### 🧵 From `App.jsx` (Any Component)
+
+- Any component (like `App.jsx` or its children) can:
+    - **Read data** using `useSelector()` – it's **read-only**, **not mutable**.
+    - **Send actions** using `useDispatch()` to update the global state.
+
+### Installation and Usage
+#### 1. Install Redux Toolkit and React-Redux
+
+Add the Redux Toolkit and React-Redux packages to your project:
+
+```jsx
+npm install @reduxjs/toolkit react-redux
+```
+
