@@ -1432,3 +1432,112 @@ Add the Redux Toolkit and React-Redux packages to your project:
 npm install @reduxjs/toolkit react-redux
 ```
 
+#### 2. Create a Redux Store
+
+Create a file named `src/app/store.js`. Import the `configureStore` API from Redux Toolkit. We'll start by creating an empty Redux store, and exporting it:
+
+```jsx
+import { configureStore } from '@reduxjs/toolkit'
+
+export const store = configureStore({
+  reducer: {},
+})
+```
+
+#### 3. Provide the Redux Store to React
+
+Once the store is created, we can make it available to our React components by putting a React-Redux `<Provider>` around our application in `src/index.js`. Import the Redux store we just created, put a `<Provider>` around your `<App>`, and pass the store as a prop:
+
+```jsx
+createRoot(document.getElementById("root")).render(
+<Provider store={store}>
+<App />
+</Provider>
+);
+```
+
+**Note:** Redux installed and below is example usage
+#### 4. Create a Redux State Slice
+
+```jsx
+import { createSlice } from '@reduxjs/toolkit'
+
+const initialState = {
+  value: 0,
+}
+
+export const counterSlice = createSlice({
+  name: 'counter',
+  initialState,
+  reducers: {
+    increment: (state) => {
+      // Redux Toolkit allows us to write "mutating" logic in reducers. It
+      // doesn't actually mutate the state because it uses the Immer library,
+      // which detects changes to a "draft state" and produces a brand new
+      // immutable state based off those changes
+      state.value += 1
+    },
+    decrement: (state) => {
+      state.value -= 1
+    },
+    incrementByAmount: (state, action) => {
+      state.value += action.payload
+    },
+  },
+})
+
+// Action creators are generated for each case reducer function
+export const { increment, decrement, incrementByAmount } = counterSlice.actions
+
+export default counterSlice.reducer
+```
+
+
+#### 5. Add Slice Reducers to the Store
+
+```jsx
+import { configureStore } from '@reduxjs/toolkit'
+import counterReducer from '../features/counter/counterSlice'
+
+export const store = configureStore({
+  reducer: {
+    counter: counterReducer,
+  },
+})
+```
+
+#### 6. Use Redux State and Actions in React Components
+
+```jsx
+import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { decrement, increment } from './counterSlice'
+
+export function Counter() {
+  const count = useSelector((state) => state.counter.value)
+  const dispatch = useDispatch()
+
+  return (
+    <div>
+      <div>
+        <button
+          aria-label="Increment value"
+          onClick={() => dispatch(increment())}
+        >
+          Increment
+        </button>
+        <span>{count}</span>
+        <button
+          aria-label="Decrement value"
+          onClick={() => dispatch(decrement())}
+        >
+          Decrement
+        </button>
+      </div>
+    </div>
+  )
+}
+```
+
+
+There is always room for improvement and continuous learning, but we'll end this note/article here. We've gained valuable knowledge about React — congratulations!
