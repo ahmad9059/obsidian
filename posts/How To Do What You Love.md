@@ -10,7 +10,7 @@ tags:
   - love
 Author: Ahmad Hassan
 ---
-![](posts/assets/img.png)
+![](/posts/assets/img.webp)
 
 
 To do something well you have to like it. That idea is not exactly novel. We've got it down to four words: "Do what you love." But it's not enough just to tell people that. Doing what you love is complicated.  
@@ -39,8 +39,8 @@ What a recipe for alienation. By the time they reach an age to think about what 
   
 Actually they've been told three lies: the stuff they've been taught to regard as work in school is not real work; grownup work is not (necessarily) worse than schoolwork; and many of the adults around them are lying when they say they like what they do.  
   
-The most dangerous liars can be the kids' own parents. If you take a boring job to give your family a high standard of living, as so many people do, you risk infecting your kids with the idea that work is boring. [[2](https://www.paulgraham.com/love.html#f2n)] Maybe it would be better for kids in this one case if parents were not so unselfish. A parent who set an example of loving their work might help their kids more than an expensive house. [[3](https://www.paulgraham.com/love.html#f3n)]  
-  
+The most dangerous liars can be the kids' own parents. If you take a boring job to give your family a high standard of living, as so many people do, you risk infecting your kids with the idea that work is boring. Maybe it would be better for kids in this one case if parents were not so unselfish. A parent who set an example of loving their work might help their kids more than an expensive house.
+
 It was not till I was in college that the idea of work finally broke free from the idea of making a living. Then the important question became not how to make money, but what to work on. Ideally these coincided, but some spectacular boundary cases (like Einstein in the patent office) proved they weren't identical.  
   
 The definition of work was now to make some original contribution to the world, and in the process not to starve. But after the habit of so many years my idea of work still included a large component of pain. Work still seemed to require discipline, because only hard problems yielded grand results, and hard problems couldn't literally be fun. Surely one had to force oneself to work on them.  
@@ -172,3 +172,11 @@ Whichever route you take, expect a struggle. Finding work you love is very diffi
 [6] This is isomorphic to the principle that you should prevent your beliefs about how things are from being contaminated by how you wish they were. Most people let them mix pretty promiscuously. The continuing popularity of religion is the most visible index of that.  
   
 [7] A more accurate metaphor would be to say that the graph of jobs is not very well connected.
+
+
+![](/posts/assets/img-20250617.webp)
+
+![](/posts/assets/img-20250617-234048.webp)
+
+
+![](/posts/assets/img-20250617-234156.webp)
