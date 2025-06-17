@@ -10,6 +10,6 @@
   },
   "vimMode": true,
   "showLineNumber": false,
-  "newLinkFormat": "relative",
+  "newLinkFormat": "absolute",
   "alwaysUpdateLinks": true
 }
