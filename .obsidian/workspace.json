@@ -11,14 +11,12 @@
             "id": "20a030a2d60ddaa1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "posts/How To Do What You Love.md",
-                "mode": "source",
-                "source": false
+                "file": "posts/assets/img-.png"
               },
-              "icon": "lucide-file",
-              "title": "How To Do What You Love"
+              "icon": "lucide-image",
+              "title": "img-"
             }
           }
         ]
@@ -177,19 +175,19 @@
   },
   "active": "20a030a2d60ddaa1",
   "lastOpenFiles": [
+    "posts/Copy That You Like.md",
+    "posts/assets/img-.png",
+    "posts/How To Do What You Love.md",
+    "posts/assets/img.webp",
+    "posts/assets/img-1.webp",
     "posts/assets/img-20250617-234156.webp",
     "posts/assets/img-20250617.webp",
     "posts/assets/img-20250617-234048.webp",
     "posts/assets/img-20250617-234156.png",
     "posts/assets/img-20250617-234048.png",
     "posts/assets/img-20250617.png",
-    "posts/assets/img.png",
-    "posts/assets/react/redux.webp",
-    "posts/assets/archlinux/installation.webp",
-    "posts/assets/mysql/img-2.webp",
-    "posts/assets/mysql/img-6.webp",
+    "posts/assets/img-1.png",
     "posts/What to Do.md",
-    "posts/How To Do What You Love.md",
     "posts/css.md",
     "posts/Check The Templete.md",
     "Templetes/frontmatter.md",
@@ -222,7 +220,6 @@
     "posts/assets/80-20",
     "posts/reactjs.md",
     "7- Full-Stack Development/React.js/React – A JavaScript Library.md",
-    "1-Notes/AWS CCP/AWS Certified Cloud Practitioner.md",
     "1-Notes/Fundamentals of AI/assets/finance.canvas",
     "1-Notes/Fundamentals of AI/assets/healthcare.canvas",
     "1-Notes/Fundamentals of AI/assets/cybersecurity.canvas",
