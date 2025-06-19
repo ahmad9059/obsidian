@@ -11,12 +11,14 @@
             "id": "20a030a2d60ddaa1",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "posts/assets/img-.png"
+                "file": "6- Tools/Neovim-Vim.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "img-"
+              "icon": "lucide-file",
+              "title": "Neovim-Vim"
             }
           }
         ]
