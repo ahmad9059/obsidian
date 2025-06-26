@@ -2,7 +2,7 @@
 title: temp article
 draft: false
 date: 2025-06-26
-description: temp
+description: 
 categories:
   - tech 👨🏻‍💻
   - web 🌐
@@ -13,8 +13,4 @@ tags:
 Author: Ahmad Hassan
 ---
 
-<span lang="ur">یہ ایک اردو جملہ ہے۔</span>
-
-<!-- OR -->
-
-<p class="urdu">یہ بھی ایک اردو مثال ہے۔</p>
+<span lang="ur">میری اردو پوسٹ کا یہ حصہ ہے۔</span>
