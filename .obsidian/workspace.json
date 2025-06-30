@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3- Rough Notes/Summer Vacation Goals.md",
+                "file": "posts/Hello.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Summer Vacation Goals"
+              "title": "Hello"
             }
           }
         ]
@@ -176,9 +176,11 @@
   },
   "active": "20a030a2d60ddaa1",
   "lastOpenFiles": [
+    "posts/A Confession.md",
+    "posts/Hello.md",
+    "3- Rough Notes/Summer Vacation Goals.md",
     "1-Notes/DBMS/MySQL.md",
     "1-Notes/DBMS/Complete DBMS.md",
-    "posts/A Confession.md",
     "posts/temp article.md",
     "posts/confession.md",
     "Templetes/frontmatter.md",
@@ -210,8 +212,6 @@
     "posts/mysql.md",
     "posts/markdown.md",
     "posts/javascript-advanced.md",
-    "posts/html.md",
-    "posts/gsap-locomotive.md",
     "posts/assets/react",
     "posts/assets/web/JS",
     "posts/assets/web/CSS",
