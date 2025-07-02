@@ -11,14 +11,10 @@
             "id": "20a030a2d60ddaa1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/Hello.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Hello"
+              "title": "New tab"
             }
           }
         ]
@@ -174,7 +170,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "20a030a2d60ddaa1",
+  "active": "7aaa13b447ffedea",
   "lastOpenFiles": [
     "posts/A Confession.md",
     "posts/Hello.md",
