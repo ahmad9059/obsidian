@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "eab992aa69561ea5",
+        "id": "6d6ae4f8268987b4",
         "type": "tabs",
         "children": [
           {
-            "id": "20a030a2d60ddaa1",
+            "id": "883c7a1d902c3218",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -170,7 +170,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "20a030a2d60ddaa1",
+  "active": "7aaa13b447ffedea",
   "lastOpenFiles": [
     "posts/Hello.md",
     "posts/A Confession.md",
